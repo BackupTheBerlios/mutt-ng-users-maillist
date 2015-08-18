@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> mutt-ng vs mutt w.r.t imap
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2008-July/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20mutt-ng%20vs%20mutt%20w.r.t%20imap&In-Reply-To=%3Ccac7cb1d0807090540j57ed896kd9f6bbed81fa5757%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>mutt-ng vs mutt w.r.t imap</H1>
+    <B>Ravi Chandra Nallan</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20mutt-ng%20vs%20mutt%20w.r.t%20imap&In-Reply-To=%3Ccac7cb1d0807090540j57ed896kd9f6bbed81fa5757%40mail.gmail.com%3E"
+       TITLE="mutt-ng vs mutt w.r.t imap">ravi.nallan at gmail.com
+       </A><BR>
+    <I>Wed Jul  9 14:40:50 CEST 2008</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#322">[ date ]</a>
+              <a href="thread.html#322">[ thread ]</a>
+              <a href="subject.html#322">[ subject ]</a>
+              <a href="author.html#322">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi All,
+ Looks like this is a problem specific to multiple imap folders (in
+sidebar?).
+I tried finding the stack when the muttng becomes unresponsive. It looks
+like it is spending most of its time in read from the socket!!!
+This happens when you try to move over to the next mailbox or even the next
+message!!
+
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead3555 pollsys  (8045c6c, 1, 8045c38, 0)
+fea85b12 poll (8045c6c, 1) + 52
+ fecd1c38 _nc_timed_wait (81531b0, 815b0c8, 0, 1, 8, 0) + a8
+  08152040 ???????? (81526b8, 1, ffffffff, 8150c48, 990033, 33)
+08149888 _iob () + 10
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+
+Anyone has faced similar problem? Is there any way where this could be done
+in background ?
+regards,
+~Ravi
+
+On Mon, Jan 22, 2007 at 12:42 PM, Ravi Chandra Nallan &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">ravi.nallan at gmail.com</A>&gt;
+wrote:
+
+&gt;<i> Hi All,
+</I>&gt;<i>  I have this strange problem. It seems the mutt-ng is very slow compared to
+</I>&gt;<i> mutt when getting or sending mails from IMAP server.
+</I>&gt;<i> Mutt is fast as I scroll between the messages, but with mutt-ng it takes a
+</I>&gt;<i> lot of time while switching between folders, scrolling in the messages etc.
+</I>&gt;<i> The difference can be noticed with multiple folders opened in the sidebar.
+</I>&gt;<i> I have compiled the latest version of mutt-ng on Solaris 10 sparc machine.
+</I>&gt;<i> Any help?
+</I>&gt;<i>
+</I>&gt;<i> $ ldd `which mutt` `which muttng`
+</I>&gt;<i> /opt/csw/bin/mutt:
+</I>&gt;<i>         libslang.so.1 =&gt;         /opt/csw/lib//libslang.so.1
+</I>&gt;<i>         libm.so.1 =&gt;     /lib//libm.so.1
+</I>&gt;<i>         libssl.so.0.9.7 =&gt;       /opt/csw/lib//libssl.so.0.9.7
+</I>&gt;<i>         libcrypto.so.0.9.7 =&gt;    /opt/csw/lib//libcrypto.so.0.9.7
+</I>&gt;<i>         libintl.so.3 =&gt;  /opt/csw/lib//libintl.so.3
+</I>&gt;<i>         libiconv.so.2 =&gt;         /opt/csw/lib//libiconv.so.2
+</I>&gt;<i>         libsocket.so.1 =&gt;        /lib//libsocket.so.1
+</I>&gt;<i>         libnsl.so.1 =&gt;   /lib//libnsl.so.1
+</I>&gt;<i>         libgdbm.so.3 =&gt;  /opt/csw/lib//libgdbm.so.3
+</I>&gt;<i>         libc.so.1 =&gt;     /lib//libc.so.1
+</I>&gt;<i>         libdl.so.1 =&gt;    /lib//libdl.so.1
+</I>&gt;<i>         libmp.so.2 =&gt;    /lib//libmp.so.2
+</I>&gt;<i>         libmd5.so.1 =&gt;   /lib//libmd5.so.1
+</I>&gt;<i>         libscf.so.1 =&gt;   /lib//libscf.so.1
+</I>&gt;<i>         libdoor.so.1 =&gt;  /lib//libdoor.so.1
+</I>&gt;<i>         libuutil.so.1 =&gt;         /lib//libuutil.so.1
+</I>&gt;<i>         libm.so.2 =&gt;     /lib//libm.so.2
+</I>&gt;<i>         /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+</I>&gt;<i>         /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+</I>&gt;<i> /usr/local/bin/muttng:
+</I>&gt;<i>         libslang.so.1 =&gt;         /opt/csw/lib//libslang.so.1
+</I>&gt;<i>         libm.so.2 =&gt;     /lib//libm.so.2
+</I>&gt;<i>         libssl.so.0.9.8 =&gt;       /opt/csw/lib//libssl.so.0.9.8
+</I>&gt;<i>         libcrypto.so.0.9.8 =&gt;    /opt/csw/lib//libcrypto.so.0.9.8
+</I>&gt;<i>         libintl.so.3 =&gt;  /opt/csw/lib//libintl.so.3
+</I>&gt;<i>         libiconv.so.2 =&gt;         /opt/csw/lib//libiconv.so.2
+</I>&gt;<i>         libsocket.so.1 =&gt;        /lib//libsocket.so.1
+</I>&gt;<i>         libnsl.so.1 =&gt;   /lib//libnsl.so.1
+</I>&gt;<i>         libgdbm.so.3 =&gt;  /opt/csw/lib//libgdbm.so.3
+</I>&gt;<i>         libc.so.1 =&gt;     /lib//libc.so.1
+</I>&gt;<i>         libdl.so.1 =&gt;    /lib//libdl.so.1
+</I>&gt;<i>         libm.so.1 =&gt;     /lib//libm.so.1
+</I>&gt;<i>         libmp.so.2 =&gt;    /lib//libmp.so.2
+</I>&gt;<i>         libmd5.so.1 =&gt;   /lib//libmd5.so.1
+</I>&gt;<i>         libscf.so.1 =&gt;   /lib//libscf.so.1
+</I>&gt;<i>         libdoor.so.1 =&gt;  /lib//libdoor.so.1
+</I>&gt;<i>         libuutil.so.1 =&gt;         /lib//libuutil.so.1
+</I>&gt;<i>         /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+</I>&gt;<i>         /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+</I>&gt;<i> -Ravi
+</I>&gt;<i>
+</I>-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20080709/756d803d/attachment.html">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20080709/756d803d/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#322">[ date ]</a>
+              <a href="thread.html#322">[ thread ]</a>
+              <a href="subject.html#322">[ subject ]</a>
+              <a href="author.html#322">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

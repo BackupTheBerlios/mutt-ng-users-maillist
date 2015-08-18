@@ -1,0 +1,292 @@
+From andre.berger at web.de  Tue Nov 14 12:21:35 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Tue, 14 Nov 2006 12:21:35 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061029082647.GA2053@hvk>
+References: <20061028141015.GA1145@hvk> <20061028143908.GB1145@hvk>
+	<20061028145836.GB13105@synflood.at>
+	<20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+Message-ID: <20061114112135.GA24323@hvk>
+
+* Andre Berger (2006-10-29):
+> * Andre Berger (2006-10-28):
+> > * Andreas Krennmair (2006-10-28):
+> > > * Andre Berger <andre.berger at web.de> [06-10-28 21:53]:
+> > > >* Andreas Kneib (2006-10-28):
+> > > >>* Andreas Krennmair wrote:
+> > > >>> * Andre Berger <andre.berger at web.de> [06-10-28 16:42]:
+> > [...]
+>
+> How are you going to organize the notification about new versions and
+> features? For example, when the assumed_charset patch is ready? 
+
+Any progress on the assumed_charset patch? Those broken MUAs are so
+annoying, and I would really appreciate to get it back. 
+
+-Andre
+
+
+From ak at synflood.at  Tue Nov 14 12:38:38 2006
+From: ak at synflood.at (Andreas Krennmair)
+Date: Tue, 14 Nov 2006 12:38:38 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061114112135.GA24323@hvk>
+References: <20061028141015.GA1145@hvk> <20061028143908.GB1145@hvk>
+	<20061028145836.GB13105@synflood.at>
+	<20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+	<20061114112135.GA24323@hvk>
+Message-ID: <20061114113838.GB25841@synflood.at>
+
+* Andre Berger <andre.berger at web.de> [06-11-14 12:26]:
+>Any progress on the assumed_charset patch? Those broken MUAs are so
+>annoying, and I would really appreciate to get it back. 
+
+Not yet, but I didn't really have a lot of energy for working on mutt-ng
+in the last few days (due to sleeping problems, so I'm tired most of the
+time). It's on my TODO list, but don't expect it to happen too early.
+
+Regards,
+Andreas
+
+
+From ak at synflood.at  Thu Nov 16 08:25:22 2006
+From: ak at synflood.at (Andreas Krennmair)
+Date: Thu, 16 Nov 2006 08:25:22 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061114112135.GA24323@hvk>
+References: <20061028141015.GA1145@hvk> <20061028143908.GB1145@hvk>
+	<20061028145836.GB13105@synflood.at>
+	<20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+	<20061114112135.GA24323@hvk>
+Message-ID: <20061116072521.GA2154@synflood.at>
+
+* Andre Berger <andre.berger at web.de> [06-11-14 12:26]:
+>Any progress on the assumed_charset patch? Those broken MUAs are so
+>annoying, and I would really appreciate to get it back. 
+
+Integrated. Could you please test it?
+
+Regards,
+Andreas
+
+
+From andre.berger at web.de  Thu Nov 16 14:32:49 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 16 Nov 2006 14:32:49 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061116072521.GA2154@synflood.at>
+References: <20061028141015.GA1145@hvk> <20061028143908.GB1145@hvk>
+	<20061028145836.GB13105@synflood.at>
+	<20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+	<20061114112135.GA24323@hvk> <20061116072521.GA2154@synflood.at>
+Message-ID: <20061116133249.GA12081@hvk>
+
+* Andreas Krennmair (2006-11-16):
+> * Andre Berger <andre.berger at web.de> [06-11-14 12:26]:
+> >Any progress on the assumed_charset patch? Those broken MUAs are so
+> >annoying, and I would really appreciate to get it back. 
+
+> Integrated. Could you please test it?
+
+It doesn't seem to be available yet (as of v414, if I ); it's not in
+the patches list, and $assumed_charset is still unknown. 
+
+-Andre
+
+
+From ak at synflood.at  Thu Nov 16 15:57:57 2006
+From: ak at synflood.at (Andreas Krennmair)
+Date: Thu, 16 Nov 2006 15:57:57 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061116133249.GA12081@hvk>
+References: <20061028143908.GB1145@hvk> <20061028145836.GB13105@synflood.at>
+	<20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+	<20061114112135.GA24323@hvk> <20061116072521.GA2154@synflood.at>
+	<20061116133249.GA12081@hvk>
+Message-ID: <20061116145757.GA6070@synflood.at>
+
+* Andre Berger <andre.berger at web.de> [06-11-16 14:41]:
+>It doesn't seem to be available yet (as of v414, if I ); it's not in
+>the patches list, and $assumed_charset is still unknown. 
+
+Oops. Check out r442. I forgot to actually add and commit the right
+file.
+
+Regards,
+Andreas
+
+
+From andre.berger at web.de  Thu Nov 16 17:13:34 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 16 Nov 2006 17:13:34 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061116145757.GA6070@synflood.at>
+References: <20061028145836.GB13105@synflood.at>
+	<20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+	<20061114112135.GA24323@hvk> <20061116072521.GA2154@synflood.at>
+	<20061116133249.GA12081@hvk> <20061116145757.GA6070@synflood.at>
+Message-ID: <20061116161334.GA5677@hvk>
+
+* Andreas Krennmair (2006-11-16):
+> * Andre Berger <andre.berger at web.de> [06-11-16 14:41]:
+> >It doesn't seem to be available yet (as of v414, if I ); it's not in
+> >the patches list, and $assumed_charset is still unknown. 
+> 
+> Oops. Check out r442. I forgot to actually add and commit the right
+> file.
+
+I thought so :)
+
+Apart from "strict_mime: unknown variable" (which might have
+disappeared patch-upstream), everything applies cleanly and seems to
+work just fine.
+
+THANK YOU
+
+-Andre
+
+
+From riesebie at lxtec.de  Thu Nov 16 20:15:32 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Thu, 16 Nov 2006 20:15:32 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061116161334.GA5677@hvk>
+References: <20061028160850.GA837@andreas.kneib.biz>
+	<20061028195129.GB13759@hvk> <20061028200227.GA20314@synflood.at>
+	<20061028204237.GA15055@hvk> <20061029082647.GA2053@hvk>
+	<20061114112135.GA24323@hvk> <20061116072521.GA2154@synflood.at>
+	<20061116133249.GA12081@hvk>
+	<20061116145757.GA6070@synflood.at> <20061116161334.GA5677@hvk>
+Message-ID: <20061116191532.GA3239@aragorn.home.lxtec.de>
+
+On Thu, 16 Nov 2006 the mental interface of
+Andre Berger told:
+
+> * Andreas Krennmair (2006-11-16):
+> > * Andre Berger <andre.berger at web.de> [06-11-16 14:41]:
+> > >It doesn't seem to be available yet (as of v414, if I ); it's not in
+> > >the patches list, and $assumed_charset is still unknown. 
+> > 
+> > Oops. Check out r442. I forgot to actually add and commit the right
+> > file.
+> 
+> I thought so :)
+> 
+> Apart from "strict_mime: unknown variable" (which might have
+> disappeared patch-upstream), everything applies cleanly and seems to
+> work just fine.
+
+Confirmed ;)
+
+Elimar
+
+-- 
+  >what IMHO then?
+  IMHO - Inhalation of a Multi-leafed Herbal Opiate ;)
+              --posting from alex in debian-user--
+
+
+From A.Wagner at stud.uni-frankfurt.de  Thu Nov 16 22:42:38 2006
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Thu, 16 Nov 2006 22:42:38 +0100
+Subject: mutt-ng isn't dead!
+Message-ID: <20061116214238.GB4156@hermes.commontology.de>
+
+Hello list,
+today I set out to try the new ng (up to now I've been using a copy from 
+svn dated from May this year), followed the instructions and it all 
+seemed to work out well.
+Well somehow I had to re-add the HDR_MIX stuff that got thrown out in 
+vvv.nntp.diff, line 1345 and the colours are not yet what I expected, 
+but at least I had no .rej files at all and it configured and compiled 
+cleanly.
+
+However, when I now run it I get these errors:
+
+22:02 apollo:~ > mutt -F ~/.muttngrc
+Fehler in /home/wagner/.muttngrc, Zeile 14: strict_mime: Unbekannte Variable.
+Fehler in /home/wagner/.muttngrc, Zeile 16: stuff_quoted: Unbekannte Variable.
+
+Has there anything changed in how these variables are called or aren't 
+they re-implemented yet?
+
+Thanks for any help - and congrats for what seems to be a good 
+transition.
+
+Andreas
+
+
+-- 
+Real programmers don't document. If it was hard to write, it should be 
+hard to understand.
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+
+From stettberger at gmx.de  Fri Nov 17 14:27:25 2006
+From: stettberger at gmx.de (Christian Dietrich)
+Date: Fri, 17 Nov 2006 14:27:25 +0100
+Subject: mutt-ng isn't dead!
+In-Reply-To: <20061030153039.GA27046@synflood.at>
+References: <20061028145346.GA13105@synflood.at>
+	<20061028155203.GC3762@frodo.home.lxtec.de>
+	<20061030114652.GA6800@platon> <20061030121715.GA24047@synflood.at>
+	<20061030125143.GA3853@platon.stett>
+	<20061030134011.GB26334@synflood.at>
+	<20061030135628.GA20280@platon.stett>
+	<20061030141140.GA26679@synflood.at> <20061030142505.GB6800@platon>
+	<20061030153039.GA27046@synflood.at>
+Message-ID: <20061117132725.GB7174@platon.stett>
+
+Hi,
+when i want to compile mutt with the ng patches i had a little problem
+with smtp:
+
+* in smtp.c there was no mutt_progress_bar(). this function is called
+  mutt_progress_update() ( line 160/194 )
+* although i compile mutt with --with-sasl the preprocessor makro
+  USE_SASL doesn't seem to exist in smtp.c:
+
+#ifdef USE_SASL
+    return smtp_auth (conn);
+#else
+    mutt_error (_("SMTP authentication requires SASL"));
+    mutt_sleep (1);
+    return -1;
+#endif /* USE_SASL */
+
+when i try to connect to gmx.de the "SMTP authentication requires
+SASL"-error is printet. when i define USE_SASL  manualy, it compiles and
+works.
+
+didi
+
+
+-- 
+Zwei W?rmer krochen aus einem Misthaufen hinaus. Der kleine sagt zu dem gro?en:
+"Vati, schau an, wie blau der Himmel ist, wie gr?n das Gras ist, wie sch?n
+es riecht. Und wir wohnen doch in diesem Mist?!!"
+"Verstehst du, S?hnlein, es gibt so einen Begriff wie Vaterland..."
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20061117/0fd49e32/attachment.pgp>
+

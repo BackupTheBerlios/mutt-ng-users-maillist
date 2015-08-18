@@ -1,0 +1,102 @@
+From wolf at kondancemilch.de  Sat May 19 22:04:17 2007
+From: wolf at kondancemilch.de (Wolf Wiegand)
+Date: Sat, 19 May 2007 22:04:17 +0200
+Subject: mutt in debian-experimental
+Message-ID: <20070519200417.GA8872@denkbrett.wiegand.homedns.org>
+
+Hi,
+
+I just spotted this in Debian's mutt changelog:
+
+
+mutt (1.5.15+hg20070515-0lxtec1) experimental; urgency=low
+
+  * Adde sidebarpatch
+
+ -- Elimar Riesebieter <riesebie at lxtec.de>  Fri, 18 May 2007 13:10:48 +0200
+
+
+As you can see, I use mutt-ng/devel-r804, and I use mutt-ng mainly
+because of the sidebar patch. As this patch has been added to mutt in
+experimental, I should now be able to switch from my self-compiled mutt-ng to
+the version in experimental, right? Or are there any issues which are
+not yet covered by the version from experimental?
+
+Regards,
+
+Wolf
+-- 
+Welcome to your new addiction.
+
+
+From nion at muttng.org  Sun May 20 03:44:44 2007
+From: nion at muttng.org (Nico Golde)
+Date: Sun, 20 May 2007 03:44:44 +0200
+Subject: mutt in debian-experimental
+In-Reply-To: <20070519200417.GA8872@denkbrett.wiegand.homedns.org>
+References: <20070519200417.GA8872@denkbrett.wiegand.homedns.org>
+Message-ID: <20070520014444.GA9344@ngolde.de>
+
+Hi,
+* Wolf Wiegand <wolf at kondancemilch.de> [2007-05-20 03:28]:
+> I just spotted this in Debian's mutt changelog:
+> 
+> 
+> mutt (1.5.15+hg20070515-0lxtec1) experimental; urgency=low
+> 
+>   * Adde sidebarpatch
+> 
+>  -- Elimar Riesebieter <riesebie at lxtec.de>  Fri, 18 May 2007 13:10:48 +0200
+[...] 
+Where do you see this exactly? I wonder since Christoph Berg 
+and Adeodato Sim? are the mutt maintainers for Debian.
+Kind regards
+Nico
+-- 
+Nico Golde - http://ngolde.de - nion at jabber.ccc.de - GPG: 0x73647CFF
+For security reasons, all text in this mail is double-rot13 encrypted.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20070520/e5c23580/attachment.pgp>
+
+From riesebie at lxtec.de  Sun May 20 05:57:48 2007
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Sun, 20 May 2007 05:57:48 +0200
+Subject: mutt in debian-experimental
+In-Reply-To: <20070520014444.GA9344@ngolde.de>
+References: <20070519200417.GA8872@denkbrett.wiegand.homedns.org>
+	<20070520014444.GA9344@ngolde.de>
+Message-ID: <20070520035748.GA4004@aragorn.home.lxtec.de>
+
+On Sun, 20 May 2007 the mental interface of
+Nico Golde told:
+
+> Hi,
+> * Wolf Wiegand <wolf at kondancemilch.de> [2007-05-20 03:28]:
+> > I just spotted this in Debian's mutt changelog:
+> > 
+> > 
+> > mutt (1.5.15+hg20070515-0lxtec1) experimental; urgency=low
+> > 
+> >   * Adde sidebarpatch
+> > 
+> >  -- Elimar Riesebieter <riesebie at lxtec.de>  Fri, 18 May 2007 13:10:48 +0200
+> [...] 
+> Where do you see this exactly? I wonder since Christoph Berg 
+> and Adeodato Sim? are the mutt maintainers for Debian.
+
+This isn't an official version. Just Myons experimental patched [0]
+
+Elimar
+
+[0] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=354320
+
+-- 
+  Numeric stability is probably not all that 
+  important when you're guessing;-)
+
+

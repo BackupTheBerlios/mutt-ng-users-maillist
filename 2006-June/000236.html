@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Unicode sidebar
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Unicode%20sidebar&In-Reply-To=%3C20060628132549.GA81839%40vision.anyware%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000232.html">
+   <LINK REL="Next"  HREF="000238.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Unicode sidebar</H1>
+    <B>Jean-Baptiste Quenot</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Unicode%20sidebar&In-Reply-To=%3C20060628132549.GA81839%40vision.anyware%3E"
+       TITLE="Unicode sidebar">jbq at caraldi.com
+       </A><BR>
+    <I>Wed Jun 28 15:25:50 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000232.html">Sie haben eine Grusskarte bekommen.
+</A></li>
+        <LI>Next message: <A HREF="000238.html">Unicode sidebar
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#236">[ date ]</a>
+              <a href="thread.html#236">[ thread ]</a>
+              <a href="subject.html#236">[ subject ]</a>
+              <a href="author.html#236">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello,
+
+Just tried to switch my environment from latin1 to utf-8 using
+LC_CTYPE, and I couldn't make muttng to work properly in this
+setup, the screen is garbled, and especially the sidebar.
+
+I'm using:
+
+Mutt-ng devel-r581 (based on Mutt 1.5.11/2005-09-15)
+[...]
+
+System:
+  FreeBSD 5.5-PRERELEASE (i386)
+External Libraries:
+  ncurses 5.2
+  libiconv 1.9
+  DB4 4.2.52
+  OpenSSL 0.9.7e 25 Oct 2004
+Compile Options:
+  +DEBUG
+  -HOMESPOOL  +USE_SETGID  +USE_DOTLOCK  +DL_STANDALONE
+  -USE_FCNTL  +USE_FLOCK   -USE_INODESORT   +USE_HCACHE
+  +USE_POP  -USE_NNTP  +USE_IMAP  -USE_GSS  +USE_SSL  -USE_GNUTLS  -USE_SASL  -USE_LIBESMTP
+  +HAVE_REGCOMP  -USE_GNU_REGEX  +COMPRESSED
+  +HAVE_COLOR  +HAVE_START_COLOR  +HAVE_TYPEAHEAD  +HAVE_BKGDSET
+  +HAVE_CURS_SET  +HAVE_META  +HAVE_RESIZETERM
+  +CRYPT_BACKEND_CLASSIC_PGP  +CRYPT_BACKEND_CLASSIC_SMIME  -CRYPT_BACKEND_GPGME  -BUFFY_SIZE -SUN_ATTACHMENT
+  +ENABLE_NLS  -LOCALES_HACK  +HAVE_WC_FUNCS  +HAVE_LANGINFO_CODESET  +HAVE_LANGINFO_YESEXPR
+  +HAVE_ICONV  -ICONV_NONTRANS  -HAVE_LIBIDN  +HAVE_GETSID  +HAVE_GETADDRINFO
+Built-In Defaults:
+  -DOMAIN
+  -ISPELL
+  +SENDMAIL=&quot;/usr/local/sbin/sendmail&quot;
+  +MAILPATH=&quot;/var/mail&quot;
+  +PKGDATADIR=&quot;/usr/local/share/muttng&quot;
+  +PKGDOCDIR=&quot;/usr/local/share/doc/mutt-ng&quot;
+  +SYSCONFDIR=&quot;/usr/local/etc&quot;
+  +EXECSHELL=&quot;/bin/sh&quot;
+  -MIXMASTER
+
+I'm launching MuttNG within Gnome 2.14's terminal.  And I also set
+NCURSES_NO_UTF8_ACS=1 in the environment to avoid ugly garbage
+with the vertical delimiter of the sidebar.  However, the screen
+is still garbled.
+
+Is anyone using this config successfully?
+
+Thanks in advance,
+-- 
+     Jean-Baptiste Quenot
+aka  John Banana Qwerty
+<A HREF="http://caraldi.com/jbq/">http://caraldi.com/jbq/</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000232.html">Sie haben eine Grusskarte bekommen.
+</A></li>
+	<LI>Next message: <A HREF="000238.html">Unicode sidebar
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#236">[ date ]</a>
+              <a href="thread.html#236">[ thread ]</a>
+              <a href="subject.html#236">[ subject ]</a>
+              <a href="author.html#236">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

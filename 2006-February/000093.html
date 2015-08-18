@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> 788 won't compile
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20788%20won%27t%20compile&In-Reply-To=%3C20060226113837.GA398%40hvk.local%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000096.html">
+   <LINK REL="Next"  HREF="000094.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>788 won't compile</H1>
+    <B>Andre Berger</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20788%20won%27t%20compile&In-Reply-To=%3C20060226113837.GA398%40hvk.local%3E"
+       TITLE="788 won't compile">andre.berger at web.de
+       </A><BR>
+    <I>Sun Feb 26 12:38:37 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000096.html">ssl tls issues
+</A></li>
+        <LI>Next message: <A HREF="000094.html">788 won't compile
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#93">[ date ]</a>
+              <a href="thread.html#93">[ thread ]</a>
+              <a href="subject.html#93">[ subject ]</a>
+              <a href="author.html#93">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi, I'm getting the following error with muttng-20060225/r788:
+
+gcc  -Wall -pedantic  -Os  -I/usr/local/include   -o pgpringng  pgppubring.o pgplib.o lib.o extlib.o sha1.o md5c.o pgppacket.o ascii.o -lintl -liconv -Llib -lsane -L/usr/local/lib -lgdbm
+/usr/bin/ld: Undefined symbols:
+__mem_calloc
+__mem_free
+__mem_malloc
+_str_dup
+_str_isstr
+_str_len
+__mem_realloc
+collect2: ld returned 1 exit status
+make[2]: *** [pgpringng] Error 1
+make[1]: *** [install-recursive] Error 1
+make: *** [install] Error 2
+
+
+About my gcc on Mac 0S X 10.4.5:
+
+Using built-in specs.
+Target: powerpc-apple-darwin8
+Configured with: /private/var/tmp/gcc/gcc-5250.obj~12/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --build=powerpc-apple-darwin8 --host=powerpc-apple-darwin8 --target=powerpc-apple-darwin8
+Thread model: posix
+gcc version 4.0.1 (Apple Computer, Inc. build 5250)
+
+-Andre
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000096.html">ssl tls issues
+</A></li>
+	<LI>Next message: <A HREF="000094.html">788 won't compile
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#93">[ date ]</a>
+              <a href="thread.html#93">[ thread ]</a>
+              <a href="subject.html#93">[ subject ]</a>
+              <a href="author.html#93">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

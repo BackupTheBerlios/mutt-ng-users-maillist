@@ -1,0 +1,76 @@
+From eslerj at gmail.com  Thu Oct 11 04:15:01 2007
+From: eslerj at gmail.com (Joel Esler)
+Date: Wed, 10 Oct 2007 22:15:01 -0400
+Subject: problem opening sidebar mailboxes and sorting question
+In-Reply-To: <20070730152103.GA25040@mushroom.ameri.ca>
+References: <20070730152103.GA25040@mushroom.ameri.ca>
+Message-ID: <0F5F22F5-EB60-477B-A9CC-EC7FEE2C90E6@gmail.com>
+
+I use "[" for up, "]" for down and "\" for open mailbox.
+
+Works great, and on my laptop keyboard, all three keys are next to  
+each other.
+
+J
+
+On Jul 30, 2007, at 11:21 AM, brad dreisbach wrote:
+
+> hi,
+>
+> I recently started using muttng and am having a couple of issues.
+>
+> 1.  I can't open mailboxes listed in the sidebar.  I can  
+> successfully change
+>     the highlighted mailbox, but pressing ctrl-o does not open the  
+> mailbox.
+>     I am using IMAP and here is the relevant config:
+>
+> # set up the sidebar, default not visible
+> set sidebar_width=36
+> set sidebar_visible=yes
+> set sidebar_delim='|
+>
+> # which mailboxes to list in the sidebar
+> mailboxes ! =blah1-`date +%Y-%m` =blah2-`date +%Y-%m` =blah3-`date + 
+> %Y-%m` =sent-mail-`date +%Y-%m`
+>
+> # color of folders with new mail
+> color sidebar_new green default
+>
+> # ctrl-n, ctrl-p to select next, prev folder
+> # ctrl-o to open selected folder
+> bind index \cp sidebar-prev
+> bind index \cn sidebar-next
+> bind index \co sidebar-open
+> bind pager \cp sidebar-prev
+> bind pager \cn sidebar-next
+> bind pager \co sidebar-open
+>
+> macro index B ':toggle sidebar_visible^M'
+> macro pager B ':toggle sidebar_visible^M'
+>
+> any ideas?
+>
+> 2.  My 2nd question question is related to mailbox sorting.
+>     I have the default sort option set to threads, but
+>     am using folder-hooks to set the sort mode to mailbox-order
+>     for my sidebar mailboxes since they tend to have a lot of
+>     email in them.  my inbox is relatively small, under 50 messages.
+>     when I fire up muttng it takes quite a while to start up,
+>     it hangs "Sorting mailbox...".  why would it be taking so long
+>     and what exactly is it sorting?  I guess maybe its printing
+>     this message but in reality it is downloading the headers of
+>     the emails in the sidebar mailboxes?  I have header caching  
+> enabled.
+>
+> thanks,
+> brad
+
+Joel Esler
+-- ISC Incident Handler
+http://www.incidents.org
+
+
+
+
+

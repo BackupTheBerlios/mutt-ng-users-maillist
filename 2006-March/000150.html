@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> hook for NNTP?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20hook%20for%20NNTP%3F&In-Reply-To=%3C20060331162836.GA10475%40westexe.demon.co.uk%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000147.html">
+   <LINK REL="Next"  HREF="000148.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>hook for NNTP?</H1>
+    <B>James Wilkinson</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20hook%20for%20NNTP%3F&In-Reply-To=%3C20060331162836.GA10475%40westexe.demon.co.uk%3E"
+       TITLE="hook for NNTP?">james at westexe.demon.co.uk
+       </A><BR>
+    <I>Fri Mar 31 18:28:36 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000147.html">hook for NNTP?
+</A></li>
+        <LI>Next message: <A HREF="000148.html">hook for NNTP?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#150">[ date ]</a>
+              <a href="thread.html#150">[ thread ]</a>
+              <a href="subject.html#150">[ subject ]</a>
+              <a href="author.html#150">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Rocco Rutte wrote:
+&gt;<i> You can try to use the ~w pattern like this:
+</I>&gt;<i> 
+</I>&gt;<i>   send-hook ~w. &quot;set ...&quot;
+</I>&gt;<i> 
+</I>&gt;<i> The ~w pattern matches against the Newsgroups: header.
+</I>
+I'd like to use this to score down cross-posted posts.
+
+I've been trying lines like
+score &quot;~w '.*,.*,.*'&quot; -1
+hoping that it will match the commas between the newsgroups. But it
+doesn't seem to work.
+
+Am I doing something stupid, or does ~w just apply to each newsgroup
+individually?
+
+I've tried Googling, but searching for &quot;~w&quot; isn't that easy...
+
+I'm on &quot;Mutt-ng devel-r790 (based on Mutt 1.5.11/2005-09-15)&quot; on FC5,
+compiled for AMD64.
+
+Thanks,
+
+James.
+-- 
+E-mail address: james | As Tim switched off the engine, opened the driver's
+@westexe.demon.co.uk  | door, undid his seat belt and fell out of the tree,
+                      | he decided that perhaps he didn't have the makings
+                      | of the best minicab driver. -- ISIHAC, BBC Radio 4
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000147.html">hook for NNTP?
+</A></li>
+	<LI>Next message: <A HREF="000148.html">hook for NNTP?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#150">[ date ]</a>
+              <a href="thread.html#150">[ thread ]</a>
+              <a href="subject.html#150">[ subject ]</a>
+              <a href="author.html#150">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,3119 @@
+From ljz at asfast.com  Wed Feb  1 15:34:01 2006
+From: ljz at asfast.com (Lloyd Zusman)
+Date: Wed, 1 Feb 2006 14:34:01 +0000 (UTC)
+Subject: Forcing new IMAP mail detection in Mailboxes list?
+Message-ID: <loom.20060201T152838-820@post.gmane.org>
+
+When viewing the Mailboxes list, I'd like to be able to press a key
+and cause mutt-ng to query my IMAP server and update the new message
+count, in case new email has arrived since the last time I checked.
+
+The imap-fetch-mail function doesn't work in browser mode.  Furthermore,
+when I do the following, it still doesn't cause the new message count to
+be updated:
+
+  macro browser g "q<imap-fetch-mail><change-folder>?^I"
+
+All that happens when I press "g" is for the folder to redisplay with the
+same count of new messages that it had before, even if new emails have
+arrived.
+
+How can I get the new message count to be updated on demand when I'm in the
+Mailboxes list?
+
+Thanks in advance.
+
+-- 
+ Lloyd Zusman
+ ljz at asfast.com
+ God bless you.
+
+
+
+
+From andre.berger at web.de  Mon Feb  6 11:45:24 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Mon, 6 Feb 2006 11:45:24 +0100
+Subject: Keeping track of new versions
+Message-ID: <20060206104524.GA6740@hvk.local>
+
+Hi there!
+
+I'm new to muttng, though not to mutt, and would like to know how to
+keep track of changes to the snapshot tarballs (not svn, that is). Is
+there an RSS feed or the like? Is mutt-ng still under active
+development at all?
+
+-Andre
+
+
+From y at sbcglobal.net  Mon Feb  6 19:01:50 2006
+From: y at sbcglobal.net (Berenice Artaud)
+Date: Mon, 06 Feb 2006 15:01:50 -0300
+Subject: The Bull is Back: SmallCap Profile
+Message-ID: <fnba$jawg$uifpg@>
+
+Mid-January Issue Smart Money Equities would like to thank our valued
+readers for making 2006 a great year.
+
+Please continue to support Smart Money Equities by visiting our sponsors
+and featured advertisers.
+
+We would like to introduce you to a company involved in the nano technology
+field. It is widely believed among experts that this could be the next sector
+to lead a neconomic boom. Big news expected from this next winner:
+
+Symbol:   NSLT
+
+Company:   Nano Superlattice Technology, Inc.
+
+Current Price:   around $3.40
+
+Short Term Target Price:   $6.90
+
+Recommendation:  (BUY)
+
+More about the company:
+Nano Superlattice Technology Inc is a nano technology company engaged in 
+the coating of tools and components with nano structured coatings for high-
+tech industries.
+
+With the rapid move towards miniaturization, the tools being used to create 
+high-tech goods are being pushed to their limits.
+
+Nano is a company which has come in to provide the solution needed to meet 
+the demands of our economy and take us into the future.
+
+The company uses nano technology to apply multi-layers of super-hard 
+elemental coatings on an array of precision products in order to improve their 
+physical properties.
+
+This coating improves a product's durability and performance.
+
+It is tools such as these which will allow us to meet our current needs as well as 
+pioneer further into the 22st century.
+
+Big news expected from NSLT this week! Once these gems start moving they 
+appreciate rapidly. Buy low, sellhigh!
+
+Watch this one go higher and higher all week!
+
+
+This email is for mutt-ng-users at lists.berlios.de.
+
+From bKabir02 at she.com  Mon Feb  6 21:57:40 2006
+From: bKabir02 at she.com (Mr.Kabir Bello.)
+Date: Tue, 7 Feb 2006 03:57:40 +0700
+Subject: REQUEST INVESTMENT
+Message-ID: <200602062057.k16KvLE14925@bat.berlios.de>
+
+From:Mr.Kabir Bello. 
+
+E-mail: Kabirbello02 at she.com
+
+Tel:+66-1-4919460.
+
+Attention:The Managing Director
+
+Before I proceed, may I humbly introduce myself to your good self, My Name is Mr.Kabir Bello, an Iraqi refugee ,my Father was until recently, one of the personal aid to the president of Iraq who was formerly overthrown out of power during the War in My Country which took many life . 
+Prior to this last serious crisis that is still ravaging in my country, which recently led to misfortune of our government and my late Father's position as the personal aid to the president, we were able to come over here in Thailand with my mother for investment ,we inherited the sum of US$16 Million. The funds were originally gotten from my late Father's proceeds. My late father was able to safe guard the fund with a very good diplomatic contact from my Country to Thailand which make us to come here to plan our life. 
+But all is about life and death I witnessed another tragedy which could have taken my own life in Thailand here but I feel this is not the time, It started on 26th of December here in Phuket another disaster occurred here named( TSUNAMI) which as well took the life of my mother and up till now her body are yet to to be found, I am the only surviving person in my Family now.
+I have decided to contact you because I am interested in investing in your country . Please kindly guide and assist me in making the right investment as every thing regarding technical and logistics details is worked out and ascertained to our respective satisfaction. In view of your participation, I am ready to give you a good negotiable percentage for your assistance, or better still commit it into viable Joint venture projects, be assured that you stand no risk of any kind as the funds belong to me as the only surviving son. As soon as I get your consent, I will quickly move this fund to your country for investment . 
+However, upon your acceptance to work as my partner, you can contact me with my private telephone number or e-mail for more details.
+I strongly believe that associating with you to embark on this and other business ventures will derive a huge success here after, please include you private contact telephone number and private e-mail when replying.
+
+Yours Sincerely.
+Mr.Kabir Bello.
+
+
+
+
+From arias at m-a-g.net  Wed Feb  8 20:37:31 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Wed, 8 Feb 2006 11:37:31 -0800
+Subject: Having outbound sent mail NOT marked as new
+Message-ID: <20060208193731.GA11011@radio.m-a-g.net>
+
+For some reason my outband sent mail in the $record folder is always marked
+as new.  If this is normal, it seems rather strange to me.  What is the
+proper way to not have it marked as such?  I am using Maildir.
+
+Having sent this inquiry recently to the mutt-users list, I received a reply
+of:
+
+----- Forwarded message from Michael Tatge <Michael.Tatge at web.de> -----
+Date: Tue, 7 Feb 2006 08:50:19 +0100
+Sender: owner-mutt-users at mutt.org
+From: Michael Tatge <Michael.Tatge at web.de>
+To: Mutt Users <mutt-users at mutt.org>
+Subject: Re: Having outbound sent mail NOT marked as new
+Mail-Followup-To: Mutt Users <mutt-users at mutt.org>
+
+Blame mutt-ng then. Plain mutt does not do that.
+
+Michael
+----- End forwarded message -----
+
+Could this really be specific to Mutt-ng?  But more importantly, for me 
+at least, does anyone have any idea how I can fix this problem?
+
+Thanks in advanced to whomever might have the time to help.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060208/13085e17/attachment.pgp>
+
+From magnus at therning.org  Thu Feb  9 01:17:17 2006
+From: magnus at therning.org (Magnus Therning)
+Date: Thu, 9 Feb 2006 00:17:17 +0000
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060208193731.GA11011@radio.m-a-g.net>
+References: <20060208193731.GA11011@radio.m-a-g.net>
+Message-ID: <20060209001717.GB7284@die.therning.org>
+
+On Wed, Feb 08, 2006 at 11:37:31AM -0800, Arias Hung wrote:
+>For some reason my outband sent mail in the $record folder is always marked
+>as new.  If this is normal, it seems rather strange to me.  What is the
+>proper way to not have it marked as such?  I am using Maildir.
+>
+>Having sent this inquiry recently to the mutt-users list, I received a reply
+>of:
+>
+>----- Forwarded message from Michael Tatge <Michael.Tatge at web.de> -----
+>Date: Tue, 7 Feb 2006 08:50:19 +0100
+>Sender: owner-mutt-users at mutt.org
+>From: Michael Tatge <Michael.Tatge at web.de>
+>To: Mutt Users <mutt-users at mutt.org>
+>Subject: Re: Having outbound sent mail NOT marked as new
+>Mail-Followup-To: Mutt Users <mutt-users at mutt.org>
+>
+>Blame mutt-ng then. Plain mutt does not do that.
+>
+>Michael
+>----- End forwarded message -----
+>
+>Could this really be specific to Mutt-ng?  But more importantly, for me 
+>at least, does anyone have any idea how I can fix this problem?
+>
+>Thanks in advanced to whomever might have the time to help.
+
+My recorded mail isn't marked as new. I can't find anything in muttng's
+manpages to suggest it's possible to do what you apparently are doing ;)
+
+/M
+
+-- 
+Magnus Therning                    (OpenPGP: 0xAB4DFBA4)
+magnus at therning.org
+http://therning.org/magnus
+
+Software is not manufactured, it is something you write and publish.
+Keep Europe free from software patents, we do not want censorship
+by patent law on written works.
+
+Never be afraid to try something new. Remember, amateurs built the
+ark; professionals built the Titanic.
+     -- Anonymous
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060209/db1f27c6/attachment.pgp>
+
+From wolf at kondancemilch.de  Thu Feb  9 08:08:36 2006
+From: wolf at kondancemilch.de (Wolf Wiegand)
+Date: Thu, 9 Feb 2006 08:08:36 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209001717.GB7284@die.therning.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org>
+Message-ID: <20060209070836.GA6362@piii700.wiegand.homedns.org>
+
+Hi,
+
+Magnus Therning wrote:
+
+> On Wed, Feb 08, 2006 at 11:37:31AM -0800, Arias Hung wrote:
+> >For some reason my outband sent mail in the $record folder is always marked
+> >as new.  If this is normal, it seems rather strange to me.  What is the
+> >proper way to not have it marked as such?  I am using Maildir.
+>
+> My recorded mail isn't marked as new. I can't find anything in muttng's
+> manpages to suggest it's possible to do what you apparently are doing ;)
+
+Actually, I am seeing the same behaviour as Arias does, both with a rather
+ancient version of muttng (about last July, I guess) and a version from
+about 6 weeks ago. I am using LDAP.
+
+Regards,
+
+Wolf
+-- 
+"Wenn Du jetzt "krasser Spruch" gesagt h?ttest wie diese linguistischen 
+Ikonoklasten, die sich anschicken, kraft Reduktionsgrammatik und 
+Vakuumvokabular die sprachliche Weltherrschaft zu erlangen..." (Rainer 
+Buchty in z-netz.rechner.c64+c128.spiele)
+
+
+From pdmef at gmx.net  Thu Feb  9 08:16:13 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 08:16:13 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209070836.GA6362@piii700.wiegand.homedns.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org> <20060209070836.GA6362@piii700.wiegand.homedns.org>
+Message-ID: <20060209071613.GB6010@bolero.cs.tu-berlin.de>
+
+* Wolf Wiegand <wolf at kondancemilch.de>:
+
+>Actually, I am seeing the same behaviour as Arias does, both with a rather
+>ancient version of muttng (about last July, I guess) and a version from
+>about 6 weeks ago. I am using LDAP.
+
+Hmm, I get different results with mbox (both compressed and not) as well 
+as Maildir and can't remember this ever being different so far.
+
+I'm sorry for the long delay the last weeks, and I'm even more sorry 
+that I have to delay this until next week...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Thu Feb  9 08:17:43 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 08:17:43 +0100
+Subject: Forcing new IMAP mail detection in Mailboxes list?
+In-Reply-To: <loom.20060201T152838-820@post.gmane.org>
+References: <loom.20060201T152838-820@post.gmane.org>
+Message-ID: <20060209071742.GC6010@bolero.cs.tu-berlin.de>
+
+* Lloyd Zusman <ljz at asfast.com>:
+
+>How can I get the new message count to be updated on demand when I'm in the
+>Mailboxes list?
+
+The <buffy-list> function lists folders with new mail and is bound to 
+'.' by default. With the $force_buffy_check option set, it first polls 
+all folders for new mail before displaying the result. Perhaps this 
+helps?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Thu Feb  9 08:22:47 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 08:22:47 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060206104524.GA6740@hvk.local>
+References: <20060206104524.GA6740@hvk.local>
+Message-ID: <20060209072247.GD6010@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+
+>I'm new to muttng, though not to mutt, and would like to know how to
+>keep track of changes to the snapshot tarballs (not svn, that is). Is
+>there an RSS feed or the like?
+
+Sorry but no. There's not much logic behind the snapshots as they're 
+simply archives from the latest devel tree (and not only produced when a 
+change happened). A very poor man's version could be to go by file size.
+
+When changes are made, a mail listing the changes is sent to the 
+developer's list but determing whether something changed within a week 
+or so requires manual interaction and changelog reading.
+
+Or you could try the subversion interface at our berlios site.
+
+>Is mutt-ng still under active
+>development at all?
+
+In theory yes. The problem is that Andreas is at the army right now and 
+doesn't have time at all. Nico is busy with university. I'm busy with 
+other projects and have been ill for a few weeks so that there wasn't 
+much progress...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Thu Feb  9 08:25:17 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 08:25:17 +0100
+Subject: f=f vs. trailing spaces in edit_headers
+In-Reply-To: <20060201163743.GE6757@hermes.commontology.de>
+References: <20060201163743.GE6757@hermes.commontology.de>
+Message-ID: <20060209072517.GE6010@bolero.cs.tu-berlin.de>
+
+* Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+
+>Is there a way to avoid having spaces appended to the empty 
+>header lines when using edit_headers?
+
+No there isn't. But you have control over which headers are shown so you 
+could only let it provide non-empty fields and add new headers manually 
+as needed. This isn't really elegant, but it could do...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Thu Feb  9 11:04:03 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 9 Feb 2006 11:04:03 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209072247.GD6010@bolero.cs.tu-berlin.de>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de>
+Message-ID: <20060209100402.GA5115@hvk.local>
+
+* Rocco Rutte (2006-02-09):
+> * Andre Berger <andre.berger at web.de>:
+> 
+> >I'm new to muttng, though not to mutt, and would like to know how to
+> >keep track of changes to the snapshot tarballs (not svn, that is). Is
+> >there an RSS feed or the like?
+> 
+> Sorry but no.
+[...]
+> Or you could try the subversion interface at our berlios site.
+
+Thank you, I'll think about it.
+
+> >Is mutt-ng still under active
+> >development at all?
+> 
+> In theory yes. The problem is that Andreas is at the army right now and doesn't have time at 
+> all. Nico is busy with university. I'm busy with other projects and have been ill for a few 
+> weeks so that there wasn't much progress...
+
+I hope you are better now! 
+
+Bye,
+
+-Andre
+
+
+From magnus at therning.org  Thu Feb  9 12:03:43 2006
+From: magnus at therning.org (Magnus Therning)
+Date: Thu, 9 Feb 2006 11:03:43 +0000
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209071613.GB6010@bolero.cs.tu-berlin.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org> <20060209070836.GA6362@piii700.wiegand.homedns.org> <20060209071613.GB6010@bolero.cs.tu-berlin.de>
+Message-ID: <20060209110343.GD19340@die.therning.org>
+
+On Thu, Feb 09, 2006 at 08:16:13AM +0100, Rocco Rutte wrote:
+>* Wolf Wiegand <wolf at kondancemilch.de>:
+>
+>>Actually, I am seeing the same behaviour as Arias does, both with a
+>>rather ancient version of muttng (about last July, I guess) and a
+>>version from about 6 weeks ago. I am using LDAP.
+>
+>Hmm, I get different results with mbox (both compressed and not) as
+>well as Maildir and can't remember this ever being different so far.
+>
+>I'm sorry for the long delay the last weeks, and I'm even more sorry
+>that I have to delay this until next week...
+
+I'm using Maildir only. Mutt-ng from 2006-01-13 (the one in Debian's
+experimental repo).
+
+/M
+
+-- 
+Magnus Therning                    (OpenPGP: 0xAB4DFBA4)
+magnus at therning.org
+http://therning.org/magnus
+
+Software is not manufactured, it is something you write and publish.
+Keep Europe free from software patents, we do not want censorship
+by patent law on written works.
+
+Good powers of observation are frequently called "cynicism" by those
+that don't have them.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060209/fee0d263/attachment.pgp>
+
+From pdmef at gmx.net  Thu Feb  9 12:33:05 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 12:33:05 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209100402.GA5115@hvk.local>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de> <20060209100402.GA5115@hvk.local>
+Message-ID: <20060209113305.GG6010@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+>* Rocco Rutte (2006-02-09):
+
+>> Or you could try the subversion interface at our berlios site.
+
+>Thank you, I'll think about it.
+
+Or you could try:
+
+   <http://mutt-ng.berlios.de/Changelog.trunk>
+
+and
+
+   <http://mutt-ng.berlios.de/Changelog.rewrite>
+
+which now still are empty as subversion is terribly slow at the moment. 
+They'll be upgraded twice a day together with the rewrite documentation.
+
+>I hope you are better now! 
+
+Since this morning I feel confident that it'll be this week that I can 
+re-start eating on a regular basis without any pain killing pills... so 
+thanks! ;-)
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Thu Feb  9 12:41:18 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 12:41:18 +0100
+Subject: Remove trailing space for empty headers in general? (was: f=f vs. trailing spaces in edit_headers)
+In-Reply-To: <20060209113423.GA6849@hermes.commontology.de>
+References: <20060201163743.GE6757@hermes.commontology.de> <20060209072517.GE6010@bolero.cs.tu-berlin.de> <20060209113423.GA6849@hermes.commontology.de>
+Message-ID: <20060209114118.GH6010@bolero.cs.tu-berlin.de>
+
+I'm taking this to devel list, too.
+
+* Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+>* Rocco Rutte wrote on Feb/09/2006:
+
+>>>Is there a way to avoid having spaces appended to the empty header lines when using 
+>>>edit_headers?
+
+>>No there isn't. But you have control over which headers are shown so you could only let 
+>>it provide non-empty fields and add new headers manually as needed. This isn't really 
+>>elegant, but it could do...
+
+>I think I have got it now as you've described.
+>While I know that your schedule is full and your time is scarce, would you be willing to 
+>add something like an option for it to your wishlist? It'd be an important improvement 
+>for format-flowed support I believe...
+
+As the space to empty header fields is always added regardless of 
+$edit_headers, my suggestion to simply remove the space in all cases. 
+IMHO special treatment for format=flowed only doesn't make sense.
+
+I'll go ahead removing it for all cases... except someone comes up with 
+a really good point for why the space is important. Opinions?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Thu Feb  9 14:58:50 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 9 Feb 2006 14:58:50 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209113305.GG6010@bolero.cs.tu-berlin.de>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de> <20060209100402.GA5115@hvk.local> <20060209113305.GG6010@bolero.cs.tu-berlin.de>
+Message-ID: <20060209135850.GA963@hvk.local>
+
+* Rocco Rutte (2006-02-09):
+> * Andre Berger <andre.berger at web.de>:
+> >* Rocco Rutte (2006-02-09):
+> 
+> >>Or you could try the subversion interface at our berlios site.
+> 
+> >Thank you, I'll think about it.
+> 
+> Or you could try:
+> 
+>   <http://mutt-ng.berlios.de/Changelog.trunk>
+> 
+> and
+> 
+>   <http://mutt-ng.berlios.de/Changelog.rewrite>
+> 
+> which now still are empty as subversion is terribly slow at the moment. They'll be upgraded 
+> twice a day together with the rewrite documentation.
+
+I'm not familiar with this system; they show different version
+numbers (774/trunk vs 776/rewrite)?
+
+> >I hope you are better now! 
+> 
+> Since this morning I feel confident that it'll be this week that I can re-start eating on a 
+> regular basis without any pain killing pills... so thanks! ;-)
+
+Nochmals beste Wuensche,
+
+-Andre
+
+
+From pdmef at gmx.net  Thu Feb  9 15:02:04 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 15:02:04 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209135850.GA963@hvk.local>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de> <20060209100402.GA5115@hvk.local> <20060209113305.GG6010@bolero.cs.tu-berlin.de> <20060209135850.GA963@hvk.local>
+Message-ID: <20060209140204.GJ6010@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+>* Rocco Rutte (2006-02-09):
+>>   <http://mutt-ng.berlios.de/Changelog.trunk>
+>>   <http://mutt-ng.berlios.de/Changelog.rewrite>
+
+>I'm not familiar with this system; they show different version
+>numbers (774/trunk vs 776/rewrite)?
+
+That's ok. There's only one number for the whole project. 774/trunk says 
+that the "normal" or "old" version was last changed in revision 774 
+while the rewrite was last changed in revision 776.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From A.Wagner at stud.uni-frankfurt.de  Thu Feb  9 13:03:06 2006
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Thu, 9 Feb 2006 13:03:06 +0100
+Subject: sidebar_width is executed even with sidebar invisible
+Message-ID: <20060209120306.GB6849@hermes.commontology.de>
+
+Hello list,
+During review of my muttngrc ($editor_headers) I have discovered that I 
+when I <:set sidebar_width=xy>, while the sidebar is /not/ visible, I 
+get a somwhat garbled display: I have xy chars to the left of the window 
+/without the actual sidebar in it/. It seems the regular contents of the 
+main window is shifted xy chars to the right and whatever falls out on 
+the right window border is wrapped around and shows in this peculiar 
+"would-be" sidebar area.
+
+Shall I first try to get a newer version from CVS and then confirm it is 
+still the same?
+
+Cheers,
+Andreas
+
+-- 
+These opinions are mine, not those of the University of 
+Frankfurt. It is the opinion of the University that I should 
+be writing my dissertation.
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+
+From andre.berger at web.de  Thu Feb  9 15:19:15 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 9 Feb 2006 15:19:15 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209140204.GJ6010@bolero.cs.tu-berlin.de>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de> <20060209100402.GA5115@hvk.local> <20060209113305.GG6010@bolero.cs.tu-berlin.de> <20060209135850.GA963@hvk.local> <20060209140204.GJ6010@bolero.cs.tu-berlin.de>
+Message-ID: <20060209141914.GB963@hvk.local>
+
+* Rocco Rutte (2006-02-09):
+> * Andre Berger <andre.berger at web.de>:
+> >* Rocco Rutte (2006-02-09):
+> >>  <http://mutt-ng.berlios.de/Changelog.trunk>
+> >>  <http://mutt-ng.berlios.de/Changelog.rewrite>
+> 
+> >I'm not familiar with this system; they show different version
+> >numbers (774/trunk vs 776/rewrite)?
+> 
+> That's ok. There's only one number for the whole project. 774/trunk says that the "normal" or 
+> "old" version was last changed in revision 774 while the rewrite was last changed in revision 
+> 776.
+
+Now I'm confused -- what IS the latest version of mutt-ng? Are .trunk
+and .rewrite ever in sync? I'm planning to write a script that will
+download either .trunk or .rewrite and check the version against the
+version installed on my system, then build muttng from the tarball.
+Right now, today's tarball's version and the one found in .trunk do
+match (744). Can I rely on that in the future?
+
+-Andre
+
+
+From pdmef at gmx.net  Thu Feb  9 15:31:27 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 15:31:27 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209141914.GB963@hvk.local>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de> <20060209100402.GA5115@hvk.local> <20060209113305.GG6010@bolero.cs.tu-berlin.de> <20060209135850.GA963@hvk.local> <20060209140204.GJ6010@bolero.cs.tu-berlin.de> <20060209141914.GB963@hvk.local>
+Message-ID: <20060209143126.GA3542@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+
+>Now I'm confused -- what IS the latest version of mutt-ng? Are .trunk
+>and .rewrite ever in sync?
+
+Nope, these are totally different. The version in trunk/ is usable and 
+what everybody else uses. In branches/ the only thing is the rewrite: an 
+attempt to completely rewrite all of it. It's a completely different 
+program that eventually feel the same as the "old" one now.
+
+Just go with trunk.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Thu Feb  9 15:33:01 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 9 Feb 2006 15:33:01 +0100
+Subject: sidebar_width is executed even with sidebar invisible
+In-Reply-To: <20060209120306.GB6849@hermes.commontology.de>
+References: <20060209120306.GB6849@hermes.commontology.de>
+Message-ID: <20060209143301.GB3542@bolero.cs.tu-berlin.de>
+
+* Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+
+>Shall I first try to get a newer version from CVS and then 
+>confirm it is still the same?
+
+It will be the same. By some accidentally mistyping I got the same 
+effect. I (or one of the other three as they have time) will fix this 
+soon (I could do it this weekend, hopefully)
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From muttng at artificialidea.com  Thu Feb  9 15:45:15 2006
+From: muttng at artificialidea.com (Ivan F. Villanueva B.)
+Date: Thu, 9 Feb 2006 15:45:15 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209070836.GA6362@piii700.wiegand.homedns.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org> <20060209070836.GA6362@piii700.wiegand.homedns.org>
+Message-ID: <20060209144515.GF2931@golem>
+
+On Thu, Feb 09, 2006 08:08:36AM +0100, Wolf Wiegand wrote:
+> Hi,
+> 
+> Magnus Therning wrote:
+> 
+> > On Wed, Feb 08, 2006 at 11:37:31AM -0800, Arias Hung wrote:
+> > >For some reason my outband sent mail in the $record folder is always marked
+> > >as new.  If this is normal, it seems rather strange to me.  What is the
+> > >proper way to not have it marked as such?  I am using Maildir.
+> >
+> > My recorded mail isn't marked as new. I can't find anything in muttng's
+> > manpages to suggest it's possible to do what you apparently are doing ;)
+> 
+> Actually, I am seeing the same behaviour as Arias does,
+
+Me too.
+-- 
+Ivan F. Villanueva B.
+The dream of intelligent machines: www.artificialidea.com
+Encrypted mail preferred.
+GPG Key Id: 3FDBF85F 2004-10-18 Ivan-Fernando Villanueva Barrio
+
+
+From andre.berger at web.de  Thu Feb  9 15:42:37 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 9 Feb 2006 15:42:37 +0100
+Subject: Keeping track of new versions
+In-Reply-To: <20060209143126.GA3542@bolero.cs.tu-berlin.de>
+References: <20060206104524.GA6740@hvk.local> <20060209072247.GD6010@bolero.cs.tu-berlin.de> <20060209100402.GA5115@hvk.local> <20060209113305.GG6010@bolero.cs.tu-berlin.de> <20060209135850.GA963@hvk.local> <20060209140204.GJ6010@bolero.cs.tu-berlin.de> <20060209141914.GB963@hvk.local> <20060209143126.GA3542@bolero.cs.tu-berlin.de>
+Message-ID: <20060209144237.GC963@hvk.local>
+
+* Rocco Rutte (2006-02-09):
+> * Andre Berger <andre.berger at web.de>:
+> 
+> >Now I'm confused -- what IS the latest version of mutt-ng? Are .trunk
+> >and .rewrite ever in sync?
+> 
+> Nope, these are totally different. The version in trunk/ is usable and what everybody else uses. 
+> In branches/ the only thing is the rewrite: an attempt to completely rewrite all of it. It's a 
+> completely different program that eventually feel the same as the "old" one now.
+> 
+> Just go with trunk.
+
+Thank you very much.
+
+-Andre
+
+
+From wolf at kondancemilch.de  Thu Feb  9 21:49:16 2006
+From: wolf at kondancemilch.de (Wolf Wiegand)
+Date: Thu, 9 Feb 2006 21:49:16 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209070836.GA6362@piii700.wiegand.homedns.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org> <20060209070836.GA6362@piii700.wiegand.homedns.org>
+Message-ID: <20060209204916.GA4280@thinkpad.wiegand.homedns.org>
+
+Wolf Wiegand wrote:
+
+> I am using LDAP.
+
+Sorry, I meant IMAP, of course.
+
+Wolf
+-- 
+Weihnachten ist, wenn im Supermarkt die Osterdekoration aufgebaut wird. 
+(Henning Schlottmann in d.a.s.r.)
+
+
+From arias at m-a-g.net  Fri Feb 10 14:59:35 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Fri, 10 Feb 2006 05:59:35 -0800
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209110343.GD19340@die.therning.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org> <20060209070836.GA6362@piii700.wiegand.homedns.org> <20060209071613.GB6010@bolero.cs.tu-berlin.de> <20060209110343.GD19340@die.therning.org>
+Message-ID: <20060210135935.GA8557@radio.m-a-g.net>
+
+On Thu, 09 Feb 2006, Magnus Therning delivered in simple text monotype:
+
+> I'm using Maildir only. Mutt-ng from 2006-01-13 (the one in Debian's
+> experimental repo).
+<---snip--->
+
+I always use the most recent experimental version, although I recompile
+it to include libesmtp, inodesort, flock, and ispell.  My user-agent 
+header should reflect the same version as yours 2006-01-13.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060210/d846c4cd/attachment.pgp>
+
+From muttng at artificialidea.com  Fri Feb 10 16:41:50 2006
+From: muttng at artificialidea.com (Ivan F. Villanueva B.)
+Date: Fri, 10 Feb 2006 16:41:50 +0100
+Subject: sidebar_width is executed even with sidebar invisible
+In-Reply-To: <20060209120306.GB6849@hermes.commontology.de>
+References: <20060209120306.GB6849@hermes.commontology.de>
+Message-ID: <20060210154150.GB27066@golem>
+
+On Thu, Feb 09, 2006 01:03:06PM +0100, Andreas Wagner wrote:
+> It seems the regular contents of the main window is shifted xy chars to the
+> right and whatever falls out on the right window border is wrapped around and
+> shows in this peculiar "would-be" sidebar area.
+
+It has happened to me too when I change the size of the font, but I cannot
+reproduce it at the moment with the same version.
+
+-- 
+Ivan F. Villanueva B.
+<<<                   European Community Patent will bring            >>>
+<<<                     Software patents by the backdoor              >>>
+<<<                      http://wiki.ffii.org/ComPatEn                >>>
+
+
+From muttng at artificialidea.com  Fri Feb 10 16:43:02 2006
+From: muttng at artificialidea.com (Ivan F. Villanueva B.)
+Date: Fri, 10 Feb 2006 16:43:02 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060209144515.GF2931@golem>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060209001717.GB7284@die.therning.org> <20060209070836.GA6362@piii700.wiegand.homedns.org> <20060209144515.GF2931@golem>
+Message-ID: <20060210154302.GC27066@golem>
+
+On Thu, Feb 09, 2006 03:45:15PM +0100, Ivan F. Villanueva B. wrote:
+> On Thu, Feb 09, 2006 08:08:36AM +0100, Wolf Wiegand wrote:
+> > > >For some reason my outband sent mail in the $record folder is always marked
+> > > >as new.  If this is normal, it seems rather strange to me.  What is the
+> > > >proper way to not have it marked as such?  I am using Maildir.
+
+> Me too.
+Using mboxes.
+
+-- 
+Ivan F. Villanueva B.
+<<<                   European Community Patent will bring            >>>
+<<<                     Software patents by the backdoor              >>>
+<<<                      http://wiki.ffii.org/ComPatEn                >>>
+
+
+From nion at muttng.org  Fri Feb 10 19:04:33 2006
+From: nion at muttng.org (Nico Golde)
+Date: Fri, 10 Feb 2006 19:04:33 +0100
+Subject: Remove trailing space for empty headers in general? (was: f=f vs. trailing spaces in edit_headers)
+In-Reply-To: <20060209114118.GH6010@bolero.cs.tu-berlin.de>
+References: <20060201163743.GE6757@hermes.commontology.de> <20060209072517.GE6010@bolero.cs.tu-berlin.de> <20060209113423.GA6849@hermes.commontology.de> <20060209114118.GH6010@bolero.cs.tu-berlin.de>
+Message-ID: <20060210180433.GB11911@ngolde.de>
+
+Hi,
+* Rocco Rutte <pdmef at gmx.net> [2006-02-09 18:47]:
+> I'm taking this to devel list, too.
+> 
+> * Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+> >* Rocco Rutte wrote on Feb/09/2006:
+> 
+> >>>Is there a way to avoid having spaces appended to the empty 
+> >>>header lines when using edit_headers?
+> 
+[...] 
+> I'll go ahead removing it for all cases... except someone comes 
+> up with a really good point for why the space is important. 
+> Opinions?
+
+Perfect idea!
+Regards Nico
+-- 
+Nico Golde - JAB: nion at jabber.ccc.de | GPG: 0x73647CFF
+http://www.ngolde.de | http://www.muttng.org | http://grml.org
+Forget about that mouse with 3/4/5 buttons -
+gimme a keyboard with 103/104/105 keys!
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060210/ee73653d/attachment.pgp>
+
+From pdmef at gmx.net  Sat Feb 11 23:50:27 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sat, 11 Feb 2006 22:50:27 +0000
+Subject: sidebar_width is executed even with sidebar invisible
+In-Reply-To: <20060209120306.GB6849@hermes.commontology.de>
+References: <20060209120306.GB6849@hermes.commontology.de>
+Message-ID: <20060211225027.GA82207@robert.daprodeges.fqdn.th-h.de>
+
+Hi,
+
+* Andreas Wagner [06-02-09 13:03:06 +0100] wrote:
+
+[...]
+
+In r778 I tried to fix this by fixing the underlying problem and some 
+more bugs triggered by this (for example, before r778, when the sidebar 
+is hidden and one queries for $sidebar_width, muttng reports 0; when 
+switching it back on it reported the correct value; now it should always 
+report the correct one). I hope I caught all places but it may not be 
+the case.
+
+Please report back if the display looks strange and even if something 
+looks different...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Sat Feb 11 23:59:52 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sat, 11 Feb 2006 22:59:52 +0000
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060208193731.GA11011@radio.m-a-g.net>
+References: <20060208193731.GA11011@radio.m-a-g.net>
+Message-ID: <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+
+Hi,
+
+* Arias Hung [06-02-08 11:37:31 -0800] wrote:
+
+>For some reason my outband sent mail in the $record folder is always marked
+>as new.  If this is normal, it seems rather strange to me.  What is the
+>proper way to not have it marked as such?  I am using Maildir.
+
+As said, I cannot reproduce this on several systems with compressed and 
+uncompressed mbox and maildir.
+
+I had a look at the code now. As far as I can tell, we didn't touch a 
+single line so far in this area. Also, the calls are so obvious that I 
+just can't imagine mail being marked as new.
+
+That means I'm somewhat stuck.
+
+The only way of getting more detailed information of what's going on 
+seems to be to temporarily add some debugging code to see why this 
+doesn't work for some users...
+
+Is anybody willing of those affected to help?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Sat Feb 11 23:53:12 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sat, 11 Feb 2006 22:53:12 +0000
+Subject: f=f vs. trailing spaces in edit_headers
+In-Reply-To: <20060201163743.GE6757@hermes.commontology.de>
+References: <20060201163743.GE6757@hermes.commontology.de>
+Message-ID: <20060211225312.GB82207@robert.daprodeges.fqdn.th-h.de>
+
+Hi,
+
+* Andreas Wagner [06-02-01 17:37:43 +0100] wrote:
+
+>I am using vim and format=flowed and whenever I am editing in the 
+>headers they're being wrapped into one line.
+
+This is done in r777. Btw, what vim settings do you use? I only get this 
+problem when I let vim reformat the paragraph which I wouldn't do in the 
+header part...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From trey at fastmail.fm  Sun Feb 12 00:14:13 2006
+From: trey at fastmail.fm (Trey Sizemore)
+Date: Sat, 11 Feb 2006 18:14:13 -0500
+Subject: Display now messed up with r778
+Message-ID: <20060211231413.GA20099@chameleon.search>
+
+After upgrading to r778 today, the display is now messed up.  By that,
+I mean that paging down the lists of messages in the folder view, when
+I reach the end if there is a gap on the screen after the last message,
+the gap on the left is now filled with text from the previous screen
+(message info from the previous screen).
+
+I realize this is hard to picture by my description, so I will include
+a screen capture if needed.
+
+Thanks.
+
+-- 
+Cheers,
+Trey
+----
+ 
+Goldenstern's Rules:
+	(1) Always hire a rich attorney
+	(2) Never buy from a rich salesman.
+ 
+Linux chameleon 2.6.13-15-default i686 GNU/Linux
+  6:11pm  up 2 days  3:36,  4 users,  load average: 0.35, 0.75, 0.52
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060211/9ab59b07/attachment.pgp>
+
+From pdmef at gmx.net  Sun Feb 12 00:26:11 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sun, 12 Feb 2006 00:26:11 +0100
+Subject: Display now messed up with r778
+In-Reply-To: <20060211231413.GA20099@chameleon.search>
+References: <20060211231413.GA20099@chameleon.search>
+Message-ID: <20060211232611.GE3542@bolero.cs.tu-berlin.de>
+
+* Trey Sizemore <trey at fastmail.fm>:
+>I realize this is hard to picture by my description, so I will include
+>a screen capture if needed.
+
+I see, same here. Revision 780 fixes it, thanks.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From wolf at kondancemilch.de  Sun Feb 12 12:12:30 2006
+From: wolf at kondancemilch.de (Wolf Wiegand)
+Date: Sun, 12 Feb 2006 12:12:30 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+
+Hi,
+
+Rocco Rutte wrote:
+
+> The only way of getting more detailed information of what's going on 
+> seems to be to temporarily add some debugging code to see why this 
+> doesn't work for some users...
+> 
+> Is anybody willing of those affected to help?
+
+Sure, if you can give me some help on how to proceed. I just upgraded to
+rev 781 (which, btw, has Bug #5970 fixed) which still shows this
+behaviour. To describe this explicitly:
+
+- I send a new email
+- the count of mails in the sent folder, as shown in the sidebar, does
+  change
+- I execute imap-fetch-mail, the count of mails does not change, either
+- I enter another folder using sidebar-open, now the count of both mails
+  and unread mails in the send folder increase by one
+
+Actually, I am seeing the same behaviour with the trash folder - mails
+which are deleted and thus moved into that folder appear as unread
+mails in the trash folder.
+
+Regards, Wolf
+-- 
+B?roschimpfwort des Tages: Kurzstrecken-Gr?bler - sein Vorgang des 
+Nachdenkens bleibt recht ?bersichtlich und erfreut die Steno-Sekret?rin. 
+(Richard H?rner)
+
+
+From wolf at kondancemilch.de  Sun Feb 12 12:20:56 2006
+From: wolf at kondancemilch.de (Wolf Wiegand)
+Date: Sun, 12 Feb 2006 12:20:56 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+Message-ID: <20060212112056.GC23142@thinkpad.wiegand.homedns.org>
+
+Wolf Wiegand wrote:
+
+> - I enter another folder using sidebar-open, now the count of both mails
+>   and unread mails in the send folder increase by one
+
+I forgot: If I then enter the sent folder, the mail is not marked as new
+anymore and the count of unread mails in the sidebar changes to the
+correct value.
+
+Regards, Wolf
+-- 
+I don't date outside my species.
+
+
+From arias at m-a-g.net  Sun Feb 12 13:56:22 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Sun, 12 Feb 2006 04:56:22 -0800
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060212125622.GA9498@radio.m-a-g.net>
+
+On Sat, 11 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+> The only way of getting more detailed information of what's going on seems to be to temporarily add some debugging 
+> code to see why this doesn't work for some users...
+> 
+> Is anybody willing of those affected to help?
+<---snip--->
+
+Ditto with Wolf, I'd be happy to insert debug code, however the only difference in my behavior to his I should add
+is going into the SENT folder alone does not in itself remove the N status flag from the just sent message.
+
+I need to manually open the message to remove the N status, although i do have a macro set that auto opens
+the first message of any mailbox that I enter so due to this mechanism the last just sent mail at the top of
+my SENT folder shall auto open resulting in that N flag to unset.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060212/866025da/attachment.pgp>
+
+From wolf at kondancemilch.de  Sun Feb 12 14:10:48 2006
+From: wolf at kondancemilch.de (Wolf Wiegand)
+Date: Sun, 12 Feb 2006 14:10:48 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+Message-ID: <20060212131048.GA3393@thinkpad.wiegand.homedns.org>
+
+Yet another mistake, sorry:
+
+Wolf Wiegand wrote:
+
+> - I send a new email
+> - the count of mails in the sent folder, as shown in the sidebar, does
+>   change
+
+The count does not change at that point.
+
+Wolf
+-- 
+Senseo: Das Windows unter den Kaffeemaschinen - rundes Ding einlegen, 
+Autostart springt an. (Ulrich Schwarz in d.a.s.r.)
+
+
+From riesebie at lxtec.de  Sun Feb 12 15:52:48 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Sun, 12 Feb 2006 15:52:48 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060212145248.GA3782@aragorn.home.lxtec.de>
+
+On Sat, 11 Feb 2006 the mental interface of
+Rocco Rutte told:
+
+> Hi,
+> 
+> * Arias Hung [06-02-08 11:37:31 -0800] wrote:
+> 
+> >For some reason my outband sent mail in the $record folder is
+> >always marked as new.  If this is normal, it seems rather strange
+> >to me.  What is the proper way to not have it marked as such?  I
+> >am using Maildir.
+> 
+> As said, I cannot reproduce this on several systems with
+> compressed and uncompressed mbox and maildir.
+> 
+> I had a look at the code now. As far as I can tell, we didn't
+> touch a single line so far in this area. Also, the calls are so
+> obvious that I just can't imagine mail being marked as new.
+> 
+> That means I'm somewhat stuck.
+> 
+> The only way of getting more detailed information of what's going
+> on seems to be to temporarily add some debugging code to see why
+> this doesn't work for some users...
+> 
+> Is anybody willing of those affected to help?
+
+This seems to be similar to Debian Bug#341369
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=341369, which I
+can't reproduce even with the settings of the reporter.
+
+Elimar
+
+
+-- 
+    .~.
+    /V\   L   I   N   U   X
+   /( )\ >Phear the Penguin<
+   ^^-^^
+
+
+From pdmef at gmx.net  Sun Feb 12 20:55:04 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sun, 12 Feb 2006 20:55:04 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212111230.GB23142@thinkpad.wiegand.homedns.org>
+Message-ID: <20060212195503.GA5140@bolero.cs.tu-berlin.de>
+
+* Wolf Wiegand <wolf at kondancemilch.de>:
+> (which, btw, has Bug #5970 fixed) 
+
+I marked it as closed.
+
+> which still shows this
+>behaviour. To describe this explicitly:
+
+[...]
+
+Now I'm confused. Your problem description sounds like it's a sidebar 
+issue. Is that right? I thought the problem was that the message itself in 
+the sent/record/fcc folder is marked as new and not the count for it in 
+the sidebar...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Sun Feb 12 20:57:29 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sun, 12 Feb 2006 20:57:29 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060212125622.GA9498@radio.m-a-g.net>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net>
+Message-ID: <20060212195729.GB5140@bolero.cs.tu-berlin.de>
+
+* Arias Hung <arias at m-a-g.net>:
+
+>Ditto with Wolf, I'd be happy to insert debug code, however the only difference in my behavior to his I should add
+>is going into the SENT folder alone does not in itself remove the N status flag from the just sent message.
+
+Hmm, what I forgot in the other mail: is this folder IMAP-based?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From A.Wagner at stud.uni-frankfurt.de  Mon Feb 13 09:23:00 2006
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Mon, 13 Feb 2006 09:23:00 +0100
+Subject: sidebar_width is executed even with sidebar invisible
+In-Reply-To: <20060211225027.GA82207@robert.daprodeges.fqdn.th-h.de>
+References: <20060209120306.GB6849@hermes.commontology.de> <20060211225027.GA82207@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060213082300.GA6609@hermes.commontology.de>
+
+Hello Rocco, hello list,
+
+* Rocco Rutte wrote on Feb/11/2006:
+> In r778 I tried to fix this by fixing the underlying problem [...]
+>
+> Please report back if the display looks strange and even if something 
+> looks different...
+
+I'm on r781 now and I've only just played around with sidebar_visible 
+and sidebar_width a bit and it is working perfectly AFAICT.
+
+Thanks a lot,
+
+Andreas
+
+-- 
+Windows kann alles - wegen der 32 bit. 
+Wenn ich 32 Bit getrunken hab, glaub ich auch immer, 
+ich kann alles.
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+
+From A.Wagner at stud.uni-frankfurt.de  Mon Feb 13 09:39:17 2006
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Mon, 13 Feb 2006 09:39:17 +0100
+Subject: [OT] f=f with vim [was:] f=f vs. trailing spaces in edit_headers
+In-Reply-To: <20060211225312.GB82207@robert.daprodeges.fqdn.th-h.de>
+References: <20060201163743.GE6757@hermes.commontology.de> <20060211225312.GB82207@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060213083917.GB6609@hermes.commontology.de>
+
+Hello Rocco, hello list,
+
+* Rocco Rutte wrote on Feb/11/2006:
+>> I am using vim and format=flowed and whenever I am editing in the 
+>> headers they're being wrapped into one line.
+>
+> This is done in r777. Btw, what vim settings do you use? I only get 
+> this problem when I let vim reformat the paragraph which I wouldn't do 
+> in the header part...
+
+I'm on r781 now and it's fine now. I suppose the trouble comes from some 
+of the vim settings I puzzled together from various places -- with only 
+half understanding what they do. Anyway, since you've asked, here they 
+are as far as mail is concerned, or better, since there is stuff for 
+handling quotations, signatures, attachments, abook entries and more, as 
+far as format=flowed is concerned.
+
+
+in ftplugin/mail/mymail.vim:
+----------------------------
+
+set textwidth=72
+set fo+=tcqwra
+set updatetime=100
+
+let MAIL_flowed = 0
+
+function! s:flowed_context()
+   if g:MAIL_flowed
+     if (getline(line(".")) =~ "^-- $") || (getline(line((".")-1)) =~ "^-- $")
+       set formatoptions-=aw
+     else
+       set formatoptions+=aw
+     endif
+   endif
+endfunc
+
+function! s:ft_mail()
+   if &formatoptions =~# '\(w.*a\)\|\(a.*w\)'
+     let g:MAIL_flowed = 1
+   else
+     let g:MAIL_flowed = 0
+   endif
+   augroup Mail
+     au!
+     au CursorHold * call <SID>flowed_context()
+   augroup END
+endfunc
+
+function! Fixflowed()
+    " save position
+    let l = line(".")
+    let c = col(".")
+    normal G$
+    " whiles are used to avoid nasty error messages
+    " add spaces to the end of every line
+    while search('\([^]> :]\)\n\(>[> ]*[^> ]\)','w') > 0
+       silent s/\([^]> :]\)\n\(>[> ]*[^> ]\)/\1 \r\2/g
+    endwhile
+    " now, fix the wockas spacing from the text
+    while search('^\([> ]*>\)\([^> ]\)','w') > 0
+       silent s/^\([> ]*>\)\([^> ]\)/\1 \2/
+    endwhile
+   " now, compress the wockas
+    while search('^\(>>*\) \(>>*\( [^>]\)*\)', 'w') > 0
+       silent s/^\(>>*\) \(>>*\( [^>]\)*\)/\1\2/
+    endwhile
+    " restore the original location, such as it is
+    execute l . " normal " . c . "|"
+endfunction
+
+call s:ft_mail()
+call Fixflowed()
+
+
+---------------
+I am not too sure where I have got this particular piece of vimcode 
+from, surely somewhere from vim's tips archive. AFAIU, with "updatetime" 
+it transparently reformats the paragraph while one is typing, which 
+gives an automatic f=f linewrap when simply typing in a plain paragraph, 
+but which also (e.g.) wraps the "Subject: " line onto the preceding "To: 
+" line when that "To: " line ends with a space and when I am editing the 
+Subject line. ... or rather /has/ wrapped, since without the trailing 
+space it's much better now. (I believe the two functions I pasted above 
+don't even have anything to do with the problem at hand, but I am not 
+sure and you might be interested nonetheless (and they might help you to 
+find the corresponding entry in the tips archive), so I pasted them 
+anyway.
+
+I hope that was what you've asked for,
+
+See you,
+Andreas
+
+-- 
+_________________________________________________
+No I Don't Yahoo!
+And I'm getting pretty sick of being asked if I do.
+_________________________________________________
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+
+From ljz at asfast.com  Mon Feb 13 12:23:38 2006
+From: ljz at asfast.com (Lloyd Zusman)
+Date: Mon, 13 Feb 2006 11:23:38 +0000 (UTC)
+Subject: Forcing new IMAP mail detection in Mailboxes list?
+References: <loom.20060201T152838-820@post.gmane.org> <20060209071742.GC6010@bolero.cs.tu-berlin.de>
+Message-ID: <loom.20060213T121123-990@post.gmane.org>
+
+Rocco Rutte <pdmef <at> gmx.net> writes:
+
+> 
+> * Lloyd Zusman <ljz <at> asfast.com>:
+> 
+> >How can I get the new message count to be updated on demand when I'm in the
+> >Mailboxes list?
+> 
+> The <buffy-list> function lists folders with new mail and is bound to 
+> '.' by default. With the $force_buffy_check option set, it first polls 
+> all folders for new mail before displaying the result. Perhaps this 
+> helps?
+
+Thank you, but this doesn't update my Mailboxes list.  I double-checked,
+and I do have the following statement in /usr/local/etc/Muttngrc:
+
+  set force_buffy_check=yes
+
+And yes, I have indeed properly built mutt-ng so that it looks for
+Muttngrc in /usr/local/etc.  My other settings in that file do actually
+take effect.
+
+I also double-checked, and <buffy-list> is indeed bound to '.'.  However,
+when I am viewing the Mailboxes list and I type '.', the new message count
+doesn't change, despite the fact that there are definitely new messages in
+the folder.
+
+The only time I see this new-message count being updated for a given folder
+is if I enter the folder, and then return to the Mailboxes list.  It seems
+as if mutt-ng doesn't actually query the contents of any folders until I 
+specifically enter them.
+
+Recall that these are IMAP folders.  Does this make a difference?
+
+Or is there some other configuration variable that I'm missing which needs
+to be set before mutt-ng will actually query folders when I'm looking at
+the Mailboxes list and invoke the <buffy-list> command?
+
+Thanks again.
+
+-- 
+ Lloyd Zusman
+ ljz at asfast.com
+ God bless you.
+
+
+
+
+From andre.berger at web.de  Mon Feb 13 15:01:59 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Mon, 13 Feb 2006 15:01:59 +0100
+Subject: Power Management Problems
+Message-ID: <20060213140159.GA20136@hvk.local>
+
+I'm sorry to say muttng 781 messes up the power management on my
+iBook/Mac OS X 10.4.4. I had to compile plain mutt 1.5.11 w/
+--enable-buffy-size for correct mbox update behavior; muttng shows
+the correct behavior only if compiled w/o --enable-buffy-size. So far
+so good. But a running muttng w/o it causes system insomnia, no
+matter what $force_buffy_list is set to. Has anybody else come across
+this? Is there a cure? I cannot stick with if there isn't.
+
+Thanks,
+
+-Andre
+
+
+From pdmef at gmx.net  Mon Feb 13 16:46:48 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Mon, 13 Feb 2006 16:46:48 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060213140159.GA20136@hvk.local>
+References: <20060213140159.GA20136@hvk.local>
+Message-ID: <20060213154648.GA22712@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+>Has anybody else come across
+>this? Is there a cure? I cannot stick with if there isn't.
+
+What exactly are the symptoms? Can you determine between which revisions 
+it stopped working?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Tue Feb 14 10:41:13 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Tue, 14 Feb 2006 10:41:13 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060213154648.GA22712@bolero.cs.tu-berlin.de>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de>
+Message-ID: <20060214094112.GA21118@hvk.local>
+
+* Rocco Rutte (2006-02-13):
+> * Andre Berger <andre.berger at web.de>:
+> >Has anybody else come across
+> >this? Is there a cure? I cannot stick with if there isn't.
+> 
+> What exactly are the symptoms? Can you determine between which revisions it stopped working?
+
+I started with 778, that's all I can say to your second question. The
+syptoms, well, I compiled like twenty different versions, and set the
+iBook sleep to 1 minute. The results vary from my first statement:
+
+Not allowing for sleep, but working perfectly otherwise:
+
+  ./configure --prefix=/usr/local --enable-nntp --enable-compressed
+  --enable-pop --enable-imap --with-ssl --with-gss
+  --with-docdir=/usr/local/share/doc/mutt --sysconfdir=/usr/local/etc
+  --enable-hcache --with-libesmtp=/usr/local 
+
+Allowing for sleep:
+
+  ./configure --prefix=/usr/local --enable-nntp --enable-compressed
+  --enable-pop --enable-imap --with-ssl --with-gss
+  --with-docdir=/usr/local/share/doc/mutt --sysconfdir=/usr/local/etc
+  --enable-hcache --with-libesmtp=/usr/local --enable-buffy-size
+
+The latter, used with "set force_buffy_check=yes", seems to work most
+of the time. Particularly, there are problems when a mailbox receives
+new mail, I switch to it and read all mail, then read news, and a
+different mailbox receives mail. In this case, the first mailbox is
+marked as containing new mail even though this isn't true -- which is
+the typical problem --enable-buffy-size used to cure on upstream
+mutt-dev. With "set force_buffy_check=no", it always show the
+erroneous buffy behavior.
+
+I'm evaluating a macro <sync-mailbox><change-newgroup> to see if that
+makes a difference or not. But of course it would be working around
+the problem.
+
+This is an iBook G3 900 w/ Mac OS X 10.4.4 with HFS+/journaled and
+FileVault here.
+
+-Andre
+
+
+From andre.berger at web.de  Tue Feb 14 11:03:32 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Tue, 14 Feb 2006 11:03:32 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060214094112.GA21118@hvk.local>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local>
+Message-ID: <20060214100332.GA22013@hvk.local>
+
+* Andre Berger (2006-02-14):
+> * Rocco Rutte (2006-02-13):
+> > * Andre Berger <andre.berger at web.de>:
+> > >Has anybody else come across
+> > >this? Is there a cure? I cannot stick with if there isn't.
+> > 
+> > What exactly are the symptoms? Can you determine between which revisions it stopped working?
+[...]
+> The latter, used with "set force_buffy_check=yes", seems to work most
+> of the time. Particularly, there are problems when a mailbox receives
+> new mail, I switch to it and read all mail, then read news, and a
+> different mailbox receives mail. In this case, the first mailbox is
+> marked as containing new mail even though this isn't true -- which is
+> the typical problem --enable-buffy-size used to cure on upstream
+> mutt-dev. With "set force_buffy_check=no", it always show the
+> erroneous buffy behavior.
+
+No sorry, it's always wrong w/ "set force_buffy_check=yes|no"
+
+-Andre
+
+
+From shot at hot.pl  Tue Feb 14 22:01:21 2006
+From: shot at hot.pl (Shot (Piotr Szotkowski))
+Date: Tue, 14 Feb 2006 22:01:21 +0100
+Subject: folder-hook . mailboxes not working
+Message-ID: <20060214210121.GA24731@durance.shot.pl>
+
+My ~/.procmailrc sorts mail based on the Delivered-To: and List-Id:
+headers, creating new ~/Mail/lists/... maildirs on demand. The following
+settings work on mutt-ng?s start:
+
+mailboxes =unsure `echo /home/shot/Mail/lists/*`
+lists `cd /home/shot/Mail/lists/; echo *`
+
+I use mutt-ng in a screen on a remote server, though,
+so I don?t restart it for days. What I?d like to have is
+
+folder-hook . mailboxes =unsure `echo /home/shot/Mail/lists/*`
+
+This is evalated once on mutt-ng start, but doesn?t seem to be
+re-evaluated on folder changes. I?m using Debian?s 0.0+20060113-1
+package (r774), rebuilt for Ubuntu Breezy.
+
+-- Shot
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060214/e95b652f/attachment.pgp>
+
+From magnus at therning.org  Wed Feb 15 09:07:44 2006
+From: magnus at therning.org (Magnus Therning)
+Date: Wed, 15 Feb 2006 08:07:44 +0000
+Subject: folder-hook . mailboxes not working
+In-Reply-To: <20060214210121.GA24731@durance.shot.pl>
+References: <20060214210121.GA24731@durance.shot.pl>
+Message-ID: <20060215080744.GB4534@die.therning.org>
+
+On Tue, Feb 14, 2006 at 10:01:21PM +0100, Shot (Piotr Szotkowski) wrote:
+>My ~/.procmailrc sorts mail based on the Delivered-To: and List-Id:
+>headers, creating new ~/Mail/lists/... maildirs on demand. The following
+>settings work on mutt-ng?s start:
+>
+>mailboxes =unsure `echo /home/shot/Mail/lists/*`
+>lists `cd /home/shot/Mail/lists/; echo *`
+>
+>I use mutt-ng in a screen on a remote server, though,
+>so I don?t restart it for days. What I?d like to have is
+>
+>folder-hook . mailboxes =unsure `echo /home/shot/Mail/lists/*`
+
+It's something silly like needing to add quotes?
+
+ folder-hook . "mailboxes =unsure `echo /home/shot/Mail/lists/*`"
+
+>This is evalated once on mutt-ng start, but doesn?t seem to be
+>re-evaluated on folder changes. I?m using Debian?s 0.0+20060113-1
+>package (r774), rebuilt for Ubuntu Breezy.
+
+/M
+
+-- 
+Magnus Therning                    (OpenPGP: 0xAB4DFBA4)
+magnus at therning.org
+http://therning.org/magnus
+
+Software is not manufactured, it is something you write and publish.
+Keep Europe free from software patents, we do not want censorship
+by patent law on written works.
+
+The day after tomorrow is the third day of the rest of your life.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060215/651f74f2/attachment.pgp>
+
+From shot at hot.pl  Wed Feb 15 09:26:10 2006
+From: shot at hot.pl (Shot (Piotr Szotkowski))
+Date: Wed, 15 Feb 2006 09:26:10 +0100
+Subject: folder-hook . mailboxes not working
+In-Reply-To: <20060215080744.GB4534@die.therning.org>
+References: <20060214210121.GA24731@durance.shot.pl> <20060215080744.GB4534@die.therning.org>
+Message-ID: <20060215082610.GA26768@durance.shot.pl>
+
+Magnus Therning:
+
+> On Tue, Feb 14, 2006 at 10:01:21PM +0100, Shot (Piotr Szotkowski) wrote:
+
+>> I use mutt-ng in a screen on a remote server, though,
+>> so I don?t restart it for days. What I?d like to have is
+
+>> folder-hook . mailboxes =unsure `echo /home/shot/Mail/lists/*`
+
+> It's something silly like needing to add quotes?
+
+>  folder-hook . "mailboxes =unsure `echo /home/shot/Mail/lists/*`"
+
+Unfortunately not; I did the above, restarted mutt-ng, `cp -pr`-ed
+a maildir with new mail to a new name (under ~/Mail/lists), and
+mutt-ng doesn?t pick it up as new on folder changes.
+
+-- Shot
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060215/d52191e5/attachment.pgp>
+
+From andre.berger at web.de  Wed Feb 15 22:47:43 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Wed, 15 Feb 2006 22:47:43 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060214100332.GA22013@hvk.local>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local>
+Message-ID: <20060215214743.GA9082@hvk.local>
+
+* Andre Berger (2006-02-14):
+> * Andre Berger (2006-02-14):
+> > * Rocco Rutte (2006-02-13):
+> > > * Andre Berger <andre.berger at web.de>:
+> > > >Has anybody else come across
+> > > >this? Is there a cure? I cannot stick with if there isn't.
+> > > 
+> > > What exactly are the symptoms? Can you determine between which revisions it stopped working?
+> [...]
+> > The latter, used with "set force_buffy_check=yes", seems to work most
+> > of the time. Particularly, there are problems when a mailbox receives
+> > new mail, I switch to it and read all mail, then read news, and a
+> > different mailbox receives mail. In this case, the first mailbox is
+> > marked as containing new mail even though this isn't true -- which is
+> > the typical problem --enable-buffy-size used to cure on upstream
+> > mutt-dev. With "set force_buffy_check=no", it always show the
+> > erroneous buffy behavior.
+> 
+> No sorry, it's always wrong w/ "set force_buffy_check=yes|no"
+
+No change with Apple's 10.4.5 update. Sigh.
+
+-Andre
+
+
+From pdmef at gmx.net  Thu Feb 16 07:12:31 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 16 Feb 2006 07:12:31 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060214100332.GA22013@hvk.local>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local>
+Message-ID: <20060216061231.GC22712@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+
+>No sorry, it's always wrong w/ "set force_buffy_check=yes|no"
+
+Of course. ;-)
+
+The $set_buffy_check variable only has influence on the buffy-list 
+function which can only be invoked manually.
+
+And with revision 778 it went fine? Anybody else having problems with 
+mbox and >778? I'll look into it...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From arias at m-a-g.net  Thu Feb 16 08:40:09 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Wed, 15 Feb 2006 23:40:09 -0800
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060212195729.GB5140@bolero.cs.tu-berlin.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net> <20060212195729.GB5140@bolero.cs.tu-berlin.de>
+Message-ID: <20060216074009.GA22217@radio.m-a-g.net>
+
+On Sun, 12 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+> Hmm, what I forgot in the other mail: is this folder IMAP-based?
+<---snip--->
+
+Okay, apparently this IS an IMAP related issue.  I found the problem
+in the archives of the procmail mailing list.  Apparently this is
+a known issue with imap not marking sent mail as read so it needs to
+be unmarked new with procmail (assuming procmail is your solution
+for sorting as it is mine) here is the thread and solution:
+
+http://thread.gmane.org/gmane.mail.procmail/14909
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060215/0a64ccd6/attachment.pgp>
+
+From pdmef at gmx.net  Thu Feb 16 09:30:17 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 16 Feb 2006 09:30:17 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060216074009.GA22217@radio.m-a-g.net>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net> <20060212195729.GB5140@bolero.cs.tu-berlin.de> <20060216074009.GA22217@radio.m-a-g.net>
+Message-ID: <20060216083017.GA17608@bolero.cs.tu-berlin.de>
+
+* Arias Hung <arias at m-a-g.net>:
+
+>http://thread.gmane.org/gmane.mail.procmail/14909
+
+Does this work for you?
+
+If so, I completely misunderstood the problem. When muttng (as well as 
+mutt btw) store sent mail via $record/fcc-hook/etc., they store the mail 
+directly to the destination folder. Read: it never gets inserted into 
+any filtering chains such as procmail so tweaking procmail shouldn't 
+have any effect if the problem was mutt(ng)-only. This procmail solution 
+only works when someone's own mails come back via a mailing list so that 
+procmail marks them as read (it could mark any other mail as read, not 
+just the own).
+
+The exception would be that someone uses cronjobs to pick up mails from 
+local folders and inserting them into procmail to filter again (but I 
+cannot imagine someone really does something similar).
+
+So are we talking about "coming-back" mails not being marked as read or 
+mails really stored via $record/fcc-hook not marked as read?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Thu Feb 16 09:35:20 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 16 Feb 2006 09:35:20 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060216061231.GC22712@bolero.cs.tu-berlin.de>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de>
+Message-ID: <20060216083520.GA20601@hvk.local>
+
+* Rocco Rutte (2006-02-16):
+> * Andre Berger <andre.berger at web.de>:
+> 
+> >No sorry, it's always wrong w/ "set force_buffy_check=yes|no"
+> 
+> Of course. ;-)
+> 
+> The $set_buffy_check variable only has influence on the buffy-list function which can only be 
+> invoked manually.
+
+Ah, the '.' binding.
+
+> And with revision 778 it went fine? Anybody else having problems with mbox and >778? I'll look 
+> into it...
+
+No, it never went fine for me on Mac OS X; I jumped in at v778. I was
+surprised it compiled at all. Big improvement for PPC in comparison
+to v2xx :)
+
+If I can help in any way, let me know. 
+
+-Andre
+
+
+From muttng at artificialidea.com  Thu Feb 16 15:00:33 2006
+From: muttng at artificialidea.com (Ivan F. Villanueva B.)
+Date: Thu, 16 Feb 2006 15:00:33 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060216083017.GA17608@bolero.cs.tu-berlin.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net> <20060212195729.GB5140@bolero.cs.tu-berlin.de> <20060216074009.GA22217@radio.m-a-g.net> <20060216083017.GA17608@bolero.cs.tu-berlin.de>
+Message-ID: <20060216140033.GE19832@golem>
+
+> I completely misunderstood the problem. When muttng (as well as mutt btw)
+> store sent mail via $record/fcc-hook/etc., they store the mail directly to the
+> destination folder
+
+Yes, that's my point of view too. I have been having the problem you and I are
+speaking about for some time (with mboxes), but now it seems it works properly.
+I will post if I discover something new.
+
+> :wq!
+ZZ
+
+-- 
+Ivan F. Villanueva B.
+artificialidea.com
+<<<                   European Community Patent will bring            >>>
+<<<                     Software patents by the backdoor              >>>
+<<<                      http://wiki.ffii.org/ComPatEn                >>>
+
+
+From liccb at hoshmail.com  Wed Feb 15 11:50:37 2006
+From: liccb at hoshmail.com (Mr Li ( Manager C C B Hong Kong))
+Date: Wed, 15 Feb 2006 11:50:37 +0100
+Subject: Personal From CCB Hong Kong
+Message-ID: <200602161650.k1GGoLE06124@bat.berlios.de>
+
+Mr LI XIOZ 
+(C C B) BANK OF HONG KONG
+EMAIL Contact: info_lixioz at HOSHMAIL.COM
+
+STRICTLY CONFIDENTIAL AND URGENT FUND TRANSFER UPDATE.
+
+Urgent Attention,
+
+I am a banker from C C BANK accounts management section.  I have the opportunity and also in a good position of transferring a left over fund, $19 Million dollars to your foreign account for investment /partnership. 
+
+If you accept to work with me as my partner and also provide your account to receive the fund,I will give you 25% of the total amount as gratification after the transfer.
+
+You can reach me on my private email address for more details. info_LiXioz at HOSHMAIL.COM  or liccb at HOSHMAIL.COM
+
+Partnership Regards,
+Li XIOZ.
+
+DISCLAIMER:
+
+This message contains confidential information and is intended only for specified addressee. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. The sender therefore does not accept liability for any errors or omissions in the contents of this 
+message, which arise as a result of e-mail transmission. Please note that we reserve the right to monitor and read any emails sent and received under the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000.
+  
+-------------- next part --------------
+No virus found in this outgoing message.
+Checked by AVG Free Edition.
+Version: 7.1.375 / Virus Database: 267.15.8/260 - Release Date: 14/02/2006
+
+From arias at m-a-g.net  Thu Feb 16 22:26:17 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Thu, 16 Feb 2006 13:26:17 -0800
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060216083017.GA17608@bolero.cs.tu-berlin.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net> <20060212195729.GB5140@bolero.cs.tu-berlin.de> <20060216074009.GA22217@radio.m-a-g.net> <20060216083017.GA17608@bolero.cs.tu-berlin.de>
+Message-ID: <20060216212617.GC22217@radio.m-a-g.net>
+
+On Thu, 16 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+> * Arias Hung <arias at m-a-g.net>:
+> 
+> >http://thread.gmane.org/gmane.mail.procmail/14909
+> 
+> Does this work for you?
+
+This solution does work for me.
+> 
+> If so, I completely misunderstood the problem. When muttng (as well as mutt btw) store sent mail via 
+> $record/fcc-hook/etc., they store the mail directly to the destination folder. Read: it never gets inserted into any 
+> filtering chains such as procmail so tweaking procmail shouldn't have any effect if the problem was mutt(ng)-only. 
+> This procmail solution only works when someone's own mails come back via a mailing list so that procmail marks them 
+> as read (it could mark any other mail as read, not just the own).
+
+It is a workaround since it seem setting $record doesn't seem to do its job since it *should* insert my sent mail
+into the specified folder that i'm setting record to.
+
+Instead, it puts it in my inbox so I need to use the procmail filters to ensure that it goes to SENT.
+
+If I unset record, there is no record at all of my sent mail anywhere.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060216/0903f5d8/attachment.pgp>
+
+From pdmef at gmx.net  Thu Feb 16 23:00:06 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 16 Feb 2006 23:00:06 +0100
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060216212617.GC22217@radio.m-a-g.net>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net> <20060212195729.GB5140@bolero.cs.tu-berlin.de> <20060216074009.GA22217@radio.m-a-g.net> <20060216083017.GA17608@bolero.cs.tu-berlin.de> <20060216212617.GC22217@radio.m-a-g.net>
+Message-ID: <20060216220006.GE17608@bolero.cs.tu-berlin.de>
+
+* Arias Hung <arias at m-a-g.net>:
+
+>It is a workaround since it seem setting $record doesn't seem to do its 
+>job since it *should* insert my sent mail
+>into the specified folder that i'm setting record to.
+
+>Instead, it puts it in my inbox so I need to use the procmail filters 
+>to ensure that it goes to SENT.
+
+>If I unset record, there is no record at all of my sent mail anywhere.
+
+Good, we're getting closer to the solution.
+
+First of all, what status does the mail stored in your INBOX have? Is it 
+new or marked read already?
+
+Second, what are your values for the following variables: $record, 
+$save_name and $force_name? The folder you name via $record (or the 
+others mentioned plus fcc-hook) is shown as the 'Fcc:' pseudo header in 
+the compose screen. What does it say?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From igang at jigang.com.cn  Fri Feb 17 05:57:14 2006
+From: igang at jigang.com.cn (=?GB2312?B?wfrPyMn6?=)
+Date: Fri, 17 Feb 2006 12:57:14 +0800
+Subject: =?GB2312?B?tPq/qreixrG21MTjusPN4rbgtuA=?=
+Message-ID: <200602170456.k1H4u8E01342@bat.berlios.de>
+
+  ??/?????! ???????????????????????????????
+   
+????????????????????????????????????????!?
+
+????   1 ???????,?????6.5%???
+  
+           2 ?????????????????????????????????
+             ??????????????2%???
+       
+           3 ??????????,????????????????????????
+             ?????1-1.5%???      
+
+           ?:????????????????????
+ 
+?????????????????????????????????????????
+
+????????????????????????????!!
+                  
+                
+                                           ??????????? 
+                   
+                                           ????  ?????   
+                   
+                                           ?????  13502448185
+                
+                                                     
+
+
+
+From 28ef9418 at earthlink.net  Sat Feb 18 19:06:16 2006
+From: 28ef9418 at earthlink.net (Hilton)
+Date: Sat, 18 Feb 2006 13:06:16 -0500 (CST)
+Subject: Wall-street lnslder 
+Message-ID: <15746749270165.ol02CjevW37@9.08lycos.co.uk>
+
+Trading Alert FOR FEBRUARY and BEYOND!!
+Some very BlG NEWS and EXPLOSIVE GAINS are expected NOW!!
+Make sure to get in early and trade for MAXlMUM PROFIT!!!
+
+Company:     Ever-Glory International Group Inc.
+
+Symb0l:      EGLY .ob
+Current_Price:                         $1.81
+Short Term Target_Price:      $4.50
+
+Shares issued and outstanding:     10.5miIIion
+Profits for the 9 months ended Sept,30 2005:     $1.1miIIion
+
+This means that this company is earning over 10 cents per share in
+only nine months! In our view, this in itself is reason to buy.
+
+More about the Company (EGLY):
+
+Ever-Glory International Group is an American public company located 
+in China engaged in international business and garment manufacturing 
+mainly for middle-to-high grade well-known casuaI wear, outwear and
+sportswear brands such as Reebok, North Face, Levi's and more.
+
+It has a wholly-owned subsidiary company in mainIand China-Nanjing
+Goldenway Garment Company, Ltd.
+
+The company has over 700 team members, totaI assets near US$7.5M,
+and annuaI revenue of approx US$8m.
+
+We here at Smart M0ney feel that the fundamentaIs of this company
+and the hot market sector make it a winner. But what is really going
+take off is the expected BIG NEWS.
+
+We all know its these big announcements that make these deals move.
+We believe the time to get in is now!
+
+Watch EGLY go Higher and Higher  ALL WEEK!!!
+
+
+
+This message is for mutt-ng-users at lists.berlios.de. Thanks!
+
+From garth at aaronusa.com  Sat Feb 18 21:02:52 2006
+From: garth at aaronusa.com (Heinz French)
+Date: Sat, 18 Feb 2006 20:02:52 +0000
+Subject: New prospects  [Ref:053]
+Message-ID: <4cf401c634c6$c44fef49$5dcd34d7@aaronusa.com>
+
+   Safe Sales Inc. leader in international Law 
+and Business practise is looking for responsible 
+individuals to be responsible for the areas of 
+customer service, transaction and bank operations.
+
+   Current openings: Escrow Operator
+
+   You will receive transfers for our company, 
+send/receive funds (bank transfers, checks, money orders). 
+You should have your local bank branch locating near you, 
+so you can withdraw money from your account within several hours. 
+You should have home, work or cell phone number (preferably).
+Work is home-based.
+
+   Requirements:
+* Be able to check your email several times a day
+* Be able to respond to emails immediately
+* Be responsible and hard working
+* Should have personal bank account
+
+   If you are interested in this position 
+and meet the minimum requirements please 
+send us resume (curriculum vitae) to 
+job at safesalesinc.com
+
+   Registration is FREE of charge. Initial training is provided! 
+
+   Recruitment Department of Safe Sales Inc.
+
+
+
+From uixe at hotmail.com  Sun Feb 19 19:15:11 2006
+From: uixe at hotmail.com (uixe at hotmail.com)
+Date: Mon, 20 Feb 2006 02:15:11 +0800
+Subject: Email list
+Message-ID: <200602191815.k1JIFAE13409@bat.berlios.de>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060220/0dd0cb2c/attachment.html>
+
+From A.Wagner at stud.uni-frankfurt.de  Mon Feb 20 10:14:54 2006
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Mon, 20 Feb 2006 10:14:54 +0100
+Subject: Bug melden -- break-thread locks mailbox
+Message-ID: <20060220091454.GA8496@hermes.commontology.de>
+
+Hi list,
+today I have had an issue with break-threads and mutt-ng told me to 
+report a bug. I hope it is okay when I post to this list instead of 
+embarking on a search for possible bugzilla ways of doing it (have never 
+been there yet).
+
+I have "unset strict_threads" and sort my mbox mailbox by thread. Today 
+I've had two mails which got sorted into one thread due to their 
+identical subject. (They had proper -- different from each other -- 
+msgids.) When I did a <break-thread> on the second of them, it told me 
+"thread broken" in the status line, but whenever I want to leave the 
+mailbox for aother one or simply sync it, mutt-ng says "mailbox changed 
+but messages not" and won't sync/change mailbox.
+
+Need more details? (r781, mbox in my ext2fs home dir) ...or the headers 
+of the messages in question?
+
+I had this one time a few weeks ago but was to lazy to report it back 
+then. Due to the occasion (2 messages with the same subject), it happens 
+seldomly, but I think it is reproducible (just re-tried it).
+
+
+Andreas
+
+-- 
+God is real... unless declared as an integer.
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+
+From pdmef at cs.tu-berlin.de  Mon Feb 20 14:41:08 2006
+From: pdmef at cs.tu-berlin.de (Rocco Rutte)
+Date: Mon, 20 Feb 2006 14:41:08 +0100
+Subject: Bug melden -- break-thread locks mailbox
+In-Reply-To: <20060220091454.GA8496@hermes.commontology.de>
+References: <20060220091454.GA8496@hermes.commontology.de>
+Message-ID: <20060220134108.GD24028@bolero.cs.tu-berlin.de>
+
+* Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+>but whenever I want to leave the 
+>mailbox for aother one or simply sync it, mutt-ng says 
+>"mailbox changed but messages not" and won't sync/change 
+>mailbox.
+
+Hmm. What is the message exactly spelled? I couldn't find it in the 
+source code nor similar variants (small/big letters)... ;-((
+
+But I'll try to reproduce the problem.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Tue Feb 21 11:01:47 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Tue, 21 Feb 2006 11:01:47 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060216083520.GA20601@hvk.local>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local>
+Message-ID: <20060221100146.GA9768@hvk.local>
+
+* Andre Berger (2006-02-16):
+
+Still no joy with 785.
+
+-Andre
+
+
+From A.Wagner at stud.uni-frankfurt.de  Tue Feb 21 11:47:05 2006
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Tue, 21 Feb 2006 11:47:05 +0100
+Subject: Bug melden -- break-thread locks mailbox
+In-Reply-To: <20060220134108.GD24028@bolero.cs.tu-berlin.de>
+References: <20060220091454.GA8496@hermes.commontology.de> <20060220134108.GD24028@bolero.cs.tu-berlin.de>
+Message-ID: <20060221104705.GA9774@hermes.commontology.de>
+
+Hello Rocco, hello list,
+
+* Rocco Rutte wrote on Feb/20/2006:
+
+> * Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+>> but whenever I want to leave the mailbox for aother one or simply 
+>> sync it, mutt-ng says "mailbox changed but messages not" and won't 
+>> sync/change mailbox.
+>
+> Hmm. What is the message exactly spelled? I couldn't find it in the 
+> source code nor similar variants (small/big letters)... ;-((
+
+it's:
+sync: Mailbox ver?ndert, aber Nachrichten unver?ndert! (bitte Bug melden)
+
+HTH,
+Andreas
+
+
+-- 
+Real programmers don't document. 
+If it was hard to write, it should be hard to understand.
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+
+From arias at m-a-g.net  Tue Feb 21 15:20:09 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Tue, 21 Feb 2006 06:20:09 -0800
+Subject: Having outbound sent mail NOT marked as new
+In-Reply-To: <20060216220006.GE17608@bolero.cs.tu-berlin.de>
+References: <20060208193731.GA11011@radio.m-a-g.net> <20060211225952.GC82207@robert.daprodeges.fqdn.th-h.de> <20060212125622.GA9498@radio.m-a-g.net> <20060212195729.GB5140@bolero.cs.tu-berlin.de> <20060216074009.GA22217@radio.m-a-g.net> <20060216083017.GA17608@bolero.cs.tu-berlin.de> <20060216212617.GC22217@radio.m-a-g.net> <20060216220006.GE17608@bolero.cs.tu-berlin.de>
+Message-ID: <20060221142009.GA15527@radio.m-a-g.net>
+
+On Thu, 16 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+> First of all, what status does the mail stored in your INBOX have? Is it new or marked read already?
+<---snip---
+It's always marked as NEW.
+
+> Second, what are your values for the following variables: $record, $save_name and $force_name? The folder you name 
+> via $record (or the others mentioned plus fcc-hook) is shown as the 'Fcc:' pseudo header in the compose screen. What 
+> does it say?
+---snap--->
+
+Verbatim from my muttngrc file:
+
+  set record='+.SENT'
+  unset save_name            
+  unset force_name           
+
+and no entry with anything matching fcc.
+
+The result of muttng -t yields the absolute path of my SENT directory:
+
+record="/home/ydef/Maildir/.SENT"
+
+and the precise values I had set in my config file, which also happen to be the muttng defaults for these values: 
+
+save_name=no
+fcc_attach=yes
+force_name=no
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060221/b3553730/attachment.pgp>
+
+From pdmef at gmx.net  Tue Feb 21 16:01:39 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Tue, 21 Feb 2006 16:01:39 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060221100146.GA9768@hvk.local>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local>
+Message-ID: <20060221150139.GC22004@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+
+>Still no joy with 785.
+
+One more try to isolate the root of the problem: what happens if you 
+increase $mail_check to a few minutes (btw, what is it set to now)?
+
+I guess this has something to do with the sidebar and its counting 
+routines (e.g. the machine can't go to sleep when the sidebar thinks it 
+must count too often or does so even there's no need to)...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Tue Feb 21 16:05:35 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Tue, 21 Feb 2006 16:05:35 +0100
+Subject: Bug melden -- break-thread locks mailbox
+In-Reply-To: <20060221104705.GA9774@hermes.commontology.de>
+References: <20060220091454.GA8496@hermes.commontology.de> <20060220134108.GD24028@bolero.cs.tu-berlin.de> <20060221104705.GA9774@hermes.commontology.de>
+Message-ID: <20060221150535.GD22004@bolero.cs.tu-berlin.de>
+
+* Andreas Wagner <A.Wagner at stud.uni-frankfurt.de>:
+
+>it's:
+>sync: Mailbox ver?ndert, aber Nachrichten unver?ndert! (bitte 
+>Bug melden)
+
+Aaah, it's a translated message. Now I at least see where the error is. 
+IIRC there're reports about broken thread editing so I bet this is part 
+of the problem. I'll see if I can track it down.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Tue Feb 21 16:29:02 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Tue, 21 Feb 2006 16:29:02 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060221150139.GC22004@bolero.cs.tu-berlin.de>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local> <20060221150139.GC22004@bolero.cs.tu-berlin.de>
+Message-ID: <20060221152902.GA12975@hvk.local>
+
+* Rocco Rutte (2006-02-21):
+> * Andre Berger <andre.berger at web.de>:
+> 
+> >Still no joy with 785.
+> 
+> One more try to isolate the root of the problem: what happens if you increase $mail_check to a 
+> few minutes (btw, what is it set to now)?
+> 
+> I guess this has something to do with the sidebar and its counting routines (e.g. the machine 
+> can't go to sleep when the sidebar thinks it must count too often or does so even there's no 
+> need to)...
+
+I'm not using the sidebar; set mail_check=60000 (from 5) doesn't
+change anything. Is there an "easy" way to not apply the sidebar
+patch but keep the others?
+
+-Andre
+
+
+From pdmef at gmx.net  Tue Feb 21 16:41:29 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Tue, 21 Feb 2006 16:41:29 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060221152902.GA12975@hvk.local>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local> <20060221150139.GC22004@bolero.cs.tu-berlin.de> <20060221152902.GA12975@hvk.local>
+Message-ID: <20060221154129.GE22004@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+
+>I'm not using the sidebar; set mail_check=60000 (from 5) doesn't
+>change anything.
+
+Ok, so it's not the counting... ;-(
+
+>Is there an "easy" way to not apply the sidebar
+>patch but keep the others?
+
+For mutt there's a sidebar patch we started off with but which 
+completely changed (mostly fixes). To answer your question: no as it's 
+included.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Thu Feb 23 01:42:56 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 23 Feb 2006 01:42:56 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060221154129.GE22004@bolero.cs.tu-berlin.de>
+References: <20060213140159.GA20136@hvk.local> <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local> <20060221150139.GC22004@bolero.cs.tu-berlin.de> <20060221152902.GA12975@hvk.local> <20060221154129.GE22004@bolero.cs.tu-berlin.de>
+Message-ID: <20060223004255.GB441@hvk.local>
+
+* Rocco Rutte (2006-02-21):
+> * Andre Berger <andre.berger at web.de>:
+> 
+> >I'm not using the sidebar; set mail_check=60000 (from 5) doesn't
+> >change anything.
+> 
+> Ok, so it's not the counting... ;-(
+
+I found the culprit -- mutt-ng's $timeout must be greater than the
+computer's sleep timeout. This is a mutt-ng specific issue. 
+
+-Andre
+
+
+From andre.berger at web.de  Thu Feb 23 02:21:14 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 23 Feb 2006 02:21:14 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060223004255.GB441@hvk.local>
+References: <20060213154648.GA22712@bolero.cs.tu-berlin.de> <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local> <20060221150139.GC22004@bolero.cs.tu-berlin.de> <20060221152902.GA12975@hvk.local> <20060221154129.GE22004@bolero.cs.tu-berlin.de> <20060223004255.GB441@hvk.local>
+Message-ID: <20060223012114.GA1335@hvk.local>
+
+* Andre Berger (2006-02-23):
+> * Rocco Rutte (2006-02-21):
+> > * Andre Berger <andre.berger at web.de>:
+> > 
+> > >I'm not using the sidebar; set mail_check=60000 (from 5) doesn't
+> > >change anything.
+> > 
+> > Ok, so it's not the counting... ;-(
+> 
+> I found the culprit -- mutt-ng's $timeout must be greater than the
+> computer's sleep timeout. This is a mutt-ng specific issue. 
+
+In case you're confused now: The system *will* go to sleep if
+mutt-ng's timeout is greater than the system's sleep timeout.
+
+-Andre
+
+
+From andre.berger at web.de  Fri Feb 24 13:30:28 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Fri, 24 Feb 2006 13:30:28 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060223012114.GA1335@hvk.local>
+References: <20060214094112.GA21118@hvk.local> <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local> <20060221150139.GC22004@bolero.cs.tu-berlin.de> <20060221152902.GA12975@hvk.local> <20060221154129.GE22004@bolero.cs.tu-berlin.de> <20060223004255.GB441@hvk.local> <20060223012114.GA1335@hvk.local>
+Message-ID: <20060224123028.GA1278@hvk.local>
+
+* Andre Berger (2006-02-23):
+> * Andre Berger (2006-02-23):
+> > * Rocco Rutte (2006-02-21):
+> > > * Andre Berger <andre.berger at web.de>:
+> > > 
+> > > >I'm not using the sidebar; set mail_check=60000 (from 5) doesn't
+> > > >change anything.
+> > > 
+> > > Ok, so it's not the counting... ;-(
+> > 
+> > I found the culprit -- mutt-ng's $timeout must be greater than the
+> > computer's sleep timeout. This is a mutt-ng specific issue. 
+> 
+> In case you're confused now: The system *will* go to sleep if
+> mutt-ng's timeout is greater than the system's sleep timeout.
+
+Don't know what you guys did, but it's back to the normal Mac OS X
+sleep behavior w/ 786! THANKS!
+
+-Andre
+
+
+From arias at m-a-g.net  Fri Feb 24 14:12:45 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Fri, 24 Feb 2006 05:12:45 -0800
+Subject: ssl tls issues
+Message-ID: <20060224131245.GB10927@radio.m-a-g.net>
+
+I've been having issues with starttls with these types of errors:
+
+
+
+[1:curs_lib.c:282:mutt_curses_error()] gnutls_handshake: A TLS fatal alert has been received.(Bad record MAC)
+
+
+Which I'm not sure if its a result of my misconfiguration or the recent bug in libssl0.9.8 which has been
+breaking all sorts of things.
+
+Has anyone else noticed a problem when using tls?
+
+
+Also, its unclear to me where muttng is looking for my private key.  The certificates_file and certificate_file
+variables point to .crt files, and the only specific variable is my smime_default_key setting.
+
+Am I to assume that its using my private key from the smime_default_key setting?
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060224/409c19ac/attachment.pgp>
+
+From pdmef at gmx.net  Fri Feb 24 14:26:32 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Fri, 24 Feb 2006 14:26:32 +0100
+Subject: ssl tls issues
+In-Reply-To: <20060224131245.GB10927@radio.m-a-g.net>
+References: <20060224131245.GB10927@radio.m-a-g.net>
+Message-ID: <20060224132632.GA16719@bolero.cs.tu-berlin.de>
+
+* Arias Hung <arias at m-a-g.net>:
+
+>[1:curs_lib.c:282:mutt_curses_error()] gnutls_handshake: A TLS fatal alert has been received.(Bad record MAC)
+
+>Which I'm not sure if its a result of my misconfiguration or the recent bug in libssl0.9.8 which has been
+>breaking all sorts of things.
+
+The error is reported by gnutls (i.e. the gnutls_handshake() function) 
+and not OpenSSL.
+
+>Has anyone else noticed a problem when using tls?
+
+No.
+
+>Also, its unclear to me where muttng is looking for my private key.  The certificates_file and certificate_file
+>variables point to .crt files, and the only specific variable is my smime_default_key setting.
+
+It doesn't look for a private key since the error is reported prior to 
+checking the certificate. I'm not a TLS/SSL guru but "handshake" looks 
+like negotiation about connection details fail.
+
+What server are you trying to connect to for what type of service? Since 
+when do you get the error? Maybe the server admin changed something?
+
+As gnutls is used for TLS1 and/or SSL3, maybe the server provides at 
+most SSL2 so that no connection can be established?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Fri Feb 24 15:32:08 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Fri, 24 Feb 2006 15:32:08 +0100
+Subject: Power Management Problems
+In-Reply-To: <20060224123028.GA1278@hvk.local>
+References: <20060214100332.GA22013@hvk.local> <20060216061231.GC22712@bolero.cs.tu-berlin.de> <20060216083520.GA20601@hvk.local> <20060221100146.GA9768@hvk.local> <20060221150139.GC22004@bolero.cs.tu-berlin.de> <20060221152902.GA12975@hvk.local> <20060221154129.GE22004@bolero.cs.tu-berlin.de> <20060223004255.GB441@hvk.local> <20060223012114.GA1335@hvk.local> <20060224123028.GA1278@hvk.local>
+Message-ID: <20060224143208.GA11759@hvk.local>
+
+* Andre Berger (2006-02-24):
+> * Andre Berger (2006-02-23):
+> > * Andre Berger (2006-02-23):
+> > > * Rocco Rutte (2006-02-21):
+> > > > * Andre Berger <andre.berger at web.de>:
+> >
+> > In case you're confused now: The system *will* go to sleep if
+> > mutt-ng's timeout is greater than the system's sleep timeout.
+> 
+> Don't know what you guys did, but it's back to the normal Mac OS X
+> sleep behavior w/ 786! THANKS!
+
+<blush /> I had it accidentially compiled it w/ --enable-buffy-size;
+so the problem persists, and the workaround still works around.
+
+-Andre
+
+
+From arias at m-a-g.net  Sun Feb 26 03:49:46 2006
+From: arias at m-a-g.net (Arias Hung)
+Date: Sat, 25 Feb 2006 18:49:46 -0800
+Subject: ssl tls issues
+In-Reply-To: <20060224132632.GA16719@bolero.cs.tu-berlin.de>
+References: <20060224131245.GB10927@radio.m-a-g.net> <20060224132632.GA16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060226024946.GA12504@radio.m-a-g.net>
+
+On Fri, 24 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+Hi Rocco
+
+> What server are you trying to connect to for what type of service? Since when do you get the error? Maybe the server 
+> admin changed something?
+
+I'm trying to connect via nntps to the gmane secure nntp server at nttps://snews.gmane.org which is what I have my
+$nntp_host variable set to.
+
+> As gnutls is used for TLS1 and/or SSL3, maybe the server provides at most SSL2 so that no connection can be 
+> established?
+<---snip--->
+
+I think gmane is pretty up to date.  Thing is, it used to work for me just fine.  Are you able to successfully connect
+to them?
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060225/d1cce5ef/attachment.pgp>
+
+From andre.berger at web.de  Sun Feb 26 12:38:37 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Sun, 26 Feb 2006 12:38:37 +0100
+Subject: 788 won't compile
+Message-ID: <20060226113837.GA398@hvk.local>
+
+Hi, I'm getting the following error with muttng-20060225/r788:
+
+gcc  -Wall -pedantic  -Os  -I/usr/local/include   -o pgpringng  pgppubring.o pgplib.o lib.o extlib.o sha1.o md5c.o pgppacket.o ascii.o -lintl -liconv -Llib -lsane -L/usr/local/lib -lgdbm
+/usr/bin/ld: Undefined symbols:
+__mem_calloc
+__mem_free
+__mem_malloc
+_str_dup
+_str_isstr
+_str_len
+__mem_realloc
+collect2: ld returned 1 exit status
+make[2]: *** [pgpringng] Error 1
+make[1]: *** [install-recursive] Error 1
+make: *** [install] Error 2
+
+
+About my gcc on Mac 0S X 10.4.5:
+
+Using built-in specs.
+Target: powerpc-apple-darwin8
+Configured with: /private/var/tmp/gcc/gcc-5250.obj~12/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --build=powerpc-apple-darwin8 --host=powerpc-apple-darwin8 --target=powerpc-apple-darwin8
+Thread model: posix
+gcc version 4.0.1 (Apple Computer, Inc. build 5250)
+
+-Andre
+
+
+From pdmef at gmx.net  Sun Feb 26 13:21:51 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sun, 26 Feb 2006 13:21:51 +0100
+Subject: 788 won't compile
+In-Reply-To: <20060226113837.GA398@hvk.local>
+References: <20060226113837.GA398@hvk.local>
+Message-ID: <20060226122150.GH16719@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+>Hi, I'm getting the following error with muttng-20060225/r788:
+
+Hmm, is this a fresh build or a rebuild after an update? The symbols 
+(e.g. __mem_malloc) look like those we define except there's one 
+underscore too much (we have _mem_malloc, str_len, etc.)
+
+AFAIK Andreas is using OS X, too, so maybe he knows?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From andre.berger at web.de  Sun Feb 26 13:40:22 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Sun, 26 Feb 2006 13:40:22 +0100
+Subject: 788 won't compile
+In-Reply-To: <20060226122150.GH16719@bolero.cs.tu-berlin.de>
+References: <20060226113837.GA398@hvk.local> <20060226122150.GH16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060226124022.GB398@hvk.local>
+
+* Rocco Rutte (2006-02-26):
+> * Andre Berger <andre.berger at web.de>:
+> >Hi, I'm getting the following error with muttng-20060225/r788:
+> 
+> Hmm, is this a fresh build or a rebuild after an update? The symbols (e.g. __mem_malloc) look 
+> like those we define except there's one underscore too much (we have _mem_malloc, str_len, etc.)
+
+I'm not sure what you mean. I've always d'ld a fresh muttng-latest,
+unpacked it, and compiled it using
+
+  ./configure --prefix=/usr/local --enable-nntp --enable-compressed --enable-pop --enable-imap --with-ssl --with-gss --with-docdir=/usr/local/share/doc/mutt --sysconfdir=/usr/local/etc --enable-hcache --with-libesmtp=/usr/local 
+
+(export CFLAGS=" -Os " in bash)
+
+This is the first version with this problem since I'm in (r774-r781). 
+
+-Andre
+
+
+From pdmef at gmx.net  Sun Feb 26 13:48:54 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sun, 26 Feb 2006 13:48:54 +0100
+Subject: ssl tls issues
+In-Reply-To: <20060226024946.GA12504@radio.m-a-g.net>
+References: <20060224131245.GB10927@radio.m-a-g.net> <20060224132632.GA16719@bolero.cs.tu-berlin.de> <20060226024946.GA12504@radio.m-a-g.net>
+Message-ID: <20060226124854.GI16719@bolero.cs.tu-berlin.de>
+
+* Arias Hung <arias at m-a-g.net>:
+>On Fri, 24 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+>> As gnutls is used for TLS1 and/or SSL3, maybe the server provides at most SSL2 so that no connection can be 
+>> established?
+><---snip--->
+
+>I think gmane is pretty up to date.  Thing is, it used to work for me just fine.  Are you able to successfully connect
+>to them?
+
+I get the "bad record mac" error with muttng using OpenSSL _and_ GnuTLS. 
+Also, in the past we had a bug report that gmane doesn't support an NNTP 
+extension other providers support for quite some years now.
+
+So I guess this is a gmane issue. I don't have another SSL-enabled 
+newsreader at hand to test this.
+
+Using 'gnutls-cli-debug -p 563 snews.gmane.org' it prints that the 
+server doesn't support SSL3 and TLS 1.0 as well as 1.1. This means that 
+it doesn't work with GnuTLS (what you're trying).
+
+With OpenSSL, there're many ssl_* variables. When using SSLv2 (v3 is not 
+supported) I get another error 'bad mac decode' and 'bad mac record' 
+with v3.
+
+My conclusion: this is a gmane problem.
+
+Can you contact any of its staff to have them debug it? Or can anyone 
+connect to gmane via NNTPS with another newsreader?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Sun Feb 26 15:51:58 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Sun, 26 Feb 2006 15:51:58 +0100
+Subject: Poll: Status lines
+Message-ID: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+
+Hi,
+
+we're currently have some trouble regarding status lines when the 
+sidebar is enabled. The status line for the pager is treated specially 
+since it's the only one always supposed to start next to the sidebar.
+
+Personally I'd like to have consistent behavior. Either we always start 
+next to the sidebar for all kinds of status lines or we start all of 
+them at the very left of the screen.
+
+I want to have all of them next to the sidebar.
+
+Opinions?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From nion at muttng.org  Sun Feb 26 18:29:02 2006
+From: nion at muttng.org (Nico Golde)
+Date: Sun, 26 Feb 2006 18:29:02 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060226172902.GB2651@ngolde.de>
+
+Hallo Rocco,
+
+* Rocco Rutte <pdmef at gmx.net> [2006-02-26 16:52]:
+> we're currently have some trouble regarding status lines when 
+> the sidebar is enabled. The status line for the pager is treated 
+> specially since it's the only one always supposed to start next 
+> to the sidebar.
+> 
+> Personally I'd like to have consistent behavior. Either we 
+> always start next to the sidebar for all kinds of status lines 
+
+[x]
+Regards Nico
+-- 
+Nico Golde - JAB: nion at jabber.ccc.de | GPG: 0x73647CFF
+http://www.ngolde.de | http://www.muttng.org | http://grml.org
+Forget about that mouse with 3/4/5 buttons -
+gimme a keyboard with 103/104/105 keys!
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060226/cddaf893/attachment.pgp>
+
+From riesebie at lxtec.de  Sun Feb 26 18:58:39 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Sun, 26 Feb 2006 18:58:39 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060226175839.GC8168@aragorn.home.lxtec.de>
+
+On Sun, 26 Feb 2006 the mental interface of
+Rocco Rutte told:
+
+[...]
+> I want to have all of them next to the sidebar.
+
+ACK
+
+Elimar
+
+-- 
+  Experience is something you don't get until 
+  just after you need it!
+
+
+From akneib at gmx.net  Sun Feb 26 19:18:49 2006
+From: akneib at gmx.net (Andreas Kneib)
+Date: Sun, 26 Feb 2006 19:18:49 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060226181849.GA18265@andreas.kneib.biz>
+
+Moin Rocco,
+
+* Rocco Rutte wrote:
+
+> I want to have all of them next to the sidebar.
+
+> Opinions?
+
+Yes! I want to have all of them next to the sidebar! :)
+
+
+Bye,
+Andreas
+
+
+From apaku at gmx.de  Sun Feb 26 19:32:08 2006
+From: apaku at gmx.de (Andreas Pakulat)
+Date: Sun, 26 Feb 2006 19:32:08 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060226183208.GB6551@morpheus.apaku.dnsalias.org>
+
+On 26.02.06 15:51:58, Rocco Rutte wrote:
+> I want to have all of them next to the sidebar.
+
++1
+
+Andreas
+
+-- 
+Chicken Little was right.
+
+
+From pdmef at gmx.net  Mon Feb 27 10:20:25 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Mon, 27 Feb 2006 10:20:25 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060227092025.GN16719@bolero.cs.tu-berlin.de>
+
+* Rocco Rutte <pdmef at gmx.net>:
+
+[...]
+
+What about the help line?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Mon Feb 27 15:07:14 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Mon, 27 Feb 2006 15:07:14 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de>
+Message-ID: <20060227140714.GB19150@bolero.cs.tu-berlin.de>
+
+* Rocco Rutte <pdmef at gmx.net>:
+
+[...]
+
+Sorry for the noise, but I committed the update in r790 as one or the 
+other may have seen already.
+
+I tried to test under some circumstances but am sure I forgot some since 
+there're so many variables ($status_on_top, $help, $pager_index_lines, 
+etc.)
+
+Please report back if everything looks like it's supposed to; if not, 
+please include at least the values for the mentioned options...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From trey at fastmail.fm  Mon Feb 27 15:17:41 2006
+From: trey at fastmail.fm (Trey Sizemore)
+Date: Mon, 27 Feb 2006 09:17:41 -0500
+Subject: Anyone using multiple accounts with mutt-ng?
+Message-ID: <20060227141740.GA17068@chameleon>
+
+I have another IMAP account that I'd like to read with mutt-ng.  But
+from what I've been able to research, it appears that setting up
+multiple accounts is a bit tricky.
+
+Just curious if others are using mutt-ng with multiple accounts and, if
+so, how difficult was it to set up?  Right now I read my main account
+in mutt-ng and open other mailers to get to my other accounts.
+Inefficient, so I'd like to change.
+
+-- 
+Cheers,
+Trey
+----
+ 
+Pick another fortune cookie.
+ 
+Linux chameleon 2.6.13-15-default i686 GNU/Linux
+  9:14am  up 3 days 15:22,  5 users,  load average: 2.41, 2.57, 1.41
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060227/5ff54d95/attachment.pgp>
+
+From ptilopteri at gmail.com  Mon Feb 27 15:39:47 2006
+From: ptilopteri at gmail.com (Patrick Shanahan)
+Date: Mon, 27 Feb 2006 09:39:47 -0500
+Subject: Anyone using multiple accounts with mutt-ng?
+In-Reply-To: <20060227141740.GA17068@chameleon>
+References: <20060227141740.GA17068@chameleon>
+Message-ID: <20060227143946.GK28847@wahoo.no-ip.org>
+
+* Trey Sizemore <trey at fastmail.fm> [02-27-06 09:19]:
+> I have another IMAP account that I'd like to read with mutt-ng.  But
+> from what I've been able to research, it appears that setting up
+> multiple accounts is a bit tricky.
+
+
+mailboxes 'imap://<mail-name>@<provider-address>'
+mailboxes 'imap://<mail-name2>@<provider-address2>'
+account-hook imap://<mail-name>@<provider-address> 'set imap_user=<mail-name> imap_pass=<acct-passwd>'
+account-hook imap://<mail-name2>@<provider-address2> 'set imap_user=<mail-name2> imap_pass=<acct2-passwd>'
+
+
+as:
+mailboxes 'imap://fred at ny.rr.com'
+mailboxes 'impa://fred at nospam.net'
+account-hook imap://fred at ny.rr.com 'set imap_user=fred imap_pass=passwd'
+account-hook imap://fred at nospam 'set imap_user=fred imap_pass=passwd'
+
+
+-- 
+Patrick Shanahan                        Registered Linux User #207535
+http://wahoo.no-ip.org                        @ http://counter.li.org
+HOG # US1244711         Photo Album:  http://wahoo.no-ip.org/gallery2
+
+
+From trey at fastmail.fm  Mon Feb 27 17:58:46 2006
+From: trey at fastmail.fm (Trey Sizemore)
+Date: Mon, 27 Feb 2006 11:58:46 -0500
+Subject: Anyone using multiple accounts with mutt-ng?
+In-Reply-To: <20060227143946.GK28847@wahoo.no-ip.org>
+References: <20060227141740.GA17068@chameleon> <20060227143946.GK28847@wahoo.no-ip.org>
+Message-ID: <20060227165845.GC17068@chameleon>
+
+On Mon Feb 27, 2006 09:39AM, Patrick Shanahan wrote:
+> * Trey Sizemore <trey at fastmail.fm> [02-27-06 09:19]:
+> > I have another IMAP account that I'd like to read with mutt-ng.  But
+> > from what I've been able to research, it appears that setting up
+> > multiple accounts is a bit tricky.
+> 
+> 
+> mailboxes 'imap://<mail-name>@<provider-address>'
+> mailboxes 'imap://<mail-name2>@<provider-address2>'
+> account-hook imap://<mail-name>@<provider-address> 'set imap_user=<mail-name> imap_pass=<acct-passwd>'
+> account-hook imap://<mail-name2>@<provider-address2> 'set imap_user=<mail-name2> imap_pass=<acct2-passwd>'
+> 
+> 
+> as:
+> mailboxes 'imap://fred at ny.rr.com'
+> mailboxes 'impa://fred at nospam.net'
+> account-hook imap://fred at ny.rr.com 'set imap_user=fred imap_pass=passwd'
+> account-hook imap://fred at nospam 'set imap_user=fred imap_pass=passwd'
+> 
+> 
+
+Thanks...I'll give it a whirl.
+
+-- 
+Cheers,
+Trey
+----
+ 
+"But what we need to know is, do people want nasally-insertable
+computers?"
+ 
+Linux chameleon 2.6.13-15-default i686 GNU/Linux
+ 11:58am  up 3 days 18:06,  6 users,  load average: 0.35, 0.31, 0.27
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060227/5e77a3a4/attachment.pgp>
+
+From riesebie at lxtec.de  Mon Feb 27 20:16:46 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Mon, 27 Feb 2006 20:16:46 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060227140714.GB19150@bolero.cs.tu-berlin.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de> <20060227140714.GB19150@bolero.cs.tu-berlin.de>
+Message-ID: <20060227191646.GA15766@frodo.home.lxtec.de>
+
+On Mon, 27 Feb 2006 the mental interface of
+Rocco Rutte told:
+
+> * Rocco Rutte <pdmef at gmx.net>:
+> 
+> [...]
+> 
+> Sorry for the noise, but I committed the update in r790 as one or
+> the other may have seen already.
+> 
+> I tried to test under some circumstances but am sure I forgot some
+> since there're so many variables ($status_on_top, $help,
+> $pager_index_lines, etc.)
+> 
+> Please report back if everything looks like it's supposed to; if
+> not, please include at least the values for the mentioned
+> options...
+
+The help-line alway left margined will look perfect then;) It's like
+reading a Dokument: Start reading a page at the left is the intuitiv
+intention. Hmmm, same should be for the footer (info-line)
+rigorously then?
+
+Elimar
+
+-- 
+  We all know Linux is great... it does infinite loops in 5 seconds.
+        -- Linus Torvalds
+
+
+From comcid at tom.com  Tue Feb 28 09:47:47 2006
+From: comcid at tom.com (comcid at tom.com)
+Date: Tue, 28 Feb 2006 16:47:47 +0800
+Subject: Supply casting , stamping and machining
+Message-ID: <200602280847.k1S8lkE24019@bat.berlios.de>
+
+Dear Sir or Madam :  
+   
+    We specialize in metalworking in China , approved by IS09001-2000 Quality System Certification. 
+
+    We process the product mainly to use investment casting , san casting ,  die casting , permanent mould casting , stamping , machining , with all kinds of ferrous metal and nonferrous metal including stainless steel , carbon steel , aluminium , zinc and copper , and so on . Surface treatment include grinding, polishing, hot galvanizing , plating ,  powder coating , painting , passivating , anodizing, etc. . 
+    
+    We hope you try us by offering drawings (*.IGS,*.DWG,*.PDF , fax) or samples . We offer you good and inexpensive products . Your satisfaction is our pursuit .
+
+    It's better that you email us the original drawing by CAD , PorE , Solidworks , UG . You may offer the IGES files (.IGS) transforming from 3D software such as PorE , Solidworks , UG , etc. . Thus, we may quote for you and make the mold in the shortest time . 
+
+    Welcome to consult .
+
+Best regards
+
+Shauvay Jiang / Sales manager
+COMCID Machinery Manufacturing Co.,Ltd.
+Add?202, No. 77, Lane 138, Zhichuan Rd., Shanghai, China (200333)
+Web : www.comcid.com 
+Tel : +86 21 62543691
+Fax : +86 21 62543691
+Email : shauvayjiang at tom.com or comcid at comcid.com 
+
+
+
+From andre.berger at web.de  Tue Feb 28 11:47:07 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Tue, 28 Feb 2006 11:47:07 +0100
+Subject: 788 won't compile
+In-Reply-To: <20060226124022.GB398@hvk.local>
+References: <20060226113837.GA398@hvk.local> <20060226122150.GH16719@bolero.cs.tu-berlin.de> <20060226124022.GB398@hvk.local>
+Message-ID: <20060228104706.GA19834@hvk.local>
+
+* Andre Berger (2006-02-26):
+> * Rocco Rutte (2006-02-26):
+> > * Andre Berger <andre.berger at web.de>:
+> > >Hi, I'm getting the following error with muttng-20060225/r788:
+> > 
+> > Hmm, is this a fresh build or a rebuild after an update? The symbols (e.g. __mem_malloc) look 
+> > like those we define except there's one underscore too much (we have _mem_malloc, str_len, etc.)
+[...]
+> This is the first version with this problem since I'm in (r774-r781). 
+
+The problom persists in r790
+
+-Andre
+
+
+From pdmef at gmx.net  Tue Feb 28 19:45:49 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Tue, 28 Feb 2006 18:45:49 +0000
+Subject: Poll: Status lines
+In-Reply-To: <20060227191646.GA15766@frodo.home.lxtec.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de> <20060227140714.GB19150@bolero.cs.tu-berlin.de> <20060227191646.GA15766@frodo.home.lxtec.de>
+Message-ID: <20060228184549.GA58751@robert.daprodeges.fqdn.th-h.de>
+
+Hi,
+
+* Elimar Riesebieter [06-02-27 20:16:46 +0100] wrote:
+
+>The help-line alway left margined will look perfect then;) It's like
+>reading a Dokument: Start reading a page at the left is the intuitiv
+>intention. Hmmm, same should be for the footer (info-line)
+>rigorously then?
+
+Sounds like you want an option for it?
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From riesebie at lxtec.de  Tue Feb 28 21:30:14 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Tue, 28 Feb 2006 21:30:14 +0100
+Subject: Poll: Status lines
+In-Reply-To: <20060228184549.GA58751@robert.daprodeges.fqdn.th-h.de>
+References: <20060226145158.GL16719@bolero.cs.tu-berlin.de> <20060227140714.GB19150@bolero.cs.tu-berlin.de> <20060227191646.GA15766@frodo.home.lxtec.de> <20060228184549.GA58751@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060228203014.GA4351@frodo.home.lxtec.de>
+
+On Tue, 28 Feb 2006 the mental interface of
+Rocco Rutte told:
+
+> Hi,
+> 
+> * Elimar Riesebieter [06-02-27 20:16:46 +0100] wrote:
+> 
+> >The help-line alway left margined will look perfect then;) It's like
+> >reading a Dokument: Start reading a page at the left is the intuitiv
+> >intention. Hmmm, same should be for the footer (info-line)
+> >rigorously then?
+> 
+> Sounds like you want an option for it?
+
+This would be a charm ;)
+
+Elimar
+
+-- 
+  On the keyboard of life you have always
+  to keep a finger at the escape key;-)
+
+

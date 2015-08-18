@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Forcing new IMAP mail detection in Mailboxes list?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Forcing%20new%20IMAP%20mail%20detection%20in%20Mailboxes%20list%3F&In-Reply-To=%3Cloom.20060201T152838-820%40post.gmane.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000022.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Forcing new IMAP mail detection in Mailboxes list?</H1>
+    <B>Lloyd Zusman</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Forcing%20new%20IMAP%20mail%20detection%20in%20Mailboxes%20list%3F&In-Reply-To=%3Cloom.20060201T152838-820%40post.gmane.org%3E"
+       TITLE="Forcing new IMAP mail detection in Mailboxes list?">ljz at asfast.com
+       </A><BR>
+    <I>Wed Feb  1 15:34:01 CET 2006</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000022.html">Forcing new IMAP mail detection in Mailboxes list?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#14">[ date ]</a>
+              <a href="thread.html#14">[ thread ]</a>
+              <a href="subject.html#14">[ subject ]</a>
+              <a href="author.html#14">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>When viewing the Mailboxes list, I'd like to be able to press a key
+and cause mutt-ng to query my IMAP server and update the new message
+count, in case new email has arrived since the last time I checked.
+
+The imap-fetch-mail function doesn't work in browser mode.  Furthermore,
+when I do the following, it still doesn't cause the new message count to
+be updated:
+
+  macro browser g &quot;q&lt;imap-fetch-mail&gt;&lt;change-folder&gt;?^I&quot;
+
+All that happens when I press &quot;g&quot; is for the folder to redisplay with the
+same count of new messages that it had before, even if new emails have
+arrived.
+
+How can I get the new message count to be updated on demand when I'm in the
+Mailboxes list?
+
+Thanks in advance.
+
+-- 
+ Lloyd Zusman
+ <A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">ljz at asfast.com</A>
+ God bless you.
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000022.html">Forcing new IMAP mail detection in Mailboxes list?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#14">[ date ]</a>
+              <a href="thread.html#14">[ thread ]</a>
+              <a href="subject.html#14">[ subject ]</a>
+              <a href="author.html#14">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

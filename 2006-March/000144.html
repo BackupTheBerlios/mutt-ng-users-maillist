@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> muttng and courier imap -&gt; no new-message count?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20muttng%20and%20courier%20imap%20-%3E%20no%20new-message%20count%3F&In-Reply-To=%3C5093.1143390100%40www079.gmx.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000140.html">
+   <LINK REL="Next"  HREF="000146.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>muttng and courier imap -&gt; no new-message count?</H1>
+    <B>gnufriend at gmx.de</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20muttng%20and%20courier%20imap%20-%3E%20no%20new-message%20count%3F&In-Reply-To=%3C5093.1143390100%40www079.gmx.net%3E"
+       TITLE="muttng and courier imap -&gt; no new-message count?">gnufriend at gmx.de
+       </A><BR>
+    <I>Sun Mar 26 18:21:40 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000140.html">Solved: Displaying threads containing new messages, expanded
+</A></li>
+        <LI>Next message: <A HREF="000146.html">hook for NNTP?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#144">[ date ]</a>
+              <a href="thread.html#144">[ thread ]</a>
+              <a href="subject.html#144">[ subject ]</a>
+              <a href="author.html#144">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>hello,
+i'm using muttng with a local courier-imap server.
+I'm using the sidebar to have an overview of my folders, but the sidebar
+counts only the total number of messages:
+
+INBOX          200
+INBOX/foo    140
+....
+
+and not the number of unread messages as i would expect it.
+Does someone know the problem? Does i need a special config-option so that
+the sidebar count the new messages too?
+
+My muttng imap config (~/.muttngrc):
+
+[..]
+set folder= <A HREF="imap://user@127.0.0.1/">imap://user@127.0.0.1/</A>
+set imap_pass=&quot;XXX&quot;
+mailboxes +INBOX \
+          +INBOX/foo \
+          +INBOX/Sent\ Items \
+          +INBOX/Junk\ Mail \
+          +INBOX/Drafts \
+          ...
+          +INBOX/foo/bar \
+          <A HREF="nntp://news.arcor.de/de.comp.os.unix.discussion">nntp://news.arcor.de/de.comp.os.unix.discussion</A> \
+          <A HREF="nntp://news.arcor.de/de.comp.os.unix.programming">nntp://news.arcor.de/de.comp.os.unix.programming</A>
+[..]
+
+Thanks!
+Markus
+
+-- 
+&quot;Feel free&quot; mit GMX FreeMail!
+Monat f&#252;r Monat 10 FreeSMS inklusive! <A HREF="http://www.gmx.net">http://www.gmx.net</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000140.html">Solved: Displaying threads containing new messages, expanded
+</A></li>
+	<LI>Next message: <A HREF="000146.html">hook for NNTP?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#144">[ date ]</a>
+              <a href="thread.html#144">[ thread ]</a>
+              <a href="subject.html#144">[ subject ]</a>
+              <a href="author.html#144">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

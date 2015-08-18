@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Having outbound sent mail NOT marked as new
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Having%20outbound%20sent%20mail%20NOT%20marked%20as%20new&In-Reply-To=%3C20060221142009.GA15527%40radio.m-a-g.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000072.html">
+   <LINK REL="Next"  HREF="000051.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Having outbound sent mail NOT marked as new</H1>
+    <B>Arias Hung</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Having%20outbound%20sent%20mail%20NOT%20marked%20as%20new&In-Reply-To=%3C20060221142009.GA15527%40radio.m-a-g.net%3E"
+       TITLE="Having outbound sent mail NOT marked as new">arias at m-a-g.net
+       </A><BR>
+    <I>Tue Feb 21 15:20:09 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000072.html">Having outbound sent mail NOT marked as new
+</A></li>
+        <LI>Next message: <A HREF="000051.html">Having outbound sent mail NOT marked as new
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#81">[ date ]</a>
+              <a href="thread.html#81">[ thread ]</a>
+              <a href="subject.html#81">[ subject ]</a>
+              <a href="author.html#81">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Thu, 16 Feb 2006, Rocco Rutte delivered in simple text monotype:
+
+&gt;<i> First of all, what status does the mail stored in your INBOX have? Is it new or marked read already?
+</I>&lt;---snip---
+It's always marked as NEW.
+
+&gt;<i> Second, what are your values for the following variables: $record, $save_name and $force_name? The folder you name 
+</I>&gt;<i> via $record (or the others mentioned plus fcc-hook) is shown as the 'Fcc:' pseudo header in the compose screen. What 
+</I>&gt;<i> does it say?
+</I>---snap---&gt;
+
+Verbatim from my muttngrc file:
+
+  set record='+.SENT'
+  unset save_name            
+  unset force_name           
+
+and no entry with anything matching fcc.
+
+The result of muttng -t yields the absolute path of my SENT directory:
+
+record=&quot;/home/ydef/Maildir/.SENT&quot;
+
+and the precise values I had set in my config file, which also happen to be the muttng defaults for these values: 
+
+save_name=no
+fcc_attach=yes
+force_name=no
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060221/b3553730/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060221/b3553730/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000072.html">Having outbound sent mail NOT marked as new
+</A></li>
+	<LI>Next message: <A HREF="000051.html">Having outbound sent mail NOT marked as new
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#81">[ date ]</a>
+              <a href="thread.html#81">[ thread ]</a>
+              <a href="subject.html#81">[ subject ]</a>
+              <a href="author.html#81">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

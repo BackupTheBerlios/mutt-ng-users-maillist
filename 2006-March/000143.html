@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> weird characters in &quot;from&quot; field in the index
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060325032228.GA4475%40werner%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000142.html">
+   <LINK REL="Next"  HREF="000145.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>weird characters in &quot;from&quot; field in the index</H1>
+    <B>Sven Putteneers</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060325032228.GA4475%40werner%3E"
+       TITLE="weird characters in &quot;from&quot; field in the index">sven at tuxera.be
+       </A><BR>
+    <I>Sat Mar 25 04:22:29 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000142.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+        <LI>Next message: <A HREF="000145.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* Alain Bench &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">veronatif at free.fr</A>&gt; [2006-03-25 00:44:02]:
+&gt;&gt;|<i> set charset=&quot;utf-8&quot;
+</I>&gt;<i>
+</I>&gt;<i>    Remove this line: $charset will then be automaticaly derived from
+</I>&gt;<i>the current locale, whatever it is.
+</I>
+Done. I've tried to put every option in my config files, I've commented 
+it out. If it's derived from my locale, it should be set to utf-8 
+anyway.
+
+&gt;&gt;|<i> set assumed_charset=&quot;us-ascii:iso-8859-15:utf-8&quot;
+</I>&gt;<i>
+</I>&gt;<i>    Such value can't work correctly. I'd suggest better for westerners
+</I>&gt;<i>$assumed_charset=cp1252. This might even solve the unencoded no-break
+</I>&gt;<i>space in header problem, I hope. Also if you have a $strict_mime
+</I>&gt;<i>variable in Muttng, it would have to be unset.
+</I>
+$strict_mime was already unset (to make $assumed_charset valid).
+
+If I set $assumed_charset to cp1252, I don't get the &#195;? padding anymore, 
+but the from field gets padded with &quot;&#195;&#402;&#198;&#8217;&#195;&#8224;&#226;&#8364;&#8482;&#195;&#402;&#226;&#8364;&#160;&#195;&#162;&#226;&#8218;&quot;. This is even 
+more unexpected behavior...
+
+Unsetting $assumed_charset doesn't entirely work either, but it gives a 
+better result. It puts a transparent rectangle (&#65533;) in place of the 
+no-break space or accented characters in the from field and doesn't 
+truncate the content (for example, &quot;Dani&#235;l&quot; becomes &quot;Dani&#65533;l&quot; instead of 
+&quot;Dani&lt;garbage&gt;&quot;).
+
+I'll look further into other values for $assumed_charset tomorrow, it's 
+time for bed now ;)
+
+Thank you for your suggestions,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: <A HREF="http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc">http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060325/b1f456e1/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060325/b1f456e1/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000142.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+	<LI>Next message: <A HREF="000145.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

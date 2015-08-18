@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Bug melden -- break-thread locks mailbox
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Bug%20melden%20--%20break-thread%20locks%20mailbox&In-Reply-To=%3C20060220091454.GA8496%40hermes.commontology.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000076.html">
+   <LINK REL="Next"  HREF="000078.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Bug melden -- break-thread locks mailbox</H1>
+    <B>Andreas Wagner</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Bug%20melden%20--%20break-thread%20locks%20mailbox&In-Reply-To=%3C20060220091454.GA8496%40hermes.commontology.de%3E"
+       TITLE="Bug melden -- break-thread locks mailbox">A.Wagner at stud.uni-frankfurt.de
+       </A><BR>
+    <I>Mon Feb 20 10:14:54 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000076.html">Email list
+</A></li>
+        <LI>Next message: <A HREF="000078.html">Bug melden -- break-thread locks mailbox
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#77">[ date ]</a>
+              <a href="thread.html#77">[ thread ]</a>
+              <a href="subject.html#77">[ subject ]</a>
+              <a href="author.html#77">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi list,
+today I have had an issue with break-threads and mutt-ng told me to 
+report a bug. I hope it is okay when I post to this list instead of 
+embarking on a search for possible bugzilla ways of doing it (have never 
+been there yet).
+
+I have &quot;unset strict_threads&quot; and sort my mbox mailbox by thread. Today 
+I've had two mails which got sorted into one thread due to their 
+identical subject. (They had proper -- different from each other -- 
+msgids.) When I did a &lt;break-thread&gt; on the second of them, it told me 
+&quot;thread broken&quot; in the status line, but whenever I want to leave the 
+mailbox for aother one or simply sync it, mutt-ng says &quot;mailbox changed 
+but messages not&quot; and won't sync/change mailbox.
+
+Need more details? (r781, mbox in my ext2fs home dir) ...or the headers 
+of the messages in question?
+
+I had this one time a few weeks ago but was to lazy to report it back 
+then. Due to the occasion (2 messages with the same subject), it happens 
+seldomly, but I think it is reproducible (just re-tried it).
+
+
+Andreas
+
+-- 
+God is real... unless declared as an integer.
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000076.html">Email list
+</A></li>
+	<LI>Next message: <A HREF="000078.html">Bug melden -- break-thread locks mailbox
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#77">[ date ]</a>
+              <a href="thread.html#77">[ thread ]</a>
+              <a href="subject.html#77">[ subject ]</a>
+              <a href="author.html#77">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Marking mails as read automatically in certain folders
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Marking%20mails%20as%20read%20automatically%20in%20certain%20folders&In-Reply-To=%3C20060622060606.GG11380%40radio.m-a-g.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000212.html">
+   <LINK REL="Next"  HREF="000213.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Marking mails as read automatically in certain folders</H1>
+    <B>Arias Hung</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Marking%20mails%20as%20read%20automatically%20in%20certain%20folders&In-Reply-To=%3C20060622060606.GG11380%40radio.m-a-g.net%3E"
+       TITLE="Marking mails as read automatically in certain folders">arias at m-a-g.net
+       </A><BR>
+    <I>Thu Jun 22 08:06:06 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000212.html">Marking mails as read automatically in certain folders
+</A></li>
+        <LI>Next message: <A HREF="000213.html">Problems compiling SVN revision 804 ...
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#222">[ date ]</a>
+              <a href="thread.html#222">[ thread ]</a>
+              <a href="subject.html#222">[ subject ]</a>
+              <a href="author.html#222">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Thu, 08 Jun 2006, sECuRE delivered in simple text monotype:
+
+&gt;<i>19:07 &lt; s3CuRE&gt; and muttng shows that they're new mails in sent/trash (because the 
+</I>&gt;<i>                imapserver does)
+</I>&gt;<i>19:07 &lt; s3CuRE&gt; how can i change this? automatically mark the messages as old/read 
+</I>&gt;<i>                before letting muttng push them to sent/trash?
+</I>&lt;---snip---&gt;
+
+The way I resolved this is by adding these lines as the first filter in my procmailrc
+file:
+
+:<i>0
+</I>* ^From:.*<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">arias at m-a-g</A>\.net
+{ TRAP='mv SENT/new/* SENT/cur 2&gt; /dev/null' }
+
+
+Sort of a dirty hack, but works for me.  YMMV since you use IMAP and I'm only popping 
+mail via fetchmail.
+
+-A
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 307 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060621/3d3ba8ee/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060621/3d3ba8ee/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000212.html">Marking mails as read automatically in certain folders
+</A></li>
+	<LI>Next message: <A HREF="000213.html">Problems compiling SVN revision 804 ...
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#222">[ date ]</a>
+              <a href="thread.html#222">[ thread ]</a>
+              <a href="subject.html#222">[ subject ]</a>
+              <a href="author.html#222">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

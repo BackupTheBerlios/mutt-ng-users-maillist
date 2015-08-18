@@ -1,0 +1,202 @@
+From noreply at berlios.de  Thu Jul  6 01:04:22 2006
+From: noreply at berlios.de (The Post Office)
+Date: Wed, 5 Jul 2006 19:04:22 -0400
+Subject: Returned mail: Data format error
+Message-ID: <200607052304.k65N4X208467@bat.berlios.de>
+
+The message was undeliverable due to the following reason:
+
+Your message could not be delivered because the destination server was
+not reachable within the allowed queue period. The amount of time
+a message is queued before it is returned depends on local configura-
+tion parameters.
+
+Most likely there is a network problem that prevented delivery, but
+it is also possible that the computer is turned off, or does not
+have a mail system running right now.
+
+Your message was not delivered within 3 days:
+Host 138.46.89.163 is not responding.
+
+The following recipients could not receive this message:
+<mutt-ng-users at lists.berlios.de>
+
+Please reply to postmaster at lists.berlios.de
+if you feel this message to be in error.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: attachment.scr
+Type: application/octet-stream
+Size: 28864 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060705/0edf0a6c/attachment.obj>
+
+From geda-dev at seul.org  Thu Jul  6 21:27:24 2006
+From: geda-dev at seul.org (geda-dev at seul.org)
+Date: Thu, 6 Jul 2006 20:27:24 +0100
+Subject: Report
+Message-ID: <200607061932.k66JWe213638@bat.berlios.de>
+
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: instruction.zip
+Type: application/octet-stream
+Size: 29320 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060706/a81257d5/attachment.obj>
+
+From noreply at berlios.de  Fri Jul  7 03:45:03 2006
+From: noreply at berlios.de (Bounced mail)
+Date: Thu, 6 Jul 2006 21:45:03 -0400
+Subject: Returned mail: Data format error
+Message-ID: <200607070145.k671jG232745@bat.berlios.de>
+
+The original message was received at Thu, 6 Jul 2006 21:45:03 -0400
+from lists.berlios.de [73.50.30.94]
+
+----- The following addresses had permanent fatal errors -----
+mutt-ng-users at lists.berlios.de
+
+----- Transcript of the session follows -----
+... while talking to 5.255.75.169:
+>>> RCPT To:<mutt-ng-users at lists.berlios.de>
+<<< 550 MAILBOX NOT FOUND
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: instruction.zip
+Type: application/octet-stream
+Size: 28992 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060706/4a6f8349/attachment.obj>
+
+From postmaster at berlios.de  Fri Jul  7 06:03:11 2006
+From: postmaster at berlios.de (The Post Office)
+Date: Fri, 7 Jul 2006 00:03:11 -0400
+Subject: Returned mail: see transcript for details
+Message-ID: <200607070403.k6743P205325@bat.berlios.de>
+
+The original message was received at Fri, 7 Jul 2006 00:03:11 -0400 from [116.89.59.181]
+
+----- The following addresses had permanent fatal errors -----
+mutt-ng-users at lists.berlios.de
+
+----- Transcript of the session follows -----
+... while talking to mail server lists.berlios.de.:
+>>> DATA
+<<< 400-aturner; %MAIL-E-OPENOUT, error opening !AS as output
+<<< 400
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: instruction.zip
+Type: application/octet-stream
+Size: 29358 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060707/3df55e21/attachment.obj>
+
+From Helen_ocssubsequent at original-cards.com  Tue Jul 11 20:28:03 2006
+From: Helen_ocssubsequent at original-cards.com (Feldkirch)
+Date: Wed, 12 Jul 2006 03:28:03 +0900
+Subject: Sie haben eine Grusskarte bekommen.
+Message-ID: <hqghumeayl.6189279543lfdxfircvs@Feldkirchxggbwkf.com>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060712/cb6895cf/attachment.html>
+
+From andre.berger at web.de  Thu Jul 13 11:03:12 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 13 Jul 2006 11:03:12 +0200
+Subject: Security?
+Message-ID: <20060713090312.GD15138@hvk.local>
+
+Is muttng, as of today, vulnerable to the buffer overflow reported
+recently?
+
+-Andre
+
+
+From trey at fastmail.fm  Tue Jul 18 02:08:01 2006
+From: trey at fastmail.fm (Trey Sizemore)
+Date: Mon, 17 Jul 2006 20:08:01 -0400
+Subject: New builds?
+Message-ID: <20060718000800.GA18007@laptop>
+
+Hi-
+
+Wondering when we would be seeing some new builds?  Seems we've been on
+r804 for quite a while now.
+
+Thanks, and keep up the great work!
+
+-- 
+Cheers,
+Trey
+----
+ 
+Today is the tomorrow you worried about yesterday
+ 
+Linux laptop 2.6.16.21-0.8-default i686 GNU/Linux
+  8:07pm  up  10:21,  5 users,  load average: 0.26, 0.28, 0.29
+
+
+From mail at christiananton.de  Sun Jul 30 13:33:08 2006
+From: mail at christiananton.de (Christian Anton)
+Date: Sun, 30 Jul 2006 13:33:08 +0200
+Subject: Old messages in sidebar?
+In-Reply-To: <20060517135939.GE4565@die.therning.org>
+References: <20060517114010.GA6211@ipx10995.ipxserver.de>
+	<20060517135939.GE4565@die.therning.org>
+Message-ID: <20060730113308.GA12426@fibbs.fibbs.local>
+
+Magnus Therning <magnus at therning.org> schrieb am Wed, May 17, 2006 at 02:59:39PM +0100:
+> An option is to not deal with old messages at all. 'set mark_old = no'
+> will make mutt-ng treat your messages as wither new or read, never old.
+
+
+Sorry for my long absence... was moving my house.
+
+I am already using this option but the sidebar does still only
+display "new" messages.
+
+The problem is that i am using muttng from one client, offlineimap
+with maildir and muttng locally on another one. When i syncronize my
+messages with offlineimap on the notebook, i do not get the correct
+number of unread messages in the sidebar when connecting to the imap
+mailbox with my desktop pc (muttng directly, without offlineimap).
+Wouldn't it be useful to have an option to configure the sidebar to
+not only show "new" messages but also scan for "unread" messages in
+all mailboxes so that it works fine also when the "new" flag is not
+anymore on the message because another client (in this case
+offlineimap) has already fetched the message.
+
+Please tell me your opinions to file a feature-request.
+
+
+Fibbs
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060730/7c5cb2c2/attachment.pgp>
+
+From labradley at mindspring.com  Sun Jul 30 15:49:29 2006
+From: labradley at mindspring.com (Larry Alkoff)
+Date: Sun, 30 Jul 2006 08:49:29 -0500
+Subject: Test please ignore
+Message-ID: <44CCB8E9.50203@mindspring.com>
+
+Nothing on the list the entire month of July?
+
+-- 
+Larry Alkoff N2LA - Austin TX
+Using Thunderbird on Linux
+
+

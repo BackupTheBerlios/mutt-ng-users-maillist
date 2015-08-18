@@ -1,0 +1,400 @@
+From pdmef at cs.tu-berlin.de  Sun Jan  1 15:51:13 2006
+From: pdmef at cs.tu-berlin.de (Rocco Rutte)
+Date: Sun, 1 Jan 2006 14:51:13 +0000
+Subject: using variables in muttrc
+In-Reply-To: <20051231184208.GA4065@apartia.fr>
+References: <20051231184208.GA4065@apartia.fr>
+Message-ID: <20060101145113.GA780@robert.daprodeges.fqdn.th-h.de>
+
+Hi,
+
+* Louis-David Mitterrand [05-12-31 19:42:09 +0100] wrote:
+
+>Am I missing something in variable substitution?
+
+Yes. As you come up with it now, it looks like the documentation isn't 
+good enough: expansion only takes place when doing "plain" assignments. 
+Backticks are handled using the system's shell which doesn't know any 
+muttng specific variables so it doesn't work. Your config line has the 
+same effect as running
+
+   $ echo $FOO | sed ...
+
+from the command-line when $FOO doesn't exist.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From vindex+lists-mutt-ng-users at apartia.org  Sun Jan  1 16:59:11 2006
+From: vindex+lists-mutt-ng-users at apartia.org (Louis-David Mitterrand)
+Date: Sun, 1 Jan 2006 16:59:11 +0100
+Subject: using variables in muttrc
+In-Reply-To: <20060101145113.GA780@robert.daprodeges.fqdn.th-h.de>
+References: <20051231184208.GA4065@apartia.fr> <20060101145113.GA780@robert.daprodeges.fqdn.th-h.de>
+Message-ID: <20060101155911.GB15303@apartia.fr>
+
+On Sun, Jan 01, 2006 at 02:51:13PM +0000, Rocco Rutte wrote:
+> Hi,
+> 
+> * Louis-David Mitterrand [05-12-31 19:42:09 +0100] wrote:
+> 
+> >Am I missing something in variable substitution?
+> 
+> Yes. As you come up with it now, it looks like the documentation isn't good 
+> enough: expansion only takes place when doing "plain" assignments. Backticks 
+> are handled using the system's shell which doesn't know any muttng specific 
+> variables so it doesn't work. Your config line has the same effect as running
+> 
+>   $ echo $FOO | sed ...
+> 
+> from the command-line when $FOO doesn't exist.
+
+That's what I suspected, thanks for confirming it.
+
+Do you see any way to remove the "INBOX." substring from 
+"INBOX.mutt-ng-users" with standard muttng configuration language?
+
+Happy new year to all muttng users!
+
+-- 
+(remember when we spent millions coming up with a pen that would write
+in zero-G and the Russians just used pencils?) -- limekiller4 on /.
+
+
+From messmate at free.fr  Wed Jan 11 20:58:42 2006
+From: messmate at free.fr (mess-mate)
+Date: Wed, 11 Jan 2006 20:58:42 +0100
+Subject: mozilla
+Message-ID: <20060111195842.GA2755@masterpost>
+
+Hi,
+for any raeson i don't kown, can't open the mozilla browser when
+selecting a html page.
+here is my settings about it on my mailcap:
+
+text/html; /usr/bin/mozilla '%s';  description=HTML Text;
+nametemplate=%s.html; test=test "$DISPLAY" != ""
+
+any help would be very appreciated.
+
+mess-mate                               
+--
+You fill a much-needed gap.
+
+
+From riesebie at lxtec.de  Wed Jan 11 21:57:35 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Wed, 11 Jan 2006 21:57:35 +0100
+Subject: mozilla
+In-Reply-To: <20060111195842.GA2755@masterpost>
+References: <20060111195842.GA2755@masterpost>
+Message-ID: <20060111205735.GB31093@frodo.home.lxtec.de>
+
+On Wed, 11 Jan 2006 the mental interface of
+mess-mate told:
+
+> Hi,
+> for any raeson i don't kown, can't open the mozilla browser when
+> selecting a html page.
+> here is my settings about it on my mailcap:
+> 
+> text/html; /usr/bin/mozilla '%s';  description=HTML Text;
+> nametemplate=%s.html; test=test "$DISPLAY" != ""
+
+I assume $ which mozilla is 1
+try
+text/html; /usr/bin/mozilla '%s'; description=HTML Text; \
+test=test -n "$DISPLAY";  nametemplate=%s.html
+
+Elimar
+
+-- 
+  Numeric stability is probably not all that 
+  important when you're guessing;-)
+
+
+From messmate at free.fr  Thu Jan 12 21:37:52 2006
+From: messmate at free.fr (mess-mate)
+Date: Thu, 12 Jan 2006 21:37:52 +0100
+Subject: mozilla
+In-Reply-To: <20060111205735.GB31093@frodo.home.lxtec.de>
+References: <20060111195842.GA2755@masterpost> <20060111205735.GB31093@frodo.home.lxtec.de>
+Message-ID: <20060112203752.GC15175@masterpost>
+
+Elimar Riesebieter <riesebie at lxtec.de> wrote:
+| On Wed, 11 Jan 2006 the mental interface of
+| mess-mate told:
+| 
+| > Hi,
+| > for any raeson i don't kown, can't open the mozilla browser when
+| > selecting a html page.
+| > here is my settings about it on my mailcap:
+| > 
+| > text/html; /usr/bin/mozilla '%s';  description=HTML Text;
+| > nametemplate=%s.html; test=test "$DISPLAY" != ""
+| 
+| I assume $ which mozilla is 1
+| try
+| text/html; /usr/bin/mozilla '%s'; description=HTML Text; \
+| test=test -n "$DISPLAY";  nametemplate=%s.html
+| 
+| Elimar
+| 
+Thanks Elimar.
+Was an alternatives problem. /etc/alternatives/x-www-browser pointed
+to an old 'mozilla'. (debian/sarge)
+
+mess-mate                               
+--
+Q:	What lies on the bottom of the ocean and twitches?
+A:	A nervous wreck.
+
+
+From europwlottrxagn at interfree.it  Tue Jan 17 14:02:40 2006
+From: europwlottrxagn at interfree.it (Europw lotto International)
+Date: Tue, 17 Jan 2006 22:02:40 +0900
+Subject: Notified Award!!
+Message-ID: <8BF6594F.290B46B@interfree.it>
+
+EUROPW LOTTO PLUS ONE INTERNATIONAL  EXTRA  AWARD PROGRAM
+Ref. Number: E3P/211/474/2005
+Batch Number: 0151912NN82
+FROM:THE PROMOTIONAL LOTTO 
+AWARD PLUS DEPARTMENT.
+      CONGRATULATIONS!!!      
+Dear winner,
+                    
+We are pleased to inform you of the result of the Lotto Winners International programs held on the 7th January, 2006. 
+Your e-mail address attached to ticket number 07943582-2290 with serial number 1448232 drew lucky numbers 22-1-26-17 
+which consequently won in the 1st category "A", you have therefore been approved for a lump sum pay out of 1.500,000.00 Euros
+(One million Five Hundred Thousand Euros) which is the winning payout for category "A" winners,This is from the total prize shared each 
+of the 5 international winners in this category. CONGRATULATIONS ones more!!! Due to mix up of some numbers and names, we ask 
+that you keep your winning information strickly from public notice until your claims has been processed and your money  Remitted to you. This 
+is part of our security protocol to avoid double claiming and unwarranted abuse of this program by some participants. All participants were 
+selected through a computer ballot system drawn from over 10,000,000 companies and 30,000,000 individual email addresses and names from all over the 
+world, names from Australia, New Zealand, America, Europe, North America, Middle East, Africa and Asia as part of International Promotions 
+Program. This promotional program takes place once a year. This lottery is promoted by the software and  internet giant corporations to compensate some 
+few individuals with website and email addresses,  Please note that your lucky winning numbers falls within our European booklet representative 
+office in Europe as indicated in  your play coupon to file in for your claims, please contact your processing claims officer.
+
+Mr. Milton Raymond
+Processing Claims Manager,
+Nieuwezijds, 152/A 1242
+Voorburgwal-The Netherlands
+Email: eurpwintnatlott at netscape.net
+TEL: 00 31 642 575 648
+FAX: 00 31 847 561 259
+www.europw.com
+
+
+Best Regards.
+Mrs. Coker Garrett.
+Europw Int'l Lotto Plus One Program,
+DIRECTOR PROMOTIONAL PROGRAM.
+
+
+From pdmef at cs.tu-berlin.de  Thu Jan 19 12:07:28 2006
+From: pdmef at cs.tu-berlin.de (Rocco Rutte)
+Date: Thu, 19 Jan 2006 11:07:28 +0000
+Subject: Insight Rewrite: Licensing
+Message-ID: <20060119110728.GA820@robert.daprodeges.fqdn.th-h.de>
+
+Hi,
+
+I've just committed a patch cleaning up the licensing and wrote a devel 
+blog entry for it. Please see:
+
+   <http://mutt-ng.supersized.org/archives/42-Insight-Rewrite-Licensing.html>
+
+for why we license what in which way.
+
+As written there, everyone is invited to write comments or report 
+violations...
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From michael at kjorling.com  Fri Jan 20 16:42:14 2006
+From: michael at kjorling.com (Michael Kjorling)
+Date: Fri, 20 Jan 2006 15:42:14 +0000
+Subject: Setting read-only flag via a folder-hook?
+Message-ID: <43d104d6.784757f0@vuk.kjorling.com>
+
+Is there any way to set the read-only flag via a folder-hook such that
+it applies to the mailbox the folder-hook matches? I tried:
+
+folder-hook 'whatever' 'set read_only'
+
+which sort of works, but it requires me to open the mailbox twice for
+the change to take effect. While in theory I could automate that as
+well, it seems rather wasteful. Surely there must be a better way, but
+how would I do it?
+
+I am using muttng-20051231 (svn-655).
+
+-- 
+Michael Kj?rling, michael at kjorling.com - http://michael.kjorling.com/
+* ASCII Ribbon Campaign: Against HTML Mail, Proprietary Attachments *
+* ..... No bird soars too high if he soars with his own wings ..... *
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060120/17e047eb/attachment.pgp>
+
+From vindex+lists-mutt-ng-users at apartia.org  Tue Jan 24 10:38:23 2006
+From: vindex+lists-mutt-ng-users at apartia.org (Louis-David Mitterrand)
+Date: Tue, 24 Jan 2006 10:38:23 +0100
+Subject: mime_lookup broken?
+Message-ID: <20060124093823.GA8660@apartia.fr>
+
+In my .muttngrc I have:
+
+	mime_lookup application/octet-stream
+
+and all apropriate entries in my .mailcap. However when I try ot view an
+MS-Word document with a "application/octet-stream" mime-type I get this
+error:
+
+	No matching mailcap entry found.  Viewing as text.
+
+On the same message plain mutt 1.5.11 works fine.
+
+-- 
+ldm at apartia.fr
+
+
+From ilf at gmx.net  Tue Jan 24 20:47:53 2006
+From: ilf at gmx.net (ILF)
+Date: Tue, 24 Jan 2006 20:47:53 +0100
+Subject: rewrite from scratch?
+Message-ID: <43D68469.6000304@gmx.net>
+
+hi
+
+not to annoy you, you've probably heard this a dozen times, but what's
+the state of things on the rewrite?
+the old releases were promising, so i'm wondering when there'll be a new
+version. i understand that there's still a lot to do, but what kind of
+time frame were you thinking about for the rewrite? weeks? years?
+haven't found anything about it on the wiki or blog.
+
+also, do you have an irc-channel? i didn't find #muttng or #mutt-ng on
+freenode or otfc. how about setting one up?
+
+thanks and keep up the good work!
+
+ps, please keep me in cc:, i'm not on the list.
+
+-- 
+ .''`.   andre meister | ILF           jabber: ilf at jabber.berlin.ccc.de
+: :'  :
+`. `'`   encrypt e-mails. use gnupg!      my key-id: 0x294DFE208B0C383A
+  `-     fingerprint: 841C 3513 F09D 0CD6 8364 8F51 294D FE20 8B0C 383A
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: OpenPGP digital signature
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060124/df4ce11b/attachment.pgp>
+
+From nion at muttng.org  Tue Jan 24 21:02:21 2006
+From: nion at muttng.org (Nico Golde)
+Date: Tue, 24 Jan 2006 21:02:21 +0100
+Subject: rewrite from scratch?
+In-Reply-To: <43D68469.6000304@gmx.net>
+References: <43D68469.6000304@gmx.net>
+Message-ID: <20060124200221.GD22179@ngolde.de>
+
+Hi,
+* ILF <ilf at gmx.net> [2006-01-24 20:56]:
+> not to annoy you, you've probably heard this a dozen times, but what's
+> the state of things on the rewrite?
+> the old releases were promising, so i'm wondering when there'll be a new
+> version. i understand that there's still a lot to do, but what kind of
+> time frame were you thinking about for the rewrite? weeks? years?
+> haven't found anything about it on the wiki or blog.
+
+Like in debian, we will release if we finished :)
+AK is at "Bundersheer" (army) at the moment, I am very busy 
+with university. The only one contributing on a regular 
+basis at the moment is rocco. I think you can expect a 
+release this year but not in a few months.
+
+> also, do you have an irc-channel? i didn't find #muttng or #mutt-ng on
+> freenode or otfc. how about setting one up?
+
+We had one in the past but it sucked ;)
+regards nico
+-- 
+Nico Golde - JAB: nion at jabber.ccc.de | GPG: 0x73647CFF
+http://www.ngolde.de | http://www.muttng.org | http://grml.org
+Forget about that mouse with 3/4/5 buttons -
+gimme a keyboard with 103/104/105 keys!
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060124/5ca6ce0f/attachment.pgp>
+
+From fsdf at fed.com  Thu Jan 26 10:52:41 2006
+From: fsdf at fed.com (fsdf at fed.com)
+Date: Thu, 26 Jan 2006 17:52:41 +0800
+Subject: Promote your business
+Message-ID: <200601260952.k0Q9qgx07428@bat.berlios.de>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060126/fb6aed58/attachment.html>
+
+From thorin at gmail.com  Mon Jan 30 22:45:14 2006
+From: thorin at gmail.com (Curtis Spencer)
+Date: Mon, 30 Jan 2006 21:45:14 +0000 (UTC)
+Subject: Replying to Newsgroup Posts?
+Message-ID: <20060130214551.GD18153@jubo.Stanford.EDU>
+
+I can post to a newsgroup just fine, but I am wondering the best way to
+reply.  If I just go an "r" or "g", I end up getting a mail to the users
+email address.  The only way I can see is to do another Post with the
+same subject and use the followupto field, but there must be a better way (I
+don't even know if that would work).  Any ideas?
+
+
+-- 
+Thanks,
+Curtis
+******
+Type louder, please.
+
+
+
+From vampjon at gmail.com  Mon Jan 30 23:36:40 2006
+From: vampjon at gmail.com (Jonathan Black)
+Date: Mon, 30 Jan 2006 23:36:40 +0100
+Subject: Replying to Newsgroup Posts?
+In-Reply-To: <20060130214551.GD18153@jubo.Stanford.EDU>
+References: <20060130214551.GD18153@jubo.Stanford.EDU>
+Message-ID: <20060130223640.GA23628@beacon.dhs.org>
+
+On Mon, Jan 30, 2006 at 09:45:14PM +0000, Curtis Spencer wrote:
+> I can post to a newsgroup just fine, but I am wondering the best way
+> to reply.  If I just go an "r" or "g", I end up getting a mail to the
+> users email address.  The only way I can see is to do another Post
+> with the same subject and use the followupto field, but there must be
+> a better way (I don't even know if that would work).  Any ideas?
+
+The appropriate command is called Followup, bound by default to 'F'
+(uppercase F, that is, shift+f).
+
+-- 
+jonathaN
+
+

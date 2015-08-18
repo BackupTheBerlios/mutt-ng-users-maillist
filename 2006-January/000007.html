@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Setting read-only flag via a folder-hook?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-January/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Setting%20read-only%20flag%20via%20a%20folder-hook%3F&In-Reply-To=%3C43d104d6.784757f0%40vuk.kjorling.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000006.html">
+   <LINK REL="Next"  HREF="000008.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Setting read-only flag via a folder-hook?</H1>
+    <B>Michael Kjorling</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Setting%20read-only%20flag%20via%20a%20folder-hook%3F&In-Reply-To=%3C43d104d6.784757f0%40vuk.kjorling.com%3E"
+       TITLE="Setting read-only flag via a folder-hook?">michael at kjorling.com
+       </A><BR>
+    <I>Fri Jan 20 16:42:14 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000006.html">Insight Rewrite: Licensing
+</A></li>
+        <LI>Next message: <A HREF="000008.html">mime_lookup broken?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Is there any way to set the read-only flag via a folder-hook such that
+it applies to the mailbox the folder-hook matches? I tried:
+
+folder-hook 'whatever' 'set read_only'
+
+which sort of works, but it requires me to open the mailbox twice for
+the change to take effect. While in theory I could automate that as
+well, it seems rather wasteful. Surely there must be a better way, but
+how would I do it?
+
+I am using muttng-20051231 (svn-655).
+
+-- 
+Michael Kj&#246;rling, <A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">michael at kjorling.com</A> - <A HREF="http://michael.kjorling.com/">http://michael.kjorling.com/</A>
+* ASCII Ribbon Campaign: Against HTML Mail, Proprietary Attachments *
+* ..... No bird soars too high if he soars with his own wings ..... *
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060120/17e047eb/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060120/17e047eb/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000006.html">Insight Rewrite: Licensing
+</A></li>
+	<LI>Next message: <A HREF="000008.html">mime_lookup broken?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

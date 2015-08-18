@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> weird characters in &quot;from&quot; field in the index
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060327154434.GA24816%40werner%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000143.html">
+   <LINK REL="Next"  HREF="000149.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>weird characters in &quot;from&quot; field in the index</H1>
+    <B>Sven Putteneers</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060327154434.GA24816%40werner%3E"
+       TITLE="weird characters in &quot;from&quot; field in the index">sven at tuxera.be
+       </A><BR>
+    <I>Mon Mar 27 17:44:34 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000143.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+        <LI>Next message: <A HREF="000149.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#145">[ date ]</a>
+              <a href="thread.html#145">[ thread ]</a>
+              <a href="subject.html#145">[ subject ]</a>
+              <a href="author.html#145">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* Sven Putteneers &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">sven at tuxera.be</A>&gt; [2006-03-25 04:34:09]:
+&gt;<i>Unsetting $assumed_charset doesn't entirely work either, but it gives a better result. 
+</I>&gt;<i>It puts a transparent rectangle (&#65533;) in place of the no-break space or accented 
+</I>&gt;<i>characters in the from field and doesn't truncate the content (for example, &quot;Dani&#235;l&quot; 
+</I>&gt;<i>becomes &quot;Dani&#65533;l&quot; instead of &quot;Dani&lt;garbage&gt;&quot;).
+</I>&gt;<i>
+</I>&gt;<i>I'll look further into other values for $assumed_charset tomorrow, it's time for bed now 
+</I>
+Current workaround:
+
+don't set assumed_charset in the config file (or unset it)
+
+message-hook . &quot;unset assumed_charset&quot;
+message-hook &quot;~h X-Newsreader:\ Microsoft\ Outlook\ Express&quot; &quot;set assumed_charset='cp1252'&quot;
+
+This second message-hook is necessary for messages sent with MSOE. If 
+it's not present, accented characters show up as question marks in the 
+body of messages.
+
+Non us-ascii characters in the headers show up as transparent rectangles 
+in the index (I tried a few values for $assumed_charset, but simply 
+unsetting that variable gives the most acceptable results for the index).
+
+When school is out and this is still not fixed, I'll look into it and 
+I'll try to write a patch. But this won't happen until July.
+
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: <A HREF="http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc">http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060327/65e59a2b/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060327/65e59a2b/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000143.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+	<LI>Next message: <A HREF="000149.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#145">[ date ]</a>
+              <a href="thread.html#145">[ thread ]</a>
+              <a href="subject.html#145">[ subject ]</a>
+              <a href="author.html#145">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

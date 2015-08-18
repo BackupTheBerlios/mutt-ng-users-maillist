@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Having outbound sent mail NOT marked as new
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Having%20outbound%20sent%20mail%20NOT%20marked%20as%20new&In-Reply-To=%3C20060216083017.GA17608%40bolero.cs.tu-berlin.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000066.html">
+   <LINK REL="Next"  HREF="000069.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Having outbound sent mail NOT marked as new</H1>
+    <B>Rocco Rutte</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Having%20outbound%20sent%20mail%20NOT%20marked%20as%20new&In-Reply-To=%3C20060216083017.GA17608%40bolero.cs.tu-berlin.de%3E"
+       TITLE="Having outbound sent mail NOT marked as new">pdmef at gmx.net
+       </A><BR>
+    <I>Thu Feb 16 09:30:17 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000066.html">Having outbound sent mail NOT marked as new
+</A></li>
+        <LI>Next message: <A HREF="000069.html">Having outbound sent mail NOT marked as new
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#67">[ date ]</a>
+              <a href="thread.html#67">[ thread ]</a>
+              <a href="subject.html#67">[ subject ]</a>
+              <a href="author.html#67">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* Arias Hung &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">arias at m-a-g.net</A>&gt;:
+
+&gt;<i><A HREF="http://thread.gmane.org/gmane.mail.procmail/14909">http://thread.gmane.org/gmane.mail.procmail/14909</A>
+</I>
+Does this work for you?
+
+If so, I completely misunderstood the problem. When muttng (as well as 
+mutt btw) store sent mail via $record/fcc-hook/etc., they store the mail 
+directly to the destination folder. Read: it never gets inserted into 
+any filtering chains such as procmail so tweaking procmail shouldn't 
+have any effect if the problem was mutt(ng)-only. This procmail solution 
+only works when someone's own mails come back via a mailing list so that 
+procmail marks them as read (it could mark any other mail as read, not 
+just the own).
+
+The exception would be that someone uses cronjobs to pick up mails from 
+local folders and inserting them into procmail to filter again (but I 
+cannot imagine someone really does something similar).
+
+So are we talking about &quot;coming-back&quot; mails not being marked as read or 
+mails really stored via $record/fcc-hook not marked as read?
+
+   bye, Rocco
+-- 
+:<i>wq!
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000066.html">Having outbound sent mail NOT marked as new
+</A></li>
+	<LI>Next message: <A HREF="000069.html">Having outbound sent mail NOT marked as new
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#67">[ date ]</a>
+              <a href="thread.html#67">[ thread ]</a>
+              <a href="subject.html#67">[ subject ]</a>
+              <a href="author.html#67">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

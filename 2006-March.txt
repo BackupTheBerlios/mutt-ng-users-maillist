@@ -1,0 +1,1460 @@
+From andre.berger at web.de  Wed Mar  1 01:47:51 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Wed, 1 Mar 2006 01:47:51 +0100
+Subject: 788 won't compile
+In-Reply-To: <20060228104706.GA19834@hvk.local>
+References: <20060226113837.GA398@hvk.local> <20060226122150.GH16719@bolero.cs.tu-berlin.de> <20060226124022.GB398@hvk.local> <20060228104706.GA19834@hvk.local>
+Message-ID: <20060301004751.GA558@hvk.local>
+
+* Andre Berger (2006-02-28):
+> * Andre Berger (2006-02-26):
+> > * Rocco Rutte (2006-02-26):
+> > > * Andre Berger <andre.berger at web.de>:
+> > > >Hi, I'm getting the following error with muttng-20060225/r788:
+> > > 
+> > > Hmm, is this a fresh build or a rebuild after an update? The symbols (e.g. __mem_malloc) look 
+> > > like those we define except there's one underscore too much (we have _mem_malloc, str_len, etc.)
+> [...]
+> > This is the first version with this problem since I'm in (r774-r781). 
+> 
+> The problom persists in r790
+
+No, it doesn't, it compiles just fine. No Mac OS X 10.4.5 sytem sleep
+though.
+
+-Andre
+
+
+From henrik at myunix.dk  Thu Mar  2 12:20:44 2006
+From: henrik at myunix.dk (Henrik Johansen)
+Date: Thu, 02 Mar 2006 12:20:44 +0100
+Subject: Trash folder patch and whitespaces in folder names ...
+Message-ID: <4406D50C.9000207@myunix.dk>
+
+Hi Folks.
+
+I have a problem using some IMAP folders with the trash folder patch.
+
+Some of my IMAP mailboxes include whitespaces (eg. "Deleted Item, Junk 
+Mail, etc)" and that works like a charm when browsing / accessing those 
+folder via muttng - but when trying to get the trash folder patch to 
+store mails in "Deleted Items" it seems to strip whitespaces from folder 
+names ...
+
+I am currently using revision 790.
+
+Any ideas on how to solve this ?
+
+
+Best Regards,
+
+Henrik Johansen.
+
+
+
+
+From sagebiel at gmx.net  Thu Mar  2 12:48:34 2006
+From: sagebiel at gmx.net (SAGEBIEL Markus)
+Date: Thu, 2 Mar 2006 12:48:34 +0100
+Subject: pdftotext in mailcap & fcc-hook feature request
+Message-ID: <20060302114834.GA2245@sagebiel.hn.org>
+
+Hello,
+I just wanted to tell you about my modification of mailcap to view pdf
+:) I just didn't found it in the last years.
+
+application/pdf; pdftotext -layout %s -; copiousoutput
+
+Maybe it's new to some others !
+
+I also posted to feature requests yesterday and maybe there are allready
+in.
+https://developer.berlios.de/feature/?func=detailfeature&feature_id=1893&group_id=2853
+"fcc-hook always take the folder youre in"
+
+This would be useful for me. Or is it doable with some muttrc stuff?
+
+Regards Markus
+-- 
+Dipl.-Math.oec.Univ. Markus Sagebiel
+sagebiel at yahoo.com   www.blackscholes.de
+
+
+From pdmef at gmx.net  Thu Mar  2 15:49:23 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 2 Mar 2006 15:49:23 +0100
+Subject: pdftotext in mailcap & fcc-hook feature request
+In-Reply-To: <20060302114834.GA2245@sagebiel.hn.org>
+References: <20060302114834.GA2245@sagebiel.hn.org>
+Message-ID: <20060302144923.GA7934@bolero.cs.tu-berlin.de>
+
+* SAGEBIEL Markus <sagebiel at gmx.net>:
+
+>I also posted to feature requests yesterday and maybe there are allready
+>in.
+>https://developer.berlios.de/feature/?func=detailfeature&feature_id=1893&group_id=2853
+>"fcc-hook always take the folder youre in"
+
+Do you really need fcc-hook or is $record okay?
+
+With $record you can use:
+
+   folder-hook . 'set record="$muttng_folder_path"'
+
+$muttng_folder_path is a read-only variable that always contains the 
+full path of the currently opened folder.
+
+With fcc-hook you'd have to clear all previous fcc-hooks when entering a 
+folder... which doesn't work as the unhook command cannot be used in 
+other hooks.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From supeballer006 at netscape.net  Tue Mar 14 23:14:16 2006
+From: supeballer006 at netscape.net (FIFA WORLD CUP WEEL GAME GERMANY 2006 AND ITALIA WINTER OLYMPIC WEEL GAME)
+Date: Tue, 14 Mar 2006 23:14:16 +0100
+Subject: CONGRATULATION!!!!!!!!!!!!!!!!!!!!!!!!!!
+Message-ID: <200603142214.k2EMEGb07061@bat.berlios.de>
+
+FIFA WORLD CUP WEEL GAME GERMANY 2006 AND ITALIA WINTER OLYMPIC WEEL GAME
+SUPERBALL AND WINTER GAME E-MAIL BALLOT INTERNATIONAL LOTTERY PROMOTIONS/PRIZE AWARD DEPT
+HEAD OFFICE:VIA SICILIA 102,58043GR, CASTIGLIONE DELLA PESCAIA
+TORINO-ITALIA  
+Ref. N?: ES/007/05/12/MAD. 
+Batch. N?: GHT/2907/333/05. 
+ 
+YOUR E-MAIL ADDRESS WON THIS YEAR IN FIFA WORLD WEEL GAME GERMANY 2006 LOTTERY. 
+
+We wish to congratulate you over your email success in our computer balloting sweepstake held on 30th January 2006. This is a FIFA WEEL GAME  GERMANY JUNE 2006 WORLD CHAMPIONSHIP CUP AND WINTER OLYMPIC scientific computer game in which email addresses were used and your email numbers 8567721/591/AB was attached. It is a promotional programmed aimed at encouraging Internet users; therefore you do not need to buy ticket to enter for it. Your email address attached to ticket star number (4-5) drew the FIFA WORLD CUP WEEL GAME GERMANY 2006 lucky numbers 3-19-26-49-50 which consequently won the draw in the 3rd categories. You have been approve for the star prize of ?667,248.26. (Six Hundred And Sixty Seven Thousand, Two Hundred And Fourty Eight Euros. Twenty-Six Cents). CONGRATULATIONS !!! 
+ 
+You are advised to keep this winning very confidential until you receive your lump prize in your account or optional cheque issuance to you. This is a protective measure to avoid double claiming by people you may tell as we have had cases like this before, please send your Full Name, Home and 
+Office Tel & Fax Number, Mobile Tel Number and your winning ticket number, reference numbers and amount won information for processing of your winning fund to our registered claim agent in address below in our NETHERLANDS Office to process your claimed. 
+ 
+UNION CREDIT TRUST AGENCY INT. 
+CONTACT PERSON: MR.DONALD WHITE 
+ADDRESS: MIDDELWEG-WEST 176, SAINT ANNA PARROCHIE STRAAT,
+9077GE. FRIESLAND- NETHERLANDS
+TEL:0031-644-278-738.
+Email:supeballer006 at netscape.net
+ 
+Remember, all winning must be claimed not later than 31th March,2006.Please note, in order to avoid unnecessary delays and complications, remember to quote your reference number and batch number in all correspondence. 
+Furthermore, should there be any change of address do inform our agent as soon as possible. 
+ 
+Once again congratulations. 
+ 
+Best regard, 
+
+Mrs. Dorothy Van Der-Berge, 
+Lottery coordinator. 
+
+This promotional program takes place every four-year interval. This lottery was promoted and sponsored by THE MANAGEMENT OF THE EUROPEAN SOFTWARE PRODUCER'S INT, we hope with part of your winning you will take part on our next year ?2 million international lottery. 
+ 
+ 
+
+From andre.berger at web.de  Thu Mar 16 09:14:09 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 16 Mar 2006 09:14:09 +0100
+Subject: 791: compilation problem
+Message-ID: <20060316081409.GE412@hvk.local>
+
+I've got the same problem
+
+  From: D P Schreber <schreberdp at rayban.net>
+  Subject: 'make' in the doc directory of the cvs tree
+  Newsgroups: comp.mail.mutt
+  Date: Sun, 12 Mar 2006 09:34:13 -0600
+  Message-ID: <crmdnWVYEdbooonZRVn-vw at comcast.com>
+
+descibes for mutt-1.5.11 with mutt-ng 791:
+
+  I can't seem to do a proper make in the doc directory unless I
+  remove the '--nonet' in Makefile.in.  Otherwise I get complaints
+  from xsltproc about it not being able to resolve imports.  Makes
+  sense, since the imports point to docbook.sourceforge.net.  If I
+  remove the --nonet options, everything works fine (slow, but fine).
+
+on Mac OS X 10.4.5.
+
+-Andre
+
+
+From andre.berger at web.de  Thu Mar 16 09:51:04 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 16 Mar 2006 09:51:04 +0100
+Subject: 791: compilation problem
+In-Reply-To: <20060316081409.GE412@hvk.local>
+References: <20060316081409.GE412@hvk.local>
+Message-ID: <20060316085104.GB2095@hvk.local>
+
+* Andre Berger (2006-03-16):
+[...]
+>   I can't seem to do a proper make in the doc directory unless I
+>   remove the '--nonet' in Makefile.in.  Otherwise I get complaints
+>   from xsltproc about it not being able to resolve imports.  Makes
+>   sense, since the imports point to docbook.sourceforge.net.  If I
+>   remove the --nonet options, everything works fine (slow, but fine).
+> 
+> on Mac OS X 10.4.5.
+
+muttng-20060315 fixed it, though it still announces itself as
+"Mutt-ng devel-r790 (based on Mutt 1.5.11/2005-09-15)"
+
+The "no sleep problem unless $timeout > $sleeptime" I described in
+the 788-thread still persists.
+
+-Andre
+
+
+From cebewee at gmx.de  Thu Mar 16 11:07:02 2006
+From: cebewee at gmx.de (Lars Noschinski)
+Date: Thu, 16 Mar 2006 11:07:02 +0100
+Subject: 791: compilation problem
+In-Reply-To: <20060316081409.GE412@hvk.local>
+References: <20060316081409.GE412@hvk.local>
+Message-ID: <20060316100702.GA12077@lars.home.noschinski.de>
+
+* Andre Berger <andre.berger at web.de> [2006-03-16 10:54]:
+>descibes for mutt-1.5.11 with mutt-ng 791:
+>
+>  I can't seem to do a proper make in the doc directory unless I
+>  remove the '--nonet' in Makefile.in.  Otherwise I get complaints
+>  from xsltproc about it not being able to resolve imports.  Makes
+>  sense, since the imports point to docbook.sourceforge.net.  If I
+>  remove the --nonet options, everything works fine (slow, but fine).
+
+You can install those files locally, so this is not a bug. For example
+under Debian you need to install the docbook-xsl packages to get it
+working with the -nonet option.
+
+But maybe it would be useful to make the -nonet a ./configure-option?
+
+
+From sven at tuxera.be  Tue Mar 21 17:25:46 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Tue, 21 Mar 2006 17:25:46 +0100
+Subject: weird characters in "from" field in the index
+Message-ID: <20060321162545.GA1212@werner>
+
+Hello,
+
+I have encountered the following weird behavior when using mutt-ng to 
+browse newsgroups.
+
+On one particular newsgroup, the "from" field in the index is padded 
+with ?? instead of spaces. So there are alternating A-tilde and question 
+marks.
+
+Not all messages have this cosmetic problem. Also, when I open an 
+affected post in the pager, the "from" field in the index shows the name 
+of the poster, padded with spaces (the expected behavior).
+
+There are no accented characters in the posters names (so this rules out 
+a broken news client at the posters side).
+
+The IMO relevant settings from my muttngrc are:
+	set charset="utf-8"
+	muttngrc.display:set index_format="%4C %Z %4N %{%F %R} %2X %-20.20F (%?l?%4l&%4c?) %s"
+
+I start muttng in a rxvt-unicode, so displaying utf-8 characters 
+shouldn't be any problem.
+
+I haven't been able to reproduce this behaviour when listing the 
+contents of either normal mailfolders or other newsgroups (the behavior 
+shows in just one particular newsgroup).
+
+If you want me to put up a screenshot somewhere, or need more 
+information or config options, I'll be happy to provide them.
+
+Is this a bug in muttng or just some setting I have wrong?
+
+Greets,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060321/f2713f01/attachment.pgp>
+
+From sven at tuxera.be  Wed Mar 22 01:51:41 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Wed, 22 Mar 2006 01:51:41 +0100
+Subject: ANSI colors in pager misbehave?
+Message-ID: <20060322005140.GA29157@werner>
+
+Hello,
+
+I have "set allow_ansi" and "set implicit_autoview" in my muttrc file. I 
+wanted to use the code2color script from 
+http://www-zeuthen.desy.de/~friebel/unix/less/code2color to 
+automatically display source code attachments (C(++), perl, ...) in 
+color, but it seems muttng doesn't display the colors like it should.
+
+It's hard to explain what exactly goes wrong (and even harder to make an 
+educated guess where in the source code things go wrong). Maybe the best 
+way is to see for yourself. Download the script and invoke it with 
+"code2color <sourcefile>" to see what it should do.
+Then put a line in your mailcap to filter source code (there doesn't 
+seem to be a unique mime-type for source files, I've encountered quite 
+some on the mailing lists I'm subscribed to), mail yourself the source 
+file and view it in the internal pager.
+
+Also try to scroll the code2color'ed output in the pager, the colored 
+bits all change color (which shouldn't happen).
+
+I use muttng-r781.
+
+Greets,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060322/7eee2d63/attachment.pgp>
+
+From andre.berger at web.de  Wed Mar 22 09:00:06 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Wed, 22 Mar 2006 09:00:06 +0100
+Subject: 791: compilation problem
+In-Reply-To: <20060316100702.GA12077@lars.home.noschinski.de>
+References: <20060316081409.GE412@hvk.local> <20060316100702.GA12077@lars.home.noschinski.de>
+Message-ID: <20060322080006.GB29122@hvk.local>
+
+* Lars Noschinski (2006-03-16):
+> * Andre Berger <andre.berger at web.de> [2006-03-16 10:54]:
+> >descibes for mutt-1.5.11 with mutt-ng 791:
+> >
+> > I can't seem to do a proper make in the doc directory unless I
+> > remove the '--nonet' in Makefile.in.  Otherwise I get complaints
+> > from xsltproc about it not being able to resolve imports.  Makes
+> > sense, since the imports point to docbook.sourceforge.net.  If I
+> > remove the --nonet options, everything works fine (slow, but fine).
+> 
+> You can install those files locally, so this is not a bug. For example
+> under Debian you need to install the docbook-xsl packages to get it
+> working with the -nonet option.
+>
+> But maybe it would be useful to make the -nonet a ./configure-option?
+
+Yes please -- unless you can tell me what to install on Mac OS X. 
+
+-Andre
+
+
+From walter at netscape.com  Wed Mar 22 11:48:15 2006
+From: walter at netscape.com (Philip. W. Walter)
+Date: Wed, 22 Mar 2006 11:48:15 +0100
+Subject: INVESTMENT FUNDS!!!!
+Message-ID: <200603221047.k2MAlqt04326@bat.berlios.de>
+
+Dear Sir/Madam
+ 
+INVESTMENT FUNDS
+
+My name is Philip. W. Walter. I am resident in Germany. I am also a sales manager in a financial consultancy firm here. My Company is mandated to source for reliable investors the world over to invest available funds in profitable business ventures. This is why i am making this contact.
+
+These funds are made available by some third world leaders and the pool is close to half a billion US Dollars. Depending on your experience and the proposal you will forward to us, we will determine a suitable amount to remit to you to kick off the business you intend to invest in. You will manage this business without interference for a period of three years, after which, the profit on investment will be shared after taxation.
+
+The investment areas is not limited and may include new business or injection of funds into an existing firm that, of course, is profit oriented. Bearing in mind that you are not authorised to invest in public companies or government agencies, You can incorporate a firm fully owned by you based on the laws of your country or invest this money in a private company as a share holder. you can equally trade stock or export and import goods as may be profitable. Fresh funds may also be invested to 
+
+enlarge the business if the prospect is good.
+
+All these are without any liability to you as this is a risk that the fund owners are ready to take. 
+You will be required to meet with us to finalise arrangements on how to move the agreed funds into your account and sign related documents that will authorise you to manage this money on our behalf. A draft agreement will be forwarded to you to enable us fine-tune all grey areas and ensure a smooth take off.
+
+Please reply to this E-mail :philip_globa.consulting at yahoo.com and i will forward more information to you. All we need is to ascertain your credibility, resourcefulness and experience.
+
+I earnestly await your response.
+
+Best Regards
+
+Philip. W. Walter
+
+Manager, Int?l Dept.
+
+Global Haus, 256 Fasannent Str, D-40210 Dusseldorf, Germany.    
+
+From mfyang at gmail.com  Wed Mar 22 16:19:26 2006
+From: mfyang at gmail.com (mfyang)
+Date: Wed, 22 Mar 2006 10:19:26 -0500
+Subject: smtp-->segmentation fault
+Message-ID: <20060322151926.GA31542@pak6.clarku.edu>
+
+Whenever I try to send email by gmail smtp server.
+It results in a segmentation fault.
+
+I am using muttng-20060309 release on a Gentto system, and it's compiled
+with the following support "berkdb cjk crypt gdbm imap mbox nls nntp pop
+slang smime smtp ssl".
+
+Is it a bug? Or I did something wrong?
+
+Mingfeng
+
+
+From sven at tuxera.be  Wed Mar 22 17:02:20 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Wed, 22 Mar 2006 17:02:20 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060321162545.GA1212@werner>
+References: <20060321162545.GA1212@werner>
+Message-ID: <20060322160220.GA17859@werner>
+
+* Sven Putteneers <sven at tuxera.be> [2006-03-21 17:34:08]:
+
+I'm sorry to reply to my own message, but I found out what causes this.
+
+>On one particular newsgroup, the "from" field in the index is padded with ?? instead of 
+>spaces. So there are alternating A-tilde and question marks.
+
+It seems that the from-names in the messages are padded with a \240 
+(hex. A0) character. According to iso_8859-1(7), this is a no-break 
+space.
+
+Most users on that newsgroup use some web-frontend to post messages, so 
+that's the likely culprit for this unexpected character.
+
+Still it would seem to me that muttng should be able to cope with this. 
+As mentioned before, when I open a message sent by someone with an 
+affected realname, the pager all of a sudden displays the correct name 
+(properly padded with spaces).
+
+Any insights on this issue?
+
+Greets,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060322/decf5902/attachment.pgp>
+
+From sven at tuxera.be  Wed Mar 22 19:50:17 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Wed, 22 Mar 2006 19:50:17 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060322160220.GA17859@werner>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner>
+Message-ID: <20060322185017.GA13720@werner>
+
+* Sven Putteneers <sven at tuxera.be> [2006-03-22 17:44:04]:
+>I'm sorry to reply to my own message, but I found out what causes this.
+
+Even more sorry for this reply to a reply...
+
+It seems the index shows this behavior with both from- and subject 
+fields.
+When an accented character (or anything with ASCII-code above 127, for 
+that matter) is present in a field that is displayed in the index, 
+everything in that field, starting from the non-us-ascii character to 
+the end of the field is not displayed and a series of alternating 
+A-tilde and question marks are displayed instead.
+
+When such a message is opened in the pager, the index gets updated to 
+the expected output.
+
+When trying to duplicate this behavior, i sent myself a mail with "t?st" 
+in the subject. Muttng changed this to '=?iso-8859-1?Q?t=E9st?=' as it 
+should, so this seems to be the result of broken mailers/newsclients not 
+making the correct substitutions for header values outside of the 
+us-ascii character range.
+
+Can this be fixed?
+
+Thanks in advance,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060322/8ba5397d/attachment.pgp>
+
+From riesebie at lxtec.de  Wed Mar 22 20:13:11 2006
+From: riesebie at lxtec.de (Elimar Riesebieter)
+Date: Wed, 22 Mar 2006 20:13:11 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060322185017.GA13720@werner>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner>
+Message-ID: <20060322191311.GA3547@aragorn.home.lxtec.de>
+
+On Wed, 22 Mar 2006 the mental interface of
+Sven Putteneers told:
+
+[...]
+> When such a message is opened in the pager, the index gets updated
+> to the expected output.
+> 
+> When trying to duplicate this behavior, i sent myself a mail with
+> "t?st" in the subject. Muttng changed this to
+> '=?iso-8859-1?Q?t=E9st?=' as it should, so this seems to be the
+> result of broken mailers/newsclients not making the correct
+> substitutions for header values outside of the us-ascii character
+> range.
+
+Could you please send a mail with the symtoms you're fighting with
+to the list?
+
+Elimar
+
+-- 
+  The path to source is always uphill!
+                                -unknown-
+
+
+From nion at muttng.org  Thu Mar 23 04:25:04 2006
+From: nion at muttng.org (Nico Golde)
+Date: Thu, 23 Mar 2006 04:25:04 +0100
+Subject: smtp-->segmentation fault
+In-Reply-To: <20060322151926.GA31542@pak6.clarku.edu>
+References: <20060322151926.GA31542@pak6.clarku.edu>
+Message-ID: <20060323032504.GA15357@ngolde.de>
+
+HI,
+* mfyang <mfyang at gmail.com> [2006-03-22 19:24]:
+> Whenever I try to send email by gmail smtp server.
+> It results in a segmentation fault.
+> 
+> I am using muttng-20060309 release on a Gentto system, and it's compiled
+> with the following support "berkdb cjk crypt gdbm imap mbox nls nntp pop
+> slang smime smtp ssl".
+> 
+> Is it a bug? Or I did something wrong?
+
+Segfaults are always a bug. Can you provide a backtrace?
+http://www.cprogramming.com/debugging/segfaults.html
+Regards Nico
+-- 
+Nico Golde - JAB: nion at jabber.ccc.de | GPG: 0x73647CFF
+http://www.ngolde.de | http://www.muttng.org | http://grml.org
+Forget about that mouse with 3/4/5 buttons -
+gimme a keyboard with 103/104/105 keys!
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060323/2b1d4404/attachment.pgp>
+
+From svennieboy at linux.be  Thu Mar 23 03:00:29 2006
+From: svennieboy at linux.be (Sven Putteneers)
+Date: Thu, 23 Mar 2006 03:00:29 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060322191311.GA3547@aragorn.home.lxtec.de>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de>
+Message-ID: <20060323020029.GB18336@werner>
+
+* Elimar Riesebieter <riesebie at lxtec.de> [2006-03-22 20:24:03]:
+>Could you please send a mail with the symtoms you're fighting with
+>to the list?
+
+I've attached a newsgroup post that has a defective From: header. I've 
+gzipped it to make sure muttng doesn't mangle (repair) the defective 
+header to a properly encoded one.
+
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: message.gz
+Type: application/x-gunzip
+Size: 844 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060323/355e7b5d/attachment.bin>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060323/355e7b5d/attachment.pgp>
+
+From pdmef at gmx.net  Thu Mar 23 10:51:07 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 23 Mar 2006 10:51:07 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060323020029.GB18336@werner>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner>
+Message-ID: <20060323095107.GC13700@bolero.cs.tu-berlin.de>
+
+* Sven Putteneers <svennieboy at linux.be>:
+
+>I've attached a newsgroup post that has a defective From: 
+>header. I've gzipped it to make sure muttng doesn't mangle 
+>(repair) the defective header to a properly encoded one.
+
+The From: line contains a non-ASCII character (hex 0xA0, dec 160) which 
+is standard-violating. I googled for a latin1 map and it says this is 
+"non breaking space".
+
+Here muttng simply displays an additional space character in a latin1 
+terminal but garbage in UTF-8 terminal. If no encoding information is 
+given, muttng simply prints everything as-is and doesn't do guessing at 
+all.
+
+I have no exact idea on how to solve this besides telling the poster 
+that it's illegal and he should go look for a more standard compliant 
+news client.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Thu Mar 23 10:55:43 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 23 Mar 2006 10:55:43 +0100
+Subject: 791: compilation problem
+In-Reply-To: <20060322080006.GB29122@hvk.local>
+References: <20060316081409.GE412@hvk.local> <20060316100702.GA12077@lars.home.noschinski.de> <20060322080006.GB29122@hvk.local>
+Message-ID: <20060323095543.GD13700@bolero.cs.tu-berlin.de>
+
+* Andre Berger <andre.berger at web.de>:
+>* Lars Noschinski (2006-03-16):
+>> * Andre Berger <andre.berger at web.de> [2006-03-16 10:54]:
+
+>> You can install those files locally, so this is not a bug.
+
+This is a bug and a feature at the very same time. ;-)
+
+>> But maybe it would be useful to make the -nonet a ./configure-option?
+
+>Yes please -- unless you can tell me what to install on Mac OS X. 
+
+We've already had some issues with it and whatever we do, it'll always 
+be wrong. With -nonet one would be abled to correctly build the docs if 
+the DocBook stylesheets aren't installed locally.
+
+When they're locally installed, no network access should be required. If 
+not and there's no network, it doesn't make sense to build the 
+documentation at all. In this case we could skip the complete build 
+process for docs instead of puting -nonet in.
+
+So I'm still not sure on how to exactly proceed... :(
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From sven at tuxera.be  Thu Mar 23 12:20:19 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Thu, 23 Mar 2006 12:20:19 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060323095107.GC13700@bolero.cs.tu-berlin.de>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de>
+Message-ID: <20060323112019.GC9732@werner>
+
+* Rocco Rutte <pdmef at gmx.net> [2006-03-23 10:54:12]:
+>Here muttng simply displays an additional space character in a latin1 terminal but 
+>garbage in UTF-8 terminal. If no encoding information is given, muttng simply prints 
+>everything as-is and doesn't do guessing at all.
+
+Muttngs doesn't behave consequently on my UTF-8 terminal. It prints 
+garbage in the index when the message hasn't been viewed in the pager 
+yet, but when the message is opened in the pager, the index is updated 
+and displays as expected.
+
+>I have no exact idea on how to solve this besides telling the poster that it's illegal 
+>and he should go look for a more standard compliant news client.
+
+It's a newsgroup where the majority of posters use a web frontend (and 
+that frontend seems to add the 0xA0 character). I don't think the users 
+want to change their news"client", but I'll ask the maintainer of the 
+website to make his backend standards compliant.
+
+I haven't been able to figure out why muttng changes from garbled output 
+to expected output when opening the message in the pager. It seems 
+muttng knows how to display the index line (as shown when it's opened in 
+the pager).
+Does muttng use two different formatting routines for displaying entries 
+in the index (one when the pager is not opened, the other when it is 
+opened)?
+
+Greets,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060323/56c10012/attachment.pgp>
+
+From pdmef at gmx.net  Thu Mar 23 12:55:47 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Thu, 23 Mar 2006 12:55:47 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060323112019.GC9732@werner>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner>
+Message-ID: <20060323115547.GE13700@bolero.cs.tu-berlin.de>
+
+* Sven Putteneers <sven at tuxera.be>:
+>* Rocco Rutte <pdmef at gmx.net> [2006-03-23 10:54:12]:
+
+>>Here muttng simply displays an additional space character in 
+>>a latin1 terminal but garbage in UTF-8 terminal. If no 
+>>encoding information is given, muttng simply prints 
+>>everything as-is and doesn't do guessing at all.
+
+>Muttngs doesn't behave consequently on my UTF-8 terminal. It 
+>prints garbage in the index when the message hasn't been 
+>viewed in the pager yet, but when the message is opened in 
+>the pager, the index is updated and displays as expected.
+
+I only saw this with NNTP and the same cache being used with different 
+character sets. Before caching it (note: the NNTP cache is _not_ the 
+header cache for Maildir/IMAP), it gets decoded and is stored, say in 
+latin1. When loading it from the index with charset==utf-8, it's assumed 
+that it's decoded properly which isn't the case. When in the pager, it 
+gets decoded/converted again but this time to the right character set. 
+Thus the index is correct afterwards. This is a known bug.
+
+>It's a newsgroup where the majority of posters use a web 
+>frontend (and that frontend seems to add the 0xA0 character). 
+>I don't think the users want to change their news"client", 
+>but I'll ask the maintainer of the website to make his 
+>backend standards compliant.
+
+Okay. I don't really see a reason to add the character at all; but if it 
+get's added, it needs to be encoded (but that still could make the above 
+mentioned bug occur).
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From sven at tuxera.be  Thu Mar 23 13:17:33 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Thu, 23 Mar 2006 13:17:33 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060323115547.GE13700@bolero.cs.tu-berlin.de>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner> <20060323115547.GE13700@bolero.cs.tu-berlin.de>
+Message-ID: <20060323121733.GE9732@werner>
+
+* Rocco Rutte <pdmef at gmx.net> [2006-03-23 13:04:02]:
+> I only saw this with NNTP and the same cache being used with different character sets. 
+> Before caching it (note: the NNTP cache is _not_ the header cache for Maildir/IMAP), it 
+> gets decoded and is stored, say in latin1.
+> When loading it from the index with 
+> charset==utf-8, it's assumed that it's decoded properly which isn't the case. When in 
+> the pager, it gets decoded/converted again but this time to the right character set. 
+> Thus the index is correct afterwards. This is a known bug.
+
+Is there a known workaround too? ;)
+
+I have the following charset related options in my muttngrc, but I don't 
+think any of these control the charset the NNTP cache is stored in:
+	set config_charset="utf-8"
+	set charset="utf-8"
+	set assumed_charset="us-ascii:iso-8859-15:utf-8"
+	set send_charset="us-ascii:iso-8859-15:utf-8"
+	set file_charset=""
+
+> Okay. I don't really see a reason to add the character at all; but if it get's added, it 
+> needs to be encoded (but that still could make the above mentioned bug occur).
+
+Me neither. But bugs happen and maybe all quality assurance the 
+developer did was to check if his posts looked good in Outlook Express.
+
+Greets,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060323/830365cb/attachment.pgp>
+
+From michael at kjorling.com  Fri Mar 24 12:13:29 2006
+From: michael at kjorling.com (Michael Kjorling)
+Date: Fri, 24 Mar 2006 11:13:29 +0000
+Subject: Displaying threads containing new messages, expanded
+Message-ID: <4423d459.3a0baf12@vuk.kjorling.com>
+
+I am on a few mailing lists that are rather high volume. Currently,
+those mailboxes have folder-hooks limiting the view to ~N, which works
+OK. However, I'd prefer to get a bit more context. Is there a way (and
+if so, how?) to, in threaded mode, display the full threads which
+contain new messages, while not displaying or at least collapsing the
+rest?
+
+Looking at the documentation did not turn up anything obvious, but any
+pointers to anything !NULL are appreciated.
+
+-- 
+Michael Kj?rling, michael at kjorling.com - http://michael.kjorling.com/
+* ..... No bird soars too high if he soars with his own wings ..... *
+* ASCII Ribbon Campaign: Against HTML Mail, Proprietary Attachments *
+* PGP/GnuPG encrypted e-mail preferred * OpenPGP key ID: 0xBDE9ADA6 *
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060324/555601df/attachment.pgp>
+
+From pdmef at gmx.net  Fri Mar 24 12:23:31 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Fri, 24 Mar 2006 12:23:31 +0100
+Subject: Displaying threads containing new messages, expanded
+In-Reply-To: <4423d459.3a0baf12@vuk.kjorling.com>
+References: <4423d459.3a0baf12@vuk.kjorling.com>
+Message-ID: <20060324112331.GP13700@bolero.cs.tu-berlin.de>
+
+* Michael Kjorling <michael at kjorling.com>:
+
+>Looking at the documentation did not turn up anything obvious, but any
+>pointers to anything !NULL are appreciated.
+
+Just do it manually once, create a macro and put it into a folder-hook:
+
+   1) uncollapse all
+   2) untag all
+   3) tag all new
+   4) collapse all
+   5) tag-exec: uncollapse thread
+
+It works manually so it can be automated. :-)
+
+Still it's not really good for larger threads.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Fri Mar 24 12:27:24 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Fri, 24 Mar 2006 12:27:24 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060323121733.GE9732@werner>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner> <20060323115547.GE13700@bolero.cs.tu-berlin.de> <20060323121733.GE9732@werner>
+Message-ID: <20060324112724.GQ13700@bolero.cs.tu-berlin.de>
+
+* Sven Putteneers <sven at tuxera.be>:
+
+[...]
+
+>Is there a known workaround too? ;)
+
+No. You could try to not have a cache for nntp ($nntp_cache_dir) but 
+that increases network load. (at least here no cache seems to be faster 
+than cache with a news server in my LAN, hmm...).
+
+>I have the following charset related options in my muttngrc, 
+>but I don't think any of these control the charset the NNTP 
+>cache is stored in:
+
+$charset determines the encoding for the NNTP cache. But this only 
+matters if the cache is used with muttng of different $charset settings.
+
+You could still try to remove the cache and start over again. If the 
+problem remains, it's something different.
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From pdmef at gmx.net  Fri Mar 24 12:53:30 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Fri, 24 Mar 2006 12:53:30 +0100
+Subject: Displaying threads containing new messages, expanded
+In-Reply-To: <20060324112331.GP13700@bolero.cs.tu-berlin.de>
+References: <4423d459.3a0baf12@vuk.kjorling.com> <20060324112331.GP13700@bolero.cs.tu-berlin.de>
+Message-ID: <20060324115330.GR13700@bolero.cs.tu-berlin.de>
+
+* Rocco Rutte <pdmef at gmx.net>:
+
+>It works manually so it can be automated. :-)
+
+No, it doesn't. The collapse functions aren't subject to tagging, 
+somehow... :-(
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From michael at kjorling.com  Fri Mar 24 12:56:27 2006
+From: michael at kjorling.com (Michael Kjorling)
+Date: Fri, 24 Mar 2006 11:56:27 +0000
+Subject: Solved: Displaying threads containing new messages, expanded
+In-Reply-To: <20060324112331.GP13700@bolero.cs.tu-berlin.de>
+References: <4423d459.3a0baf12@vuk.kjorling.com> <20060324112331.GP13700@bolero.cs.tu-berlin.de>
+Message-ID: <4423de6b.3e74c54e@vuk.kjorling.com>
+
+On 2006-03-24 12:23 +0100, pdmef at gmx.net wrote:
+> Still it's not really good for larger threads.
+
+Definitely better than what I had before though, thanks for the
+suggestion. For the benefit of the archives, here is what I came up
+with (a really long line):
+
+folder-hook =mailbox 'push "<untag-pattern>~A<enter><tag-pattern>~N<enter><collapse-all><tag-prefix><collapse-thread><untag-pattern>~A<enter>"'
+
+It appears that <collapse-{thread,all}> are simply toggle functions,
+so there is no explicit uncollapse counterpart. However, since my
+configuration at least has everything expanded when the mailbox is
+opened, this is a close enough approximation.
+ 
+-- 
+Michael Kj?rling, michael at kjorling.com - http://michael.kjorling.com/
+* ..... No bird soars too high if he soars with his own wings ..... *
+* ASCII Ribbon Campaign: Against HTML Mail, Proprietary Attachments *
+* PGP/GnuPG encrypted e-mail preferred * OpenPGP key ID: 0xBDE9ADA6 *
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060324/567aa3ff/attachment.pgp>
+
+From pdmef at gmx.net  Fri Mar 24 13:31:01 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Fri, 24 Mar 2006 13:31:01 +0100
+Subject: Solved: Displaying threads containing new messages, expanded
+In-Reply-To: <4423de6b.3e74c54e@vuk.kjorling.com>
+References: <4423d459.3a0baf12@vuk.kjorling.com> <20060324112331.GP13700@bolero.cs.tu-berlin.de> <4423de6b.3e74c54e@vuk.kjorling.com>
+Message-ID: <20060324123101.GS13700@bolero.cs.tu-berlin.de>
+
+* Michael Kjorling <michael at kjorling.com>:
+
+>Definitely better than what I had before though, thanks for the
+>suggestion. For the benefit of the archives, here is what I came up
+>with (a really long line):
+
+>folder-hook =mailbox 'push "<untag-pattern>~A<enter><tag-pattern>~N<enter><collapse-all><tag-prefix><collapse-thread><untag-pattern>~A<enter>"'
+
+I just tried the very same. The problem is that <collapse-thread> works 
+with the current thread only and is not really considered for all tagged 
+messages. Read: it un-collapses the first thread with new mail.
+
+Just mark two messages in different threads as new. We really need a 
+scripting language to have loops for things like that... ;-)
+
+>It appears that <collapse-{thread,all}> are simply toggle functions,
+>so there is no explicit uncollapse counterpart.
+
+Yes, that what the help screen says, too. :-)
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From sven at tuxera.be  Fri Mar 24 14:12:14 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Fri, 24 Mar 2006 14:12:14 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060324112724.GQ13700@bolero.cs.tu-berlin.de>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner> <20060323115547.GE13700@bolero.cs.tu-berlin.de> <20060323121733.GE9732@werner> <20060324112724.GQ13700@bolero.cs.tu-berlin.de>
+Message-ID: <20060324131214.GA22446@werner>
+
+* Rocco Rutte <pdmef at gmx.net> [2006-03-24 12:34:03]:
+>>Is there a known workaround too? ;)
+>
+>No. You could try to not have a cache for nntp ($nntp_cache_dir) but that increases 
+>network load. (at least here no cache seems to be faster than cache with a news server 
+>in my LAN, hmm...).
+>
+>You could still try to remove the cache and start over again. If the problem remains, 
+>it's something different.
+
+Neither of these work. I still get garbled entries in the index when I 
+open that particular newsgroup.
+
+>$charset determines the encoding for the NNTP cache. But this only matters if the cache 
+>is used with muttng of different $charset settings.
+
+According to the manual, $charset determines "[the] Character set your 
+terminal uses to display and enter textual data." (it doesn't mention 
+the NNTP cache).
+I guess it doesn't make sense to set $charset to something like 
+"us-ascii:iso-8859-15:utf-8"?
+
+Since I don't run a local newsserver and thus am unable to sanitize the 
+messages before muttng can get to them, it seems my only hope is to 
+convince the web-frontend developer to make his posting engine standards 
+compliant.
+
+Thank you for your suggestions anyway.
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060324/6f1786c1/attachment.pgp>
+
+From veronatif at free.fr  Sat Mar 25 00:33:13 2006
+From: veronatif at free.fr (Alain Bench)
+Date: Sat, 25 Mar 2006 00:33:13 +0100 (CET)
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060323121733.GE9732@werner>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner>
+ <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de>
+ <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de>
+ <20060323112019.GC9732@werner> <20060323115547.GE13700@bolero.cs.tu-berlin.de>
+ <20060323121733.GE9732@werner>
+Message-ID: <20060324233312.GA9260@free.fr>
+
+Hello Sven,
+
+ On Thursday, March 23, 2006 at 13:17:33 +0100, Sven Putteneers wrote:
+
+> I have the following charset related options in my muttngrc
+>| set charset="utf-8"
+
+    Remove this line: $charset will then be automaticaly derived from
+the current locale, whatever it is.
+
+
+>| set assumed_charset="us-ascii:iso-8859-15:utf-8"
+
+    Such value can't work correctly. I'd suggest better for westerners
+$assumed_charset=cp1252. This might even solve the unencoded no-break
+space in header problem, I hope. Also if you have a $strict_mime
+variable in Muttng, it would have to be unset.
+
+
+Bye!	Alain.
+-- 
+Give your computer's unused idle processor cycles to a scientific goal:
+The Folding at home project at <URL:http://folding.stanford.edu/>.
+
+
+From sven at tuxera.be  Sat Mar 25 04:22:29 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Sat, 25 Mar 2006 04:22:29 +0100
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060324233312.GA9260@free.fr>
+References: <20060321162545.GA1212@werner> <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner> <20060323115547.GE13700@bolero.cs.tu-berlin.de> <20060323121733.GE9732@werner> <20060324233312.GA9260@free.fr>
+Message-ID: <20060325032228.GA4475@werner>
+
+* Alain Bench <veronatif at free.fr> [2006-03-25 00:44:02]:
+>>| set charset="utf-8"
+>
+>    Remove this line: $charset will then be automaticaly derived from
+>the current locale, whatever it is.
+
+Done. I've tried to put every option in my config files, I've commented 
+it out. If it's derived from my locale, it should be set to utf-8 
+anyway.
+
+>>| set assumed_charset="us-ascii:iso-8859-15:utf-8"
+>
+>    Such value can't work correctly. I'd suggest better for westerners
+>$assumed_charset=cp1252. This might even solve the unencoded no-break
+>space in header problem, I hope. Also if you have a $strict_mime
+>variable in Muttng, it would have to be unset.
+
+$strict_mime was already unset (to make $assumed_charset valid).
+
+If I set $assumed_charset to cp1252, I don't get the ?? padding anymore, 
+but the from field gets padded with "??????????????????". This is even 
+more unexpected behavior...
+
+Unsetting $assumed_charset doesn't entirely work either, but it gives a 
+better result. It puts a transparent rectangle (?) in place of the 
+no-break space or accented characters in the from field and doesn't 
+truncate the content (for example, "Dani?l" becomes "Dani?l" instead of 
+"Dani<garbage>").
+
+I'll look further into other values for $assumed_charset tomorrow, it's 
+time for bed now ;)
+
+Thank you for your suggestions,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060325/b1f456e1/attachment.pgp>
+
+From gnufriend at gmx.de  Sun Mar 26 18:21:40 2006
+From: gnufriend at gmx.de (gnufriend at gmx.de)
+Date: Sun, 26 Mar 2006 18:21:40 +0200 (MEST)
+Subject: muttng and courier imap -> no new-message count?
+Message-ID: <5093.1143390100@www079.gmx.net>
+
+hello,
+i'm using muttng with a local courier-imap server.
+I'm using the sidebar to have an overview of my folders, but the sidebar
+counts only the total number of messages:
+
+INBOX          200
+INBOX/foo    140
+....
+
+and not the number of unread messages as i would expect it.
+Does someone know the problem? Does i need a special config-option so that
+the sidebar count the new messages too?
+
+My muttng imap config (~/.muttngrc):
+
+[..]
+set folder= imap://user at 127.0.0.1/
+set imap_pass="XXX"
+mailboxes +INBOX \
+          +INBOX/foo \
+          +INBOX/Sent\ Items \
+          +INBOX/Junk\ Mail \
+          +INBOX/Drafts \
+          ...
+          +INBOX/foo/bar \
+          nntp://news.arcor.de/de.comp.os.unix.discussion \
+          nntp://news.arcor.de/de.comp.os.unix.programming
+[..]
+
+Thanks!
+Markus
+
+-- 
+"Feel free" mit GMX FreeMail!
+Monat f?r Monat 10 FreeSMS inklusive! http://www.gmx.net
+
+
+From sven at tuxera.be  Mon Mar 27 17:44:34 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Mon, 27 Mar 2006 17:44:34 +0200
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060325032228.GA4475@werner>
+References: <20060322160220.GA17859@werner> <20060322185017.GA13720@werner> <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner> <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner> <20060323115547.GE13700@bolero.cs.tu-berlin.de> <20060323121733.GE9732@werner> <20060324233312.GA9260@free.fr> <20060325032228.GA4475@werner>
+Message-ID: <20060327154434.GA24816@werner>
+
+* Sven Putteneers <sven at tuxera.be> [2006-03-25 04:34:09]:
+>Unsetting $assumed_charset doesn't entirely work either, but it gives a better result. 
+>It puts a transparent rectangle (?) in place of the no-break space or accented 
+>characters in the from field and doesn't truncate the content (for example, "Dani?l" 
+>becomes "Dani?l" instead of "Dani<garbage>").
+>
+>I'll look further into other values for $assumed_charset tomorrow, it's time for bed now 
+
+Current workaround:
+
+don't set assumed_charset in the config file (or unset it)
+
+message-hook . "unset assumed_charset"
+message-hook "~h X-Newsreader:\ Microsoft\ Outlook\ Express" "set assumed_charset='cp1252'"
+
+This second message-hook is necessary for messages sent with MSOE. If 
+it's not present, accented characters show up as question marks in the 
+body of messages.
+
+Non us-ascii characters in the headers show up as transparent rectangles 
+in the index (I tried a few values for $assumed_charset, but simply 
+unsetting that variable gives the most acceptable results for the index).
+
+When school is out and this is still not fixed, I'll look into it and 
+I'll try to write a patch. But this won't happen until July.
+
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060327/65e59a2b/attachment.pgp>
+
+From sven at tuxera.be  Wed Mar 29 11:17:43 2006
+From: sven at tuxera.be (Sven Putteneers)
+Date: Wed, 29 Mar 2006 11:17:43 +0200
+Subject: hook for NNTP?
+Message-ID: <20060329091743.GA2530@werner>
+
+Hello,
+
+I was wondering if it's possible to set hooks for when posting no 
+usenet.
+
+For example, if I send mail, I want my from-address to be my normal 
+address. If I post to usenet on the other hand, I'd rather have my from 
+address to end in .invalid and set a Reply-To: header with my correct 
+address.
+
+I tried:
+	send-hook "~h Newsgroups:" "set from=sven at tuxera.invalid"
+
+but muttng tells me that kind of expression is invalid in that context. 
+When checking the man page afterwards, it seems muttng is right ;)
+
+I'm out of ideas on how to hook usenet postings and googling didn't turn 
+up anything.
+
+Can someone tell me if it's possible? And if it's possible, how I can do 
+it?
+
+Thanks,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060329/e2808cab/attachment.pgp>
+
+From pdmef at gmx.net  Wed Mar 29 12:37:09 2006
+From: pdmef at gmx.net (Rocco Rutte)
+Date: Wed, 29 Mar 2006 12:37:09 +0200
+Subject: hook for NNTP?
+In-Reply-To: <20060329091743.GA2530@werner>
+References: <20060329091743.GA2530@werner>
+Message-ID: <20060329103709.GG21088@bolero.cs.tu-berlin.de>
+
+* Sven Putteneers <sven at tuxera.be>:
+
+>I was wondering if it's possible to set hooks for when 
+>posting no usenet.
+
+You can try to use the ~w pattern like this:
+
+   send-hook ~w. "set ..."
+
+The ~w pattern matches against the Newsgroups: header.
+
+If that doesn't work, you can still use a folder-hook:
+
+   folder-hook ^nntp: "..."
+
+though it wouldn't work in situations where you want to post to a 
+different group than current (or from a mailbox).
+
+   bye, Rocco
+-- 
+:wq!
+
+
+From akneib at gmx.net  Wed Mar 29 13:02:03 2006
+From: akneib at gmx.net (Andreas Kneib)
+Date: Wed, 29 Mar 2006 13:02:03 +0200
+Subject: hook for NNTP?
+In-Reply-To: <20060329091743.GA2530@werner>
+References: <20060329091743.GA2530@werner>
+Message-ID: <20060329110203.GA6553@andreas.kneib.biz>
+
+Hello Sven,
+
+* Sven Putteneers wrote:
+
+> I was wondering if it's possible to set hooks for when posting no usenet.
+
+This work...
+
+folder-hook nntp 'push l~N\n'
+
+...or this...
+
+send-hook !~t. 'set record=+posted'
+
+...or (the best of all) the tipps in Roccos mail. ;-)
+
+
+Gru?,
+Andreas 
+
+
+From veronatif at free.fr  Wed Mar 29 13:57:29 2006
+From: veronatif at free.fr (Alain Bench)
+Date: Wed, 29 Mar 2006 13:57:29 +0200 (CEST)
+Subject: weird characters in "from" field in the index
+In-Reply-To: <20060325032228.GA4475@werner>
+References: <20060322160220.GA17859@werner> <20060322185017.GA13720@werner>
+ <20060322191311.GA3547@aragorn.home.lxtec.de> <20060323020029.GB18336@werner>
+ <20060323095107.GC13700@bolero.cs.tu-berlin.de> <20060323112019.GC9732@werner>
+ <20060323115547.GE13700@bolero.cs.tu-berlin.de> <20060323121733.GE9732@werner>
+ <20060324233312.GA9260@free.fr> <20060325032228.GA4475@werner>
+Message-ID: <20060329115729.GA2602@free.fr>
+
+ On Saturday, March 25, 2006 at 4:22:29 +0100, Sven Putteneers wrote:
+
+> If I set $assumed_charset to cp1252, I don't get the ?? padding
+> anymore, but the from field gets padded with "??????????????????".
+> This is even more unexpected behavior...
+
+    Wow! I assume this garbage is still in index, from cache, while
+opening the message redisplays a correct non-break space, right? In fact
+this begins to look vaguely as double transcoding:
+
+| $ printf "\xC3\x83\xC2\xA0" | iconv -f cp1252 -t utf-8 | iconv -f cp1252 -t utf-8
+| ??????????????????
+
+    Well even triple transcoding, as the cache already contains UTF-8
+from the beginning, IIUC. I don't understand exactly what happens, but
+the nntp cache doesn't seem to cooperate well with $assumed_charset.
+
+
+> Unsetting $assumed_charset doesn't entirely work either, but it gives
+> a better result. It puts a transparent rectangle (???) in place of the
+> no-break space or accented characters in the from field
+
+    With $assumed_charset unset, an 8-bit byte is not transcoded, but
+displayed as-is in "pass-thru" mode. It is only masked by "?" or U+FFFD
+(replacement char) if it is invalid (as is this A0 in an UTF-8 locale).
+Not nice unless the raw message's charset matches the current locale.
+
+
+ On Monday, March 27, 2006 at 17:44:34 +0200, Sven Putteneers wrote:
+
+> Current workaround: don't set assumed_charset in the config file (or
+> unset it)
+>| message-hook . "unset assumed_charset"
+>| message-hook "~h X-Newsreader:\ Microsoft\ Outlook\ Express" "set assumed_charset='cp1252'"
+
+    That seems the less bad compromise I can imagine so far, right. OTOS
+it might perturbate replying (exactly the "To:" prompt) I think.
+
+
+> This second message-hook is necessary for messages sent with MSOE.
+
+    Note many other mailers, webmails, and newsreaders would need it
+also. MSOE users can be hinted to set: MIME, encoding none, and uncheck
+"allow 8 bits chars in header" in Tools -> Options -> Sending -> News ->
+Plain text parameters.
+
+
+Bye!	Alain.
+-- 
+Mutt muttrc tip to send mails in best adapted first necessary and sufficient
+charset (version for East Europe Latin-2/CP-852/CP-1250 terminal users):
+set send_charset="us-ascii:iso-8859-1:iso-8859-15:windows-1252:iso-8859-2:windows-1250:utf-8"
+
+
+From james at westexe.demon.co.uk  Fri Mar 31 18:28:36 2006
+From: james at westexe.demon.co.uk (James Wilkinson)
+Date: Fri, 31 Mar 2006 17:28:36 +0100
+Subject: hook for NNTP?
+In-Reply-To: <20060329103709.GG21088@bolero.cs.tu-berlin.de>
+References: <20060329091743.GA2530@werner> <20060329103709.GG21088@bolero.cs.tu-berlin.de>
+Message-ID: <20060331162836.GA10475@westexe.demon.co.uk>
+
+Rocco Rutte wrote:
+> You can try to use the ~w pattern like this:
+> 
+>   send-hook ~w. "set ..."
+> 
+> The ~w pattern matches against the Newsgroups: header.
+
+I'd like to use this to score down cross-posted posts.
+
+I've been trying lines like
+score "~w '.*,.*,.*'" -1
+hoping that it will match the commas between the newsgroups. But it
+doesn't seem to work.
+
+Am I doing something stupid, or does ~w just apply to each newsgroup
+individually?
+
+I've tried Googling, but searching for "~w" isn't that easy...
+
+I'm on "Mutt-ng devel-r790 (based on Mutt 1.5.11/2005-09-15)" on FC5,
+compiled for AMD64.
+
+Thanks,
+
+James.
+-- 
+E-mail address: james | As Tim switched off the engine, opened the driver's
+@westexe.demon.co.uk  | door, undid his seat belt and fell out of the tree,
+                      | he decided that perhaps he didn't have the makings
+                      | of the best minicab driver. -- ISIHAC, BBC Radio 4
+
+

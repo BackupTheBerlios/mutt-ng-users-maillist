@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> IMAP + sidebar issue
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-May/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20IMAP%20%2B%20sidebar%20issue&In-Reply-To=%3C20060520222315.GB3069%40ipx10995.ipxserver.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000193.html">
+   <LINK REL="Next"  HREF="000192.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>IMAP + sidebar issue</H1>
+    <B>Christian Anton</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20IMAP%20%2B%20sidebar%20issue&In-Reply-To=%3C20060520222315.GB3069%40ipx10995.ipxserver.de%3E"
+       TITLE="IMAP + sidebar issue">mail at christiananton.de
+       </A><BR>
+    <I>Sun May 21 00:23:15 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000193.html">IMAP + sidebar issue
+</A></li>
+        <LI>Next message: <A HREF="000192.html">Returned mail: see transcript for details
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#194">[ date ]</a>
+              <a href="thread.html#194">[ thread ]</a>
+              <a href="subject.html#194">[ subject ]</a>
+              <a href="author.html#194">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I have noticed that not only the sidebar does not actualize, but
+also the &quot;c&quot; command does not anymore show any of the configured
+folders where new mails exist. Just sais &quot;press ? to get a list&quot;.
+
+What could be wrong?
+
+my config:
+################# .muttngrc ######################
+set realname='Christian Anton'			# real name
+
+# Some self defined headers
+my_hdr X-Operating-System: `uname -a`
+my_hdr From: Christian Anton &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">mail at christiananton.de</A>&gt;
+
+# my email addresses
+alternates mail\@christiananton\.de christian\.anton\@gentix\.de info\@gentix\.de \
+		   christian\.anton\@gmx.de christian\.anton\@candoit\.de
+
+
+# show text/plain first, when multipart mime
+alternative_order text/plain
+
+set mail_check=60
+set check_new
+set timeout=15
+set charset=ISO-8859-15
+
+#set autoedit
+#set beep_new
+#set confirmcreate
+set edit_headers
+#set fast_reply
+set fcc_attach
+set attribution=&quot;%n &lt;%a&gt; schrieb am %d:&quot;
+set sidebar_width=28
+set sidebar_visible=&quot;no&quot;
+set pager_stop=&quot;yes&quot;
+
+set forward_format=&quot;Fw: %s&quot;     # subject in forwarded messages
+set quote_regexp=&quot;^([A-Za-z ]+&gt;|[]%&gt;:|}-][]&gt;:|}-]*)&quot;
+set reply_regexp='^((re(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*'
+set mime_forward=ask-yes
+set index_format=&quot;%4C %Z %{%b %d} %-15.15F (%?l?%4l&amp;%4c?) %s&quot;
+
+set nomark_old # do not set messages old
+
+unset askbcc
+unset askcc
+unset collapse_unread
+
+# View html mails using lynx
+set implicit_autoview
+auto_view text/html  application/x-pgp-message
+set mailcap_path=&quot;~/.mailcap&quot;
+set mailcap_sanitize=yes
+set pager_index_lines=8
+set header_cache=~/.muttng/header_cache
+
+folder-hook . set sort=date-sent
+folder-hook Listen set sort=threads
+
+folder-hook . my_hdr From: Christian Anton &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">mail at christiananton.de</A>&gt;
+folder-hook gentix my_hdr From: Christian Anton &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">christian.anton at gentix.de</A>&gt;
+folder-hook lug-erding my_hdr From: Christian Anton &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">christian.anton at gmx.de</A>&gt;
+folder-hook CAN my_hdr From: Christian Anton &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">christian.anton at candoit.de</A>&gt;
+
+
+#Editor settings
+set editor=&quot;vim -c 'set tw=68 et' -c 'set filetype=mail'&quot;
+
+source ~/.muttng/client_specific # Client specific settings
+source ~/.muttng/header		# define header display
+source ~/.muttng/colors		# define colors
+source ~/.muttng/bindings	# define key bindings
+source ~/.muttng/lists		# define lists settings
+source ~/.muttng/mailboxes	# define mailboxes
+source /etc/muttng/gpg_global.rc # gnupg globals
+source ~/.muttng/pgp		# pgp related stuff
+
+
+############### .muttng/client_specific ##################
+set spoolfile=<A HREF="imap://localhost">imap://localhost</A>
+set folder=<A HREF="imap://localhost/INBOX/">imap://localhost/INBOX/</A>
+#set record=+Sent
+set record=<A HREF="imap://localhost/INBOX/Sent">imap://localhost/INBOX/Sent</A>
+set trash=<A HREF="imap://localhost/INBOX/Trash">imap://localhost/INBOX/Trash</A>
+set postponed=<A HREF="imap://localhost/INBOX/Drafts">imap://localhost/INBOX/Drafts</A>
+# smtp stuff
+set smtp_host=localhost
+set imap_user=&lt;my_username&gt;
+set imap_pass=&lt;verysecret&gt;
+
+################# .muttng/header #######################
+ignore *
+
+# Ignore all headers
+ignore *
+
+# Then un-ignore the ones I want to see
+unignore From:
+unignore To:
+unignore Reply-To:
+unignore Mail-Followup-To:
+unignore Subject:
+unignore Date:
+unignore Organization:
+unignore Newsgroups:
+unignore CC:
+unignore BCC:
+#unignore Message-ID:
+unignore X-Mailer:
+unignore User-Agent:
+unignore X-Junked-Because:
+unignore X-SpamProbe:
+unignore X-Virus-hagbard:
+
+# Now order the visable header lines
+hdr_order From: Subject: To: CC: BCC: Reply-To: Mail-Followup-To: Date: Organization: User-Agent: X-Mailer:
+
+
+################ .muttng/colors ########################
+# color settings
+color header brightgreen default ^.*$
+color header brightyellow default ^From:
+color header brightyellow default ^Subject:
+color header brightcyan default ^To:
+color header brightcyan default ^Cc:
+
+color tree green default
+
+color attachment magenta default
+color error red default
+color signature brightblack default
+color status brightyellow blue
+
+color quoted yellow default
+color quoted1 green default
+color quoted2 cyan default
+color quoted3 red default
+
+# Highlights inside the body of a message.
+
+# URLs
+color body brightblue  default &quot;(http|https|ftp|news|telnet|finger)://[^ \&quot;&gt;\t\r\n]*&quot;
+color body brightblue  default &quot;mailto:[-a-z_0-9.]+@[-a-z_0-9.]+&quot;
+color body brightblue  default &quot;news:[^ \&quot;&gt;\t\r\n]*&quot;
+mono  body bold              &quot;(http|https|ftp|news|telnet|finger)://[^ \&quot;&gt;\t\r\n]*&quot;
+mono  body bold              &quot;mailto:[-a-z_0-9.]+@[-a-z_0-9.]+&quot;
+mono  body bold              &quot;news:[^ \&quot;&gt;\t\r\n]*&quot;
+
+# email addresses
+color body brightblue  default &quot;[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+&quot;
+mono  body bold              &quot;[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+&quot;
+
+# Various smilies and the like
+color body brightgreen default &quot;&lt;[Gg]&gt;&quot;                                            # &lt;g&gt;
+color body brightgreen default &quot;&lt;[Bb][Gg]&gt;&quot;                                        # &lt;bg&gt;
+color body brightgreen default &quot; [;:]-*[)&gt;(&lt;|]&quot;                                    # :-) etc...
+color body brightblue  default &quot;(^|[[:space:]])\\*[^[:space:]]+\\*([[:space:]]|$)&quot; # *Bold* text.
+color body brightblue  default &quot;(^|[[:space:]])_[^[:space:]]+_([[:space:]]|$)&quot;     # _Underlined_ text.
+color body brightblue  default &quot;(^|[[:space:]])/[^[:space:]]+/([[:space:]]|$)&quot;     # /Italic/ text.
+
+
+# Colors for the index:
+color index green default ~P 		# messeges from me
+color index brightblue default ~xchristiananton.de # messeges in reference of mine
+#color index brightblue default ~Q 	# already responded messages
+
+color index brightmagenta default ~sLUG-Camp
+color index brightmagenta default ~sLugcamp2006
+
+color index brightwhite  red  ~F        # Flagged
+color index black white ~T          	# Tagged
+color index brightred default ~N	# new messages
+color index brightyellow default ~O 	# old messages
+color index brightblack default ~D	# marked for deletion
+
+# sidebar
+color sidebar_new brightred default
+color sidebar white default
+
+############## .muttng/bindings ####################
+
+# sidebar settings
+bind index \Ck sidebar-prev
+bind index \Cj sidebar-next
+bind index \Co sidebar-open
+bind pager \Ck sidebar-prev
+bind pager \Cj sidebar-next
+bind pager \Co sidebar-open
+
+macro index \Cb ':toggle sidebar_visible^M'
+macro pager \Cb ':toggle sidebar_visible^M'
+
+macro index \Cp ':set pager_index_lines=8'
+macro pager \Cp ':set pager_index_lines=8'
+
+macro index &#195;&#182; &quot;&lt;change-folder&gt;=Sent&lt;enter&gt;&quot;
+macro index &#195;&#8364; &quot;&lt;change-folder&gt;=Trash&lt;enter&gt;&quot;
+macro index &#195;&#338; &quot;&lt;change-folder&gt;=&lt;enter&gt;&quot;
+
+macro pager \eD &quot;|gpg --decrypt | less\n&quot; &quot;decrypt with GnuPG&quot;
+macro index \eD &quot;|gpg --decrypt | less\n&quot; &quot;decrypt with GnuPG&quot;
+macro pager \eV &quot;|gpg --verify\n&quot; &quot;verify signature with GnuPG&quot;
+macro index \eV &quot;|gpg --verify\n&quot; &quot;verify signature with GnuPG&quot;
+
+#################### .muttng/lists ###################
+
+unsubscribe *
+subscribe info-cyrus \
+		  list \
+		  gentoo-user-de \
+		  synckolab \
+		  kolab-users \
+		  <A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">linux at lug-erding.de</A> \
+		  mkcdrec \
+		  openhbci \
+		  plone \
+		  postfixbuch \
+		  samba \
+		  squirrelmail \
+		  users \
+		  web-cyradm \
+		  yaag \
+		  muttng-users \
+		  keysigning2006
+
+
+############## .muttng/mailboxes ###################
+mailboxes =Filter/CAN \
+	=Filter/Gentoo-Forum \
+	=Filter/gentix \
+	=Filter/root-proventure \
+	=Filter/root-serv01 \
+	=Listen/OpenHBCI \
+	=Listen/Postfixbuch \
+	=Listen/cyrus-imapd \
+	=Listen/gentoo-muc \
+	=Listen/gentoo-user-de \
+	=Listen/kolab-users \
+	=Listen/kolabSync \
+	=Listen/lug-erding \
+	=Listen/mkcdrec \
+	=Listen/plone-users \
+	=Listen/samba \
+	=Listen/squirrelmail \
+	=Listen/vegadns \
+	=Listen/web-cyradm \
+	=Listen/yaag-dev \
+	=Listen/muttng-users \
+	=Listen/keysigning-muc 
+
+
+################## /etc/muttng/gpg_global.rc #####################
+
+# -*-muttrc-*-
+#
+# Command formats for gpg.
+# 
+# This version uses gpg-2comp from 
+#   <A HREF="http://70t.de/download/gpg-2comp.tar.gz">http://70t.de/download/gpg-2comp.tar.gz</A>
+#
+# $Id: gpg.rc,v 3.4 2005/01/27 18:27:36 roessler Exp $
+#
+# %p    The empty string when no passphrase is needed,
+#       the string &quot;PGPPASSFD=0&quot; if one is needed.
+#
+#       This is mostly used in conditional % sequences.
+#
+# %f    Most PGP commands operate on a single file or a file
+#       containing a message.  %f expands to this file's name.
+#
+# %s    When verifying signatures, there is another temporary file
+#       containing the detached signature.  %s expands to this
+#       file's name.
+#
+# %a    In &quot;signing&quot; contexts, this expands to the value of the
+#       configuration variable $pgp_sign_as.  You probably need to
+#       use this within a conditional % sequence.
+#
+# %r    In many contexts, mutt passes key IDs to pgp.  %r expands to
+#       a list of key IDs.
+
+# Note that we explicitly set the comment armor header since GnuPG, when used
+# in some localiaztion environments, generates 8bit data in that header, thereby
+# breaking PGP/MIME.
+
+# decode application/pgp
+set pgp_decode_command=&quot;/usr/bin/gpg     --status-fd=2 %?p?--passphrase-fd 0? --no-verbose --quiet  --batch  --output - %f&quot;
+
+# verify a pgp/mime signature
+set pgp_verify_command=&quot;/usr/bin/gpg   --status-fd=2 --no-verbose --quiet  --batch  --output - --verify %s %f&quot;
+
+# decrypt a pgp/mime attachment
+set pgp_decrypt_command=&quot;/usr/bin/gpg   --status-fd=2 %?p?--passphrase-fd 0? --no-verbose --quiet  --batch  --output - %f&quot;
+
+# create a pgp/mime signed attachment
+# set pgp_sign_command=&quot;/usr/bin/gpg-2comp --comment '' --no-verbose --batch  --output - --passphrase-fd 0 --armor --detach-sign --textmode %?a?-u %a? %f&quot;
+set pgp_sign_command=&quot;/usr/bin/gpg    --no-verbose --batch --quiet   --output - %?p?--passphrase-fd 0? --armor --detach-sign --textmode %?a?-u %a? %f&quot;
+
+# create a application/pgp signed (old-style) message
+# set pgp_clearsign_command=&quot;/usr/bin/gpg-2comp --comment ''  --no-verbose --batch  --output - --passphrase-fd 0 --armor --textmode --clearsign %?a?-u %a? %f&quot;
+set pgp_clearsign_command=&quot;/usr/bin/gpg    --no-verbose --batch --quiet   --output - %?p?--passphrase-fd 0? --armor --textmode --clearsign %?a?-u %a? %f&quot;
+
+# create a pgp/mime encrypted attachment
+# set pgp_encrypt_only_command=&quot;pgpewrapng gpg-2comp  -v --batch  --output - --encrypt --textmode --armor --always-trust -- -r %r -- %f&quot;
+set pgp_encrypt_only_command=&quot;pgpewrapng /usr/bin/gpg      --batch  --quiet  --no-verbose --output - --encrypt --textmode --armor --always-trust -- -r %r -- %f&quot;
+
+# create a pgp/mime encrypted and signed attachment
+# set pgp_encrypt_sign_command=&quot;pgpewrapng gpg-2comp  --passphrase-fd 0 -v --batch  --output - --encrypt --sign %?a?-u %a? --armor --always-trust -- -r %r -- %f&quot;
+set pgp_encrypt_sign_command=&quot;pgpewrapng /usr/bin/gpg   %?p?--passphrase-fd 0?  --batch --quiet  --no-verbose  --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust -- -r %r -- %f&quot;
+
+# import a key into the public key ring
+set pgp_import_command=&quot;/usr/bin/gpg  --no-verbose --import %f&quot;
+
+# export a key from the public key ring
+set pgp_export_command=&quot;/usr/bin/gpg   --no-verbose --export --armor %r&quot;
+
+# verify a key
+set pgp_verify_key_command=&quot;/usr/bin/gpg   --verbose --batch  --fingerprint --check-sigs %r&quot;
+
+# read in the public key ring
+set pgp_list_pubring_command=&quot;/usr/bin/gpg   --no-verbose --batch --quiet   --with-colons --list-keys %r&quot; 
+
+# read in the secret key ring
+set pgp_list_secring_command=&quot;/usr/bin/gpg   --no-verbose --batch --quiet   --with-colons --list-secret-keys %r&quot; 
+
+# fetch keys
+# set pgp_getkeys_command=&quot;pkspxycwrap %r&quot;
+
+# pattern for good signature - may need to be adapted to locale!
+
+# set pgp_good_sign=&quot;^gpg: Good signature from&quot;
+
+# OK, here's a version which uses gnupg's message catalog:
+# set pgp_good_sign=&quot;`gettext -d gnupg -s 'Good signature from &quot;' | tr -d '&quot;'`&quot;
+
+# This version uses --status-fd messages
+set pgp_good_sign=&quot;^\\[GNUPG:\\] GOODSIG&quot;
+
+
+################## .muttng/pgp #######################
+set crypt_autosign=&quot;yes&quot;	# automatically sign outbound messages
+set crypt_autoencrypt=&quot;no&quot;	# do _not_ automatically encrypt outbound messages
+#set pgp_encryptself		# when encrypted, encrypt to myself, too
+set crypt_replysign=&quot;yes&quot;	# sign answer to signed messages, too
+set crypt_replyencrypt=&quot;yes&quot;	# encrypt answer to encrypted messages, too
+set crypt_replysignencrypted=&quot;yes&quot;
+set crypt_verify_sig=&quot;yes&quot;	# automatically verify incoming singed messages
+
+
+
+################### eof config files ##################
+
+
+
+I think the problems came up yesterday when i was playin' around
+with the pgp settings.
+
+
+
+Thank you all in advance
+
+
+Christian Anton
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 191 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060521/88994de6/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060521/88994de6/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000193.html">IMAP + sidebar issue
+</A></li>
+	<LI>Next message: <A HREF="000192.html">Returned mail: see transcript for details
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#194">[ date ]</a>
+              <a href="thread.html#194">[ thread ]</a>
+              <a href="subject.html#194">[ subject ]</a>
+              <a href="author.html#194">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

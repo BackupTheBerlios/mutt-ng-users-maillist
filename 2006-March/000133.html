@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> weird characters in &quot;from&quot; field in the index
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060323115547.GE13700%40bolero.cs.tu-berlin.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000132.html">
+   <LINK REL="Next"  HREF="000134.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>weird characters in &quot;from&quot; field in the index</H1>
+    <B>Rocco Rutte</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060323115547.GE13700%40bolero.cs.tu-berlin.de%3E"
+       TITLE="weird characters in &quot;from&quot; field in the index">pdmef at gmx.net
+       </A><BR>
+    <I>Thu Mar 23 12:55:47 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000132.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+        <LI>Next message: <A HREF="000134.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#133">[ date ]</a>
+              <a href="thread.html#133">[ thread ]</a>
+              <a href="subject.html#133">[ subject ]</a>
+              <a href="author.html#133">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* Sven Putteneers &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">sven at tuxera.be</A>&gt;:
+&gt;<i>* Rocco Rutte &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">pdmef at gmx.net</A>&gt; [2006-03-23 10:54:12]:
+</I>
+&gt;&gt;<i>Here muttng simply displays an additional space character in 
+</I>&gt;&gt;<i>a latin1 terminal but garbage in UTF-8 terminal. If no 
+</I>&gt;&gt;<i>encoding information is given, muttng simply prints 
+</I>&gt;&gt;<i>everything as-is and doesn't do guessing at all.
+</I>
+&gt;<i>Muttngs doesn't behave consequently on my UTF-8 terminal. It 
+</I>&gt;<i>prints garbage in the index when the message hasn't been 
+</I>&gt;<i>viewed in the pager yet, but when the message is opened in 
+</I>&gt;<i>the pager, the index is updated and displays as expected.
+</I>
+I only saw this with NNTP and the same cache being used with different 
+character sets. Before caching it (note: the NNTP cache is _not_ the 
+header cache for Maildir/IMAP), it gets decoded and is stored, say in 
+latin1. When loading it from the index with charset==utf-8, it's assumed 
+that it's decoded properly which isn't the case. When in the pager, it 
+gets decoded/converted again but this time to the right character set. 
+Thus the index is correct afterwards. This is a known bug.
+
+&gt;<i>It's a newsgroup where the majority of posters use a web 
+</I>&gt;<i>frontend (and that frontend seems to add the 0xA0 character). 
+</I>&gt;<i>I don't think the users want to change their news&quot;client&quot;, 
+</I>&gt;<i>but I'll ask the maintainer of the website to make his 
+</I>&gt;<i>backend standards compliant.
+</I>
+Okay. I don't really see a reason to add the character at all; but if it 
+get's added, it needs to be encoded (but that still could make the above 
+mentioned bug occur).
+
+   bye, Rocco
+-- 
+:<i>wq!
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000132.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+	<LI>Next message: <A HREF="000134.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#133">[ date ]</a>
+              <a href="thread.html#133">[ thread ]</a>
+              <a href="subject.html#133">[ subject ]</a>
+              <a href="author.html#133">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

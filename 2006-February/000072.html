@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Having outbound sent mail NOT marked as new
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Having%20outbound%20sent%20mail%20NOT%20marked%20as%20new&In-Reply-To=%3C20060216220006.GE17608%40bolero.cs.tu-berlin.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000071.html">
+   <LINK REL="Next"  HREF="000081.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Having outbound sent mail NOT marked as new</H1>
+    <B>Rocco Rutte</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Having%20outbound%20sent%20mail%20NOT%20marked%20as%20new&In-Reply-To=%3C20060216220006.GE17608%40bolero.cs.tu-berlin.de%3E"
+       TITLE="Having outbound sent mail NOT marked as new">pdmef at gmx.net
+       </A><BR>
+    <I>Thu Feb 16 23:00:06 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000071.html">Having outbound sent mail NOT marked as new
+</A></li>
+        <LI>Next message: <A HREF="000081.html">Having outbound sent mail NOT marked as new
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#72">[ date ]</a>
+              <a href="thread.html#72">[ thread ]</a>
+              <a href="subject.html#72">[ subject ]</a>
+              <a href="author.html#72">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* Arias Hung &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">arias at m-a-g.net</A>&gt;:
+
+&gt;<i>It is a workaround since it seem setting $record doesn't seem to do its 
+</I>&gt;<i>job since it *should* insert my sent mail
+</I>&gt;<i>into the specified folder that i'm setting record to.
+</I>
+&gt;<i>Instead, it puts it in my inbox so I need to use the procmail filters 
+</I>&gt;<i>to ensure that it goes to SENT.
+</I>
+&gt;<i>If I unset record, there is no record at all of my sent mail anywhere.
+</I>
+Good, we're getting closer to the solution.
+
+First of all, what status does the mail stored in your INBOX have? Is it 
+new or marked read already?
+
+Second, what are your values for the following variables: $record, 
+$save_name and $force_name? The folder you name via $record (or the 
+others mentioned plus fcc-hook) is shown as the 'Fcc:' pseudo header in 
+the compose screen. What does it say?
+
+   bye, Rocco
+-- 
+:<i>wq!
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000071.html">Having outbound sent mail NOT marked as new
+</A></li>
+	<LI>Next message: <A HREF="000081.html">Having outbound sent mail NOT marked as new
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#72">[ date ]</a>
+              <a href="thread.html#72">[ thread ]</a>
+              <a href="subject.html#72">[ subject ]</a>
+              <a href="author.html#72">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> problem opening sidebar mailboxes and sorting question
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2007-October/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20problem%20opening%20sidebar%20mailboxes%20and%20sorting%20question&In-Reply-To=%3C0F5F22F5-EB60-477B-A9CC-EC7FEE2C90E6%40gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>problem opening sidebar mailboxes and sorting question</H1>
+    <B>Joel Esler</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20problem%20opening%20sidebar%20mailboxes%20and%20sorting%20question&In-Reply-To=%3C0F5F22F5-EB60-477B-A9CC-EC7FEE2C90E6%40gmail.com%3E"
+       TITLE="problem opening sidebar mailboxes and sorting question">eslerj at gmail.com
+       </A><BR>
+    <I>Thu Oct 11 04:15:01 CEST 2007</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#321">[ date ]</a>
+              <a href="thread.html#321">[ thread ]</a>
+              <a href="subject.html#321">[ subject ]</a>
+              <a href="author.html#321">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I use &quot;[&quot; for up, &quot;]&quot; for down and &quot;\&quot; for open mailbox.
+
+Works great, and on my laptop keyboard, all three keys are next to  
+each other.
+
+J
+
+On Jul 30, 2007, at 11:21 AM, brad dreisbach wrote:
+
+&gt;<i> hi,
+</I>&gt;<i>
+</I>&gt;<i> I recently started using muttng and am having a couple of issues.
+</I>&gt;<i>
+</I>&gt;<i> 1.  I can't open mailboxes listed in the sidebar.  I can  
+</I>&gt;<i> successfully change
+</I>&gt;<i>     the highlighted mailbox, but pressing ctrl-o does not open the  
+</I>&gt;<i> mailbox.
+</I>&gt;<i>     I am using IMAP and here is the relevant config:
+</I>&gt;<i>
+</I>&gt;<i> # set up the sidebar, default not visible
+</I>&gt;<i> set sidebar_width=36
+</I>&gt;<i> set sidebar_visible=yes
+</I>&gt;<i> set sidebar_delim='|
+</I>&gt;<i>
+</I>&gt;<i> # which mailboxes to list in the sidebar
+</I>&gt;<i> mailboxes ! =blah1-`date +%Y-%m` =blah2-`date +%Y-%m` =blah3-`date + 
+</I>&gt;<i> %Y-%m` =sent-mail-`date +%Y-%m`
+</I>&gt;<i>
+</I>&gt;<i> # color of folders with new mail
+</I>&gt;<i> color sidebar_new green default
+</I>&gt;<i>
+</I>&gt;<i> # ctrl-n, ctrl-p to select next, prev folder
+</I>&gt;<i> # ctrl-o to open selected folder
+</I>&gt;<i> bind index \cp sidebar-prev
+</I>&gt;<i> bind index \cn sidebar-next
+</I>&gt;<i> bind index \co sidebar-open
+</I>&gt;<i> bind pager \cp sidebar-prev
+</I>&gt;<i> bind pager \cn sidebar-next
+</I>&gt;<i> bind pager \co sidebar-open
+</I>&gt;<i>
+</I>&gt;<i> macro index B ':toggle sidebar_visible^M'
+</I>&gt;<i> macro pager B ':toggle sidebar_visible^M'
+</I>&gt;<i>
+</I>&gt;<i> any ideas?
+</I>&gt;<i>
+</I>&gt;<i> 2.  My 2nd question question is related to mailbox sorting.
+</I>&gt;<i>     I have the default sort option set to threads, but
+</I>&gt;<i>     am using folder-hooks to set the sort mode to mailbox-order
+</I>&gt;<i>     for my sidebar mailboxes since they tend to have a lot of
+</I>&gt;<i>     email in them.  my inbox is relatively small, under 50 messages.
+</I>&gt;<i>     when I fire up muttng it takes quite a while to start up,
+</I>&gt;<i>     it hangs &quot;Sorting mailbox...&quot;.  why would it be taking so long
+</I>&gt;<i>     and what exactly is it sorting?  I guess maybe its printing
+</I>&gt;<i>     this message but in reality it is downloading the headers of
+</I>&gt;<i>     the emails in the sidebar mailboxes?  I have header caching  
+</I>&gt;<i> enabled.
+</I>&gt;<i>
+</I>&gt;<i> thanks,
+</I>&gt;<i> brad
+</I>
+Joel Esler
+-- ISC Incident Handler
+<A HREF="http://www.incidents.org">http://www.incidents.org</A>
+
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#321">[ date ]</a>
+              <a href="thread.html#321">[ thread ]</a>
+              <a href="subject.html#321">[ subject ]</a>
+              <a href="author.html#321">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

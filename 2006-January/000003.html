@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> mozilla
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-January/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20mozilla&In-Reply-To=%3C20060111205735.GB31093%40frodo.home.lxtec.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000002.html">
+   <LINK REL="Next"  HREF="000004.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>mozilla</H1>
+    <B>Elimar Riesebieter</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20mozilla&In-Reply-To=%3C20060111205735.GB31093%40frodo.home.lxtec.de%3E"
+       TITLE="mozilla">riesebie at lxtec.de
+       </A><BR>
+    <I>Wed Jan 11 21:57:35 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000002.html">mozilla
+</A></li>
+        <LI>Next message: <A HREF="000004.html">mozilla
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Wed, 11 Jan 2006 the mental interface of
+mess-mate told:
+
+&gt;<i> Hi,
+</I>&gt;<i> for any raeson i don't kown, can't open the mozilla browser when
+</I>&gt;<i> selecting a html page.
+</I>&gt;<i> here is my settings about it on my mailcap:
+</I>&gt;<i> 
+</I>&gt;<i> text/html; /usr/bin/mozilla '%s';  description=HTML Text;
+</I>&gt;<i> nametemplate=%s.html; test=test &quot;$DISPLAY&quot; != &quot;&quot;
+</I>
+I assume $ which mozilla is 1
+try
+text/html; /usr/bin/mozilla '%s'; description=HTML Text; \
+test=test -n &quot;$DISPLAY&quot;;  nametemplate=%s.html
+
+Elimar
+
+-- 
+  Numeric stability is probably not all that 
+  important when you're guessing;-)
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000002.html">mozilla
+</A></li>
+	<LI>Next message: <A HREF="000004.html">mozilla
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

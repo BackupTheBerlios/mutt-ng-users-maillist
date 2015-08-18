@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> weird characters in &quot;from&quot; field in the index
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060322185017.GA13720%40werner%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000125.html">
+   <LINK REL="Next"  HREF="000127.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>weird characters in &quot;from&quot; field in the index</H1>
+    <B>Sven Putteneers</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060322185017.GA13720%40werner%3E"
+       TITLE="weird characters in &quot;from&quot; field in the index">sven at tuxera.be
+       </A><BR>
+    <I>Wed Mar 22 19:50:17 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000125.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+        <LI>Next message: <A HREF="000127.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#126">[ date ]</a>
+              <a href="thread.html#126">[ thread ]</a>
+              <a href="subject.html#126">[ subject ]</a>
+              <a href="author.html#126">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>* Sven Putteneers &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">sven at tuxera.be</A>&gt; [2006-03-22 17:44:04]:
+&gt;<i>I'm sorry to reply to my own message, but I found out what causes this.
+</I>
+Even more sorry for this reply to a reply...
+
+It seems the index shows this behavior with both from- and subject 
+fields.
+When an accented character (or anything with ASCII-code above 127, for 
+that matter) is present in a field that is displayed in the index, 
+everything in that field, starting from the non-us-ascii character to 
+the end of the field is not displayed and a series of alternating 
+A-tilde and question marks are displayed instead.
+
+When such a message is opened in the pager, the index gets updated to 
+the expected output.
+
+When trying to duplicate this behavior, i sent myself a mail with &quot;t&#233;st&quot; 
+in the subject. Muttng changed this to '=?iso-8859-1?Q?t=E9st?=' as it 
+should, so this seems to be the result of broken mailers/newsclients not 
+making the correct substitutions for header values outside of the 
+us-ascii character range.
+
+Can this be fixed?
+
+Thanks in advance,
+Sven
+
+
+-- 
+/~\ The ASCII       Encrypted mail preferred. All my outgoing mail is signed.
+\ / Ribbon Campaign GPG keyID: 0x66A13305
+  X  Against HTML    GPG key FP: 5B8C 97A2 20C4 E578 CDEB  71C9 23CA 0681 66A1 3305
+/ \ Email!          GPG key URL: <A HREF="http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc">http://fenix.cmi.ua.ac.be/~p005742/gpg_pubkey.asc</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 200 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060322/8ba5397d/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060322/8ba5397d/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000125.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+	<LI>Next message: <A HREF="000127.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#126">[ date ]</a>
+              <a href="thread.html#126">[ thread ]</a>
+              <a href="subject.html#126">[ subject ]</a>
+              <a href="author.html#126">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> GSSAPI and other troubles
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20GSSAPI%20and%20other%20troubles&In-Reply-To=%3C20060613192241.GA722%40moray.salmi.ch%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000217.html">
+   <LINK REL="Next"  HREF="000219.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>GSSAPI and other troubles</H1>
+    <B>Jukka Salmi</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20GSSAPI%20and%20other%20troubles&In-Reply-To=%3C20060613192241.GA722%40moray.salmi.ch%3E"
+       TITLE="GSSAPI and other troubles">j+muttng at 2006.salmi.ch
+       </A><BR>
+    <I>Tue Jun 13 21:22:41 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000217.html">Returned mail: see transcript for details
+</A></li>
+        <LI>Next message: <A HREF="000219.html">Too busy to go back to school,{} but need a University {}Degree{} to get ahead?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#218">[ date ]</a>
+              <a href="thread.html#218">[ thread ]</a>
+              <a href="subject.html#218">[ subject ]</a>
+              <a href="author.html#218">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+
+first of all: is this project still alive? It seems that more spam
+makes it though the list than regular messages...
+
+After using Mutt-ng (revision 406) for a short period of time about a
+year ago, I decided to give it another try: I checked out the latest
+trunk (rev. 804) and built it on a NetBSD/i386 system. There is some
+regression:
+
+- SASL 1.x removal broke (at least) GSSAPI authentication with SASL 2:
+  Mutt-ng rev. 482 still works, rev. 484 doesn't (rev. 483 doesn't
+  build). The symptom: after login succeeds, Mutt-ng fails to open the
+  INBOX. `login' authentication works fine. Using the same configuration,
+  Mutt 1.5.11 works with GSSAPI.
+
+
+- There seem to be &quot;new&quot; (i.e. intoduced somewhere after rev. 406)
+  alloc/free bugs, detected by NetBSD's libc which print warnings;
+  starting Mutt-ng prints
+
+	muttng in realloc(): warning: chunk is already free.
+	muttng in free(): warning: chunk is already free.
+
+  However, I didn't trace them down yet...
+
+
+- Unsetting multiple variables with a single `unset' command doesn't
+  work anymore; e.g. a configuration line like
+
+	unset imap_user imap_pass imap_authenticators
+
+  causes Mutt-ng to print
+
+	Error in [...], line 15: imap_pass: unknown command
+
+  According to muttngrc(5) this should work:
+
+	unset variable [ ... ]
+	reset variable [ ... ]
+
+	  These commands are used to set and manipulate
+	  configuration varibles.
+
+  This used to work with Mutt-ng rev. 406, and it still works with
+  Mutt 1.5.11.
+
+
+Comments are welcome.
+
+Cheers, Jukka
+
+-- 
+bashian roulette:
+$ ((RANDOM%6)) || rm -rf ~
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000217.html">Returned mail: see transcript for details
+</A></li>
+	<LI>Next message: <A HREF="000219.html">Too busy to go back to school,{} but need a University {}Degree{} to get ahead?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#218">[ date ]</a>
+              <a href="thread.html#218">[ thread ]</a>
+              <a href="subject.html#218">[ subject ]</a>
+              <a href="author.html#218">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

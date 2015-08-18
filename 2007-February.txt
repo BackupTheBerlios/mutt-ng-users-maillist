@@ -1,0 +1,23 @@
+From muttng at artificialidea.com  Thu Feb 22 16:07:35 2007
+From: muttng at artificialidea.com (Ivan F. Villanueva B.)
+Date: Thu, 22 Feb 2007 16:07:35 +0100
+Subject: mutt-ng vs mutt w.r.t imap
+In-Reply-To: <cac7cb1d0701212312i4f79fcd8vebb992bfaff54fef@mail.gmail.com>
+References: <cac7cb1d0701212312i4f79fcd8vebb992bfaff54fef@mail.gmail.com>
+Message-ID: <20070222150735.GB20181@samsung>
+
+Am Mon, Jan 22, 2007 12:42:42PM +0530, Ravi Chandra Nallan schrieb:
+> mutt-ng takes a lot
+> of time while switching between folders, scrolling in the messages etc. The
+> difference can be noticed with multiple folders opened in the sidebar.
+
+I have the same problem with mboxes. Although I'm using the last version I could
+find in a debian-package, no the last sources.
+-- 
+Iv?n F. Villanueva B.
+A.I. library:   http://www.artificialidea.com
+<<<          The European Patent Litigation Agreement (EPLA)          >>>
+<<<            will bring Software patents by the backdoor            >>>
+<<<                     http://epla.ffii.org/                         >>>
+
+

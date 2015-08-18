@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> weird characters in &quot;from&quot; field in the index
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060324233312.GA9260%40free.fr%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000141.html">
+   <LINK REL="Next"  HREF="000143.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>weird characters in &quot;from&quot; field in the index</H1>
+    <B>Alain Bench</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20weird%20characters%20in%20%22from%22%20field%20in%20the%20index&In-Reply-To=%3C20060324233312.GA9260%40free.fr%3E"
+       TITLE="weird characters in &quot;from&quot; field in the index">veronatif at free.fr
+       </A><BR>
+    <I>Sat Mar 25 00:33:13 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000141.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+        <LI>Next message: <A HREF="000143.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#142">[ date ]</a>
+              <a href="thread.html#142">[ thread ]</a>
+              <a href="subject.html#142">[ subject ]</a>
+              <a href="author.html#142">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello Sven,
+
+ On Thursday, March 23, 2006 at 13:17:33 +0100, Sven Putteneers wrote:
+
+&gt;<i> I have the following charset related options in my muttngrc
+</I>&gt;|<i> set charset=&quot;utf-8&quot;
+</I>
+    Remove this line: $charset will then be automaticaly derived from
+the current locale, whatever it is.
+
+
+&gt;|<i> set assumed_charset=&quot;us-ascii:iso-8859-15:utf-8&quot;
+</I>
+    Such value can't work correctly. I'd suggest better for westerners
+$assumed_charset=cp1252. This might even solve the unencoded no-break
+space in header problem, I hope. Also if you have a $strict_mime
+variable in Muttng, it would have to be unset.
+
+
+Bye!	Alain.
+-- 
+Give your computer's unused idle processor cycles to a scientific goal:
+The <A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">Folding at home</A> project at &lt;URL:<A HREF="http://folding.stanford.edu/">http://folding.stanford.edu/</A>&gt;.
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000141.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+	<LI>Next message: <A HREF="000143.html">weird characters in &quot;from&quot; field in the index
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#142">[ date ]</a>
+              <a href="thread.html#142">[ thread ]</a>
+              <a href="subject.html#142">[ subject ]</a>
+              <a href="author.html#142">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Receipient is displayed instead of sender on list messages
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-May/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Receipient%20is%20displayed%20instead%20of%20sender%20on%20list%20messages&In-Reply-To=%3C20060517093107.GA4565%40die.therning.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000183.html">
+   <LINK REL="Next"  HREF="000186.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Receipient is displayed instead of sender on list messages</H1>
+    <B>Magnus Therning</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Receipient%20is%20displayed%20instead%20of%20sender%20on%20list%20messages&In-Reply-To=%3C20060517093107.GA4565%40die.therning.org%3E"
+       TITLE="Receipient is displayed instead of sender on list messages">magnus at therning.org
+       </A><BR>
+    <I>Wed May 17 11:31:07 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000183.html">Receipient is displayed instead of sender on list messages
+</A></li>
+        <LI>Next message: <A HREF="000186.html">Receipient is displayed instead of sender on list messages
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#184">[ date ]</a>
+              <a href="thread.html#184">[ thread ]</a>
+              <a href="subject.html#184">[ subject ]</a>
+              <a href="author.html#184">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Wed, May 17, 2006 at 10:23:43AM +0200, Christian Anton wrote:
+&gt;<i>Hi folks,
+</I>&gt;<i>
+</I>&gt;<i>i am using muttng since a few days, have read thousands of howtos
+</I>&gt;<i>and manpages to configure muttng/vim to have all the nice features
+</I>&gt;<i>like i want them - great!
+</I>&gt;<i>
+</I>&gt;<i>But what i did not find a solution for is that when a message is
+</I>&gt;<i>sent to a mailinglist i subscribed in the index there does not
+</I>&gt;<i>appear the sender of the message but something like &quot;To
+</I>&gt;<i>&lt;mailinglist&gt;&quot;. As i have serverside filtering for mailinglist
+</I>&gt;<i>messages into some folders i do know that this message belongs to
+</I>&gt;<i>the list, but want to see in the index who sent the message.
+</I>&gt;<i>
+</I>&gt;<i>I hope you understand my bad english...
+</I>&gt;<i>
+</I>&gt;<i>Thank you in advance for any hints.
+</I>
+Take a look at index_format. The default contains %L:
+
+	%L If an address in the To or CC  header  field
+	   matches  an address  defined  by  the users &#8220;subscribe&#8221;
+	   command, this displays &#8221;To &lt;list-name&gt;&#8221;, otherwise the same
+	   as %F.
+
+You might want to change it to using %F instead:
+
+	%F author name, or recipient name if the message is from you
+
+/M
+
+-- 
+Magnus Therning                    (OpenPGP: 0xAB4DFBA4)
+<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">magnus at therning.org</A>
+<A HREF="http://therning.org/magnus">http://therning.org/magnus</A>
+
+Software is not manufactured, it is something you write and publish.
+Keep Europe free from software patents, we do not want censorship
+by patent law on written works.
+
+DRM discourages piracy like Thalidomide promotes healthy childbirth.
+     -- Mark Hewitt, on the ORG discuss list
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060517/f0f53246/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060517/f0f53246/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000183.html">Receipient is displayed instead of sender on list messages
+</A></li>
+	<LI>Next message: <A HREF="000186.html">Receipient is displayed instead of sender on list messages
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#184">[ date ]</a>
+              <a href="thread.html#184">[ thread ]</a>
+              <a href="subject.html#184">[ subject ]</a>
+              <a href="author.html#184">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

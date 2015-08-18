@@ -1,0 +1,194 @@
+From meino.cramer at gmx.de  Sun Mar  4 06:12:13 2007
+From: meino.cramer at gmx.de (meino.cramer at gmx.de)
+Date: Sun, 4 Mar 2007 06:12:13 +0100
+Subject: Status
+Message-ID: <20070304051213.GA18901@solfire>
+
+What is the status of the mutt-ng projekt?
+
+"Not dead" as announced Oct 2006 ?
+
+Keep hacking!
+mcc
+
+
+
+-- 
+Please don't send me any Word- or Powerpoint-Attachments
+unless it's absolutely neccessary. - Send simply Text.
+See http://www.gnu.org/philosophy/no-word-attachments.html
+In a world without fences and walls nobody needs gates and windows.
+
+
+From eslerj at gmail.com  Sun Mar  4 17:33:16 2007
+From: eslerj at gmail.com (Joel Esler)
+Date: Sun, 4 Mar 2007 11:33:16 -0500
+Subject: Status
+In-Reply-To: <20070304051213.GA18901@solfire>
+References: <20070304051213.GA18901@solfire>
+Message-ID: <8c643a500703040833n322aedd6j1e1d66f206270621@mail.gmail.com>
+
+I would love for it to 'not' be dead.  I like muttng, but I haven't
+seen a thread on this list in a long time, and I think the nightly
+builds stopped a long time ago.
+
+J
+
+On 3/4/07, meino.cramer at gmx.de <meino.cramer at gmx.de> wrote:
+> What is the status of the mutt-ng projekt?
+>
+> "Not dead" as announced Oct 2006 ?
+>
+> Keep hacking!
+> mcc
+>
+>
+>
+> --
+> Please don't send me any Word- or Powerpoint-Attachments
+> unless it's absolutely neccessary. - Send simply Text.
+> See http://www.gnu.org/philosophy/no-word-attachments.html
+> In a world without fences and walls nobody needs gates and windows.
+>
+
+
+-- 
+--Joel Esler
+ISC Incident Handler
+http://www.incidents.org
+
+
+From andre.berger at web.de  Thu Mar 22 20:23:30 2007
+From: andre.berger at web.de (Andre Berger)
+Date: Thu, 22 Mar 2007 20:23:30 +0100
+Subject: Status
+In-Reply-To: <8c643a500703040833n322aedd6j1e1d66f206270621@mail.gmail.com>
+References: <20070304051213.GA18901@solfire>
+	<8c643a500703040833n322aedd6j1e1d66f206270621@mail.gmail.com>
+Message-ID: <20070322192330.GA453@hvk>
+
+* Joel Esler (2007-03-04):
+> I would love for it to 'not' be dead.  I like muttng, but I haven't
+> seen a thread on this list in a long time, and I think the nightly
+> builds stopped a long time ago.
+
+The last version that worked for me is the one I'm still using,
+Mutt1.5.13-muttng (2007-02-12). Still no joy with 1.5.14/v735 though. 
+
+-Andre
+
+-- 
+May as well be hung for a sheep as a lamb
+Linux Kernel 2.6/PPC for Linkstation/KuroBox/HG/HS from http://hvkls.dyndns.org
+
+
+From eslerj at gmail.com  Sun Mar 25 19:45:18 2007
+From: eslerj at gmail.com (Joel Esler)
+Date: Sun, 25 Mar 2007 13:45:18 -0400
+Subject: Status
+In-Reply-To: <20070322192330.GA453@hvk>
+References: <20070304051213.GA18901@solfire>
+	<8c643a500703040833n322aedd6j1e1d66f206270621@mail.gmail.com>
+	<20070322192330.GA453@hvk>
+Message-ID: <8c643a500703251045j11bbb240xf2781285afdb09ea@mail.gmail.com>
+
+Agreed.  It works great and I love it.  The only complaint I have is imap delay.
+
+
+On 3/22/07, Andre Berger <andre.berger at web.de> wrote:
+> * Joel Esler (2007-03-04):
+> > I would love for it to 'not' be dead.  I like muttng, but I haven't
+> > seen a thread on this list in a long time, and I think the nightly
+> > builds stopped a long time ago.
+>
+> The last version that worked for me is the one I'm still using,
+> Mutt1.5.13-muttng (2007-02-12). Still no joy with 1.5.14/v735 though.
+>
+> -Andre
+>
+> --
+> May as well be hung for a sheep as a lamb
+> Linux Kernel 2.6/PPC for Linkstation/KuroBox/HG/HS from
+> http://hvkls.dyndns.org
+>
+
+
+-- 
+--Joel Esler
+ISC Incident Handler
+http://www.incidents.org
+
+
+From A.Wagner at stud.uni-frankfurt.de  Sun Mar 25 21:07:48 2007
+From: A.Wagner at stud.uni-frankfurt.de (Andreas Wagner)
+Date: Sun, 25 Mar 2007 21:07:48 +0200
+Subject: Status
+In-Reply-To: <8c643a500703251045j11bbb240xf2781285afdb09ea@mail.gmail.com>
+References: <20070304051213.GA18901@solfire>
+	<8c643a500703040833n322aedd6j1e1d66f206270621@mail.gmail.com>
+	<20070322192330.GA453@hvk>
+	<8c643a500703251045j11bbb240xf2781285afdb09ea@mail.gmail.com>
+Message-ID: <20070325190748.GA10769@hermes.commontology.de>
+
+Hello Joel, hello list,
+
+* Joel Esler wrote on M?r/25/2007:
+>>> I would love for it to 'not' be dead.  I like muttng, but I haven't seen a thread on this list in a long time, and 
+>>> I think the nightly builds stopped a long time ago.
+>> The last version that worked for me is the one I'm still using, Mutt1.5.13-muttng (2007-02-12). Still no joy with 
+>> 1.5.14/v735 though.
+> Agreed.  It works great and I love it.  The only complaint I have is imap delay.
+
+Have you had a look at mutt development recently? I had some problems with muttng and my xterm display, so I had a go 
+at patching mutt-orig again:
+
+#> mutt -v
+Mutt 1.5.14 (2007-02-12)
+[snip]
+patch-1.5.13.pdmef.last-folder.1
+patch-1.5.13.sde.libesmtp.4
+patch-1.5.14.rr.compressed.1
+
+Actually, I do care only for the compressed folder patch -- and for some other mutt-ng-like stuff that has gone into 
+main mutt by now anyway (f=f, threading tricks and such -- but better don't ask me, look for the changelogs). And 
+finally, when you browse the mutt-dev mailing list you'll see that there's a discussion going on about what patches 
+should be integrated in mutt 1.6.
+
+BTW, the mutt-ng I quit using was:
+
+#> muttng -v
+Mutt-ng devel-r804 (based on Mutt 1.5.11/2005-09-15)
+[snip]
+patch-1.5.6.cb.current_shortcut.2
+patch-1.5.6.tt.assumed_charset.1
+patch-1.5.6.tg.hcache.12
+patch-1.5.5.1.pdmef.short_mbox_name.1
+rr.compressed
+patch-1.5.4.fw.maildir_inode_sort
+patch-1.4.admcd.gnutls.59d
+patch-1.5.6i.sidebar.20041122
+patch-1.5.4.aw.listreply.1
+vvv.initials
+patch-1.5.5.1.cd.purge_message.3.4
+patch-1.5.5.1.cd.trash_folder.3.4
+patch-1.5.5.1.cd.edit_threads.9.5
+patch-1.5.4.cd.ifdef.1
+patch-1.5.4.cd.source_multiple.2
+vvv.quote
+vvv.nntp
+
+(I had tried to get a newer one around January, but didn't succeed.)
+
+HTH,
+Andreas
+
+
+-- 
+Why is the alphabet in that order? Is it because of that song?
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+

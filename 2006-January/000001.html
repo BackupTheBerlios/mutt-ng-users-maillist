@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> using variables in muttrc
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-January/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20using%20variables%20in%20muttrc&In-Reply-To=%3C20060101155911.GB15303%40apartia.fr%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000000.html">
+   <LINK REL="Next"  HREF="000002.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>using variables in muttrc</H1>
+    <B>Louis-David Mitterrand</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20using%20variables%20in%20muttrc&In-Reply-To=%3C20060101155911.GB15303%40apartia.fr%3E"
+       TITLE="using variables in muttrc">vindex+lists-mutt-ng-users at apartia.org
+       </A><BR>
+    <I>Sun Jan  1 16:59:11 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000000.html">using variables in muttrc
+</A></li>
+        <LI>Next message: <A HREF="000002.html">mozilla
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Sun, Jan 01, 2006 at 02:51:13PM +0000, Rocco Rutte wrote:
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> * Louis-David Mitterrand [05-12-31 19:42:09 +0100] wrote:
+</I>&gt;<i> 
+</I>&gt;<i> &gt;Am I missing something in variable substitution?
+</I>&gt;<i> 
+</I>&gt;<i> Yes. As you come up with it now, it looks like the documentation isn't good 
+</I>&gt;<i> enough: expansion only takes place when doing &quot;plain&quot; assignments. Backticks 
+</I>&gt;<i> are handled using the system's shell which doesn't know any muttng specific 
+</I>&gt;<i> variables so it doesn't work. Your config line has the same effect as running
+</I>&gt;<i> 
+</I>&gt;<i>   $ echo $FOO | sed ...
+</I>&gt;<i> 
+</I>&gt;<i> from the command-line when $FOO doesn't exist.
+</I>
+That's what I suspected, thanks for confirming it.
+
+Do you see any way to remove the &quot;INBOX.&quot; substring from 
+&quot;INBOX.mutt-ng-users&quot; with standard muttng configuration language?
+
+Happy new year to all muttng users!
+
+-- 
+(remember when we spent millions coming up with a pen that would write
+in zero-G and the Russians just used pencils?) -- limekiller4 on /.
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000000.html">using variables in muttrc
+</A></li>
+	<LI>Next message: <A HREF="000002.html">mozilla
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

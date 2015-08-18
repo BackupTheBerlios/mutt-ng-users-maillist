@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Problems compiling SVN revision 804 ...
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Problems%20compiling%20SVN%20revision%20804%20...&In-Reply-To=%3C44894E40.6010407%40myunix.dk%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000222.html">
+   <LINK REL="Next"  HREF="000214.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Problems compiling SVN revision 804 ...</H1>
+    <B>Henrik Johansen</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Problems%20compiling%20SVN%20revision%20804%20...&In-Reply-To=%3C44894E40.6010407%40myunix.dk%3E"
+       TITLE="Problems compiling SVN revision 804 ...">henrik at myunix.dk
+       </A><BR>
+    <I>Fri Jun  9 12:32:32 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000222.html">Marking mails as read automatically in certain folders
+</A></li>
+        <LI>Next message: <A HREF="000214.html">Problems compiling SVN revision 804 ...
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#213">[ date ]</a>
+              <a href="thread.html#213">[ thread ]</a>
+              <a href="subject.html#213">[ subject ]</a>
+              <a href="author.html#213">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+
+I have problems compiling revision 840.
+
+Dump from make :
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">henrik at butler</A>:~/src/muttng$ make
+make  all-recursive
+make[1]: Entering directory `/home/henrik/src/muttng'
+Making all in m4
+make[2]: Entering directory `/home/henrik/src/muttng/m4'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/henrik/src/muttng/m4'
+Making all in po
+make[2]: Entering directory `/home/henrik/src/muttng/po'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/henrik/src/muttng/po'
+Making all in intl
+make[2]: Entering directory `/home/henrik/src/muttng/intl'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/henrik/src/muttng/intl'
+Making all in doc
+make[2]: Entering directory `/home/henrik/src/muttng/doc'
+make makedoc-all
+make[3]: Entering directory `/home/henrik/src/muttng/doc'
+xsltproc --nonet --stringparam html.stylesheet muttng.css -o manual.html 
+html.xsl manual.xml
+make[3]: xsltproc: Command not found
+make[3]: [manual.html] Error 127 (ignored)
+/usr/bin/tidy -q -i -m -asxml -utf8  manual.html || true
+Error: Can't open &quot;manual.html&quot;
+
+/usr/bin/lynx -dump -nolist -with_backspaces manual.html &gt; manual.txt
+
+Looking up manual.html
+Making HTTP connection to manual.html
+Alert!: Unable to connect to remote host.
+
+lynx: Can't access startfile <A HREF="http://manual.html/">http://manual.html/</A>
+make[3]: *** [manual.txt] Error 1
+make[3]: Leaving directory `/home/henrik/src/muttng/doc'
+make[2]: *** [all] Error 2
+make[2]: Leaving directory `/home/henrik/src/muttng/doc'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/home/henrik/src/muttng'
+make: *** [all-recursive-am] Error 2
+
+
+Any suggestions ?
+
+/Henrik
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000222.html">Marking mails as read automatically in certain folders
+</A></li>
+	<LI>Next message: <A HREF="000214.html">Problems compiling SVN revision 804 ...
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#213">[ date ]</a>
+              <a href="thread.html#213">[ thread ]</a>
+              <a href="subject.html#213">[ subject ]</a>
+              <a href="author.html#213">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

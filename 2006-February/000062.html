@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> folder-hook . mailboxes not working
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20folder-hook%20.%20mailboxes%20not%20working&In-Reply-To=%3C20060215080744.GB4534%40die.therning.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000061.html">
+   <LINK REL="Next"  HREF="000063.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>folder-hook . mailboxes not working</H1>
+    <B>Magnus Therning</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20folder-hook%20.%20mailboxes%20not%20working&In-Reply-To=%3C20060215080744.GB4534%40die.therning.org%3E"
+       TITLE="folder-hook . mailboxes not working">magnus at therning.org
+       </A><BR>
+    <I>Wed Feb 15 09:07:44 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000061.html">folder-hook . mailboxes not working
+</A></li>
+        <LI>Next message: <A HREF="000063.html">folder-hook . mailboxes not working
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#62">[ date ]</a>
+              <a href="thread.html#62">[ thread ]</a>
+              <a href="subject.html#62">[ subject ]</a>
+              <a href="author.html#62">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On Tue, Feb 14, 2006 at 10:01:21PM +0100, Shot (Piotr Szotkowski) wrote:
+&gt;<i>My ~/.procmailrc sorts mail based on the Delivered-To: and List-Id:
+</I>&gt;<i>headers, creating new ~/Mail/lists/... maildirs on demand. The following
+</I>&gt;<i>settings work on mutt-ng&#8217;s start:
+</I>&gt;<i>
+</I>&gt;<i>mailboxes =unsure `echo /home/shot/Mail/lists/*`
+</I>&gt;<i>lists `cd /home/shot/Mail/lists/; echo *`
+</I>&gt;<i>
+</I>&gt;<i>I use mutt-ng in a screen on a remote server, though,
+</I>&gt;<i>so I don&#8217;t restart it for days. What I&#8217;d like to have is
+</I>&gt;<i>
+</I>&gt;<i>folder-hook . mailboxes =unsure `echo /home/shot/Mail/lists/*`
+</I>
+It's something silly like needing to add quotes?
+
+ folder-hook . &quot;mailboxes =unsure `echo /home/shot/Mail/lists/*`&quot;
+
+&gt;<i>This is evalated once on mutt-ng start, but doesn&#8217;t seem to be
+</I>&gt;<i>re-evaluated on folder changes. I&#8217;m using Debian&#8217;s 0.0+20060113-1
+</I>&gt;<i>package (r774), rebuilt for Ubuntu Breezy.
+</I>
+/M
+
+-- 
+Magnus Therning                    (OpenPGP: 0xAB4DFBA4)
+<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">magnus at therning.org</A>
+<A HREF="http://therning.org/magnus">http://therning.org/magnus</A>
+
+Software is not manufactured, it is something you write and publish.
+Keep Europe free from software patents, we do not want censorship
+by patent law on written works.
+
+The day after tomorrow is the third day of the rest of your life.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060215/651f74f2/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060215/651f74f2/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000061.html">folder-hook . mailboxes not working
+</A></li>
+	<LI>Next message: <A HREF="000063.html">folder-hook . mailboxes not working
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#62">[ date ]</a>
+              <a href="thread.html#62">[ thread ]</a>
+              <a href="subject.html#62">[ subject ]</a>
+              <a href="author.html#62">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

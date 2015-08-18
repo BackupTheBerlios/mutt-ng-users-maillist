@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> problem opening sidebar mailboxes and sorting question
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2007-July/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20problem%20opening%20sidebar%20mailboxes%20and%20sorting%20question&In-Reply-To=%3C20070730152103.GA25040%40mushroom.ameri.ca%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000320.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>problem opening sidebar mailboxes and sorting question</H1>
+    <B>brad dreisbach</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20problem%20opening%20sidebar%20mailboxes%20and%20sorting%20question&In-Reply-To=%3C20070730152103.GA25040%40mushroom.ameri.ca%3E"
+       TITLE="problem opening sidebar mailboxes and sorting question">bradd at ameri.ca
+       </A><BR>
+    <I>Mon Jul 30 17:21:04 CEST 2007</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000320.html">problem opening sidebar mailboxes and sorting question
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#319">[ date ]</a>
+              <a href="thread.html#319">[ thread ]</a>
+              <a href="subject.html#319">[ subject ]</a>
+              <a href="author.html#319">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>hi,
+
+I recently started using muttng and am having a couple of issues.
+
+1.  I can't open mailboxes listed in the sidebar.  I can successfully change
+    the highlighted mailbox, but pressing ctrl-o does not open the mailbox.
+    I am using IMAP and here is the relevant config:
+
+# set up the sidebar, default not visible
+set sidebar_width=36
+set sidebar_visible=yes
+set sidebar_delim='|
+
+# which mailboxes to list in the sidebar
+mailboxes ! =blah1-`date +%Y-%m` =blah2-`date +%Y-%m` =blah3-`date +%Y-%m` =sent-mail-`date +%Y-%m`
+
+# color of folders with new mail
+color sidebar_new green default
+
+# ctrl-n, ctrl-p to select next, prev folder
+# ctrl-o to open selected folder
+bind index \cp sidebar-prev
+bind index \cn sidebar-next
+bind index \co sidebar-open
+bind pager \cp sidebar-prev
+bind pager \cn sidebar-next
+bind pager \co sidebar-open
+
+macro index B ':toggle sidebar_visible^M'
+macro pager B ':toggle sidebar_visible^M'
+
+any ideas?
+
+2.  My 2nd question question is related to mailbox sorting.
+    I have the default sort option set to threads, but
+    am using folder-hooks to set the sort mode to mailbox-order
+    for my sidebar mailboxes since they tend to have a lot of 
+    email in them.  my inbox is relatively small, under 50 messages.
+    when I fire up muttng it takes quite a while to start up,
+    it hangs &quot;Sorting mailbox...&quot;.  why would it be taking so long
+    and what exactly is it sorting?  I guess maybe its printing
+    this message but in reality it is downloading the headers of
+    the emails in the sidebar mailboxes?  I have header caching enabled.
+
+thanks,
+brad
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000320.html">problem opening sidebar mailboxes and sorting question
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#319">[ date ]</a>
+              <a href="thread.html#319">[ thread ]</a>
+              <a href="subject.html#319">[ subject ]</a>
+              <a href="author.html#319">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

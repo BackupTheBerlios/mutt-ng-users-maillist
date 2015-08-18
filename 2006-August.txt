@@ -1,0 +1,71 @@
+From troy at piggo.com  Wed Aug 23 00:57:35 2006
+From: troy at piggo.com (Troy Piggins)
+Date: Wed, 23 Aug 2006 08:57:35 +1000
+Subject: new user - bugs?
+Message-ID: <20060823082320@troy.piggo.com>
+
+Hi - I'm a very new mutt-ng user, from a long time mutt and slrn
+user background.
+
+I have some things I've noticed since installing mutt-ng on the
+weekend that don't seem correct, but please forgive me if posting
+bugs etc to this list is frowned upon.  Just let me know.
+
+Man pages - there is no entry for the 'score' command.  There is
+for the 'score' boolean variable, but not for the command to
+assign scores.
+
+Man pages - there is no mention of 'error' as a valid object for
+'color' command.
+
+New mail notification - my mailboxes are mbox format.  In browser
+view ones with new mail are flagged 'N' like they were in mutt.
+However if I enter one of those mailboxes, read some of the new
+mail but not all, then go back to the browser window that same
+mailbox is still flagged 'N'.  In mutt even if you didn't read
+any of the new mail, once you left the mailbox they were marked
+as old and the 'N' disappeared from flag.
+
+my_hdr - I have hooks for creating my own unique message id's
+depending on whether I am sending mail or posting news.  I've
+found mutt-ng inserting extra spaces between the header name and
+the header content.  More detailed explanation:
+
+send-hook . 'my_hdr Message-ID: <`date +"%Y%m%d%H%M%S"`@troy.piggo.com>'
+send-hook '~f usenet-[0-9]{4}@piggo.com' 'my_hdr Message-ID: <`date +"%Y%m%d%H%M%S"`@usenet.piggo.com>'
+folder-hook . 'set from=troy at piggo.com'
+folder-hook .*[.]+.* 'set from=usenet-`date +"%y%m"`@piggo.com'
+
+The message id's are of the format 200608230830 at troy.piggo.com
+Note in the above hooks the single space between Message-ID: and
+the <...
+
+If I just create a new mail by hitting 'm', entering the To:
+header, entering the Subject: header, then mutt-ng takes me into
+vim to type the message body, I then save and exit vim, then hit
+send from the menu by hitting 'y', the mail gets sent but the
+message-id has /two/ spaces between 
+Message-ID:  200608230830 at troy.piggo.com
+           ^^
+
+If I do the exact same as the above, but instead of hitting 'y'
+to send the mail I hit 'E' to edit the headers and message, this
+takes me back into vim, if I don't even edit the message but just
+save it again and then hit 'y' to send it, the message-id somehow
+only has the correct single space in it.
+
+To try to rectify this I changed the hook to contain no spaces:
+
+send-hook . 'my_hdr Message-ID:<`date +"%Y%m%d%H%M%S"`@troy.piggo.com>'
+
+and in both of the above described methods of sending normally
+versus re-editing with headers the message-id has only one space.
+So that solves my immediate problem but I would have thought the
+hook should contain the single space.
+
+-- 
+Troy Piggins
+I bought some powdered water, but I don't know what to add to it.
+- Steven Wright
+
+

@@ -1,0 +1,112 @@
+From ravi.nallan at gmail.com  Wed Jul  9 14:40:50 2008
+From: ravi.nallan at gmail.com (Ravi Chandra Nallan)
+Date: Wed, 9 Jul 2008 18:10:50 +0530
+Subject: mutt-ng vs mutt w.r.t imap
+In-Reply-To: <cac7cb1d0701212312i4f79fcd8vebb992bfaff54fef@mail.gmail.com>
+References: <cac7cb1d0701212312i4f79fcd8vebb992bfaff54fef@mail.gmail.com>
+Message-ID: <cac7cb1d0807090540j57ed896kd9f6bbed81fa5757@mail.gmail.com>
+
+Hi All,
+ Looks like this is a problem specific to multiple imap folders (in
+sidebar?).
+I tried finding the stack when the muttng becomes unresponsive. It looks
+like it is spending most of its time in read from the socket!!!
+This happens when you try to move over to the next mailbox or even the next
+message!!
+
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead3555 pollsys  (8045c6c, 1, 8045c38, 0)
+fea85b12 poll (8045c6c, 1) + 52
+ fecd1c38 _nc_timed_wait (81531b0, 815b0c8, 0, 1, 8, 0) + a8
+  08152040 ???????? (81526b8, 1, ffffffff, 8150c48, 990033, 33)
+08149888 _iob () + 10
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+ $  pstack `pgrep muttng`
+1505:   /src/muttng-230508/trunk1/muttng -y
+ fead36b5 read (4, 81a61a0, 5)
+fee7766f sock_read () + 3f
+
+Anyone has faced similar problem? Is there any way where this could be done
+in background ?
+regards,
+~Ravi
+
+On Mon, Jan 22, 2007 at 12:42 PM, Ravi Chandra Nallan <ravi.nallan at gmail.com>
+wrote:
+
+> Hi All,
+>  I have this strange problem. It seems the mutt-ng is very slow compared to
+> mutt when getting or sending mails from IMAP server.
+> Mutt is fast as I scroll between the messages, but with mutt-ng it takes a
+> lot of time while switching between folders, scrolling in the messages etc.
+> The difference can be noticed with multiple folders opened in the sidebar.
+> I have compiled the latest version of mutt-ng on Solaris 10 sparc machine.
+> Any help?
+>
+> $ ldd `which mutt` `which muttng`
+> /opt/csw/bin/mutt:
+>         libslang.so.1 =>         /opt/csw/lib//libslang.so.1
+>         libm.so.1 =>     /lib//libm.so.1
+>         libssl.so.0.9.7 =>       /opt/csw/lib//libssl.so.0.9.7
+>         libcrypto.so.0.9.7 =>    /opt/csw/lib//libcrypto.so.0.9.7
+>         libintl.so.3 =>  /opt/csw/lib//libintl.so.3
+>         libiconv.so.2 =>         /opt/csw/lib//libiconv.so.2
+>         libsocket.so.1 =>        /lib//libsocket.so.1
+>         libnsl.so.1 =>   /lib//libnsl.so.1
+>         libgdbm.so.3 =>  /opt/csw/lib//libgdbm.so.3
+>         libc.so.1 =>     /lib//libc.so.1
+>         libdl.so.1 =>    /lib//libdl.so.1
+>         libmp.so.2 =>    /lib//libmp.so.2
+>         libmd5.so.1 =>   /lib//libmd5.so.1
+>         libscf.so.1 =>   /lib//libscf.so.1
+>         libdoor.so.1 =>  /lib//libdoor.so.1
+>         libuutil.so.1 =>         /lib//libuutil.so.1
+>         libm.so.2 =>     /lib//libm.so.2
+>         /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+>         /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+> /usr/local/bin/muttng:
+>         libslang.so.1 =>         /opt/csw/lib//libslang.so.1
+>         libm.so.2 =>     /lib//libm.so.2
+>         libssl.so.0.9.8 =>       /opt/csw/lib//libssl.so.0.9.8
+>         libcrypto.so.0.9.8 =>    /opt/csw/lib//libcrypto.so.0.9.8
+>         libintl.so.3 =>  /opt/csw/lib//libintl.so.3
+>         libiconv.so.2 =>         /opt/csw/lib//libiconv.so.2
+>         libsocket.so.1 =>        /lib//libsocket.so.1
+>         libnsl.so.1 =>   /lib//libnsl.so.1
+>         libgdbm.so.3 =>  /opt/csw/lib//libgdbm.so.3
+>         libc.so.1 =>     /lib//libc.so.1
+>         libdl.so.1 =>    /lib//libdl.so.1
+>         libm.so.1 =>     /lib//libm.so.1
+>         libmp.so.2 =>    /lib//libmp.so.2
+>         libmd5.so.1 =>   /lib//libmd5.so.1
+>         libscf.so.1 =>   /lib//libscf.so.1
+>         libdoor.so.1 =>  /lib//libdoor.so.1
+>         libuutil.so.1 =>         /lib//libuutil.so.1
+>         /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+>         /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+> -Ravi
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20080709/756d803d/attachment.html>
+

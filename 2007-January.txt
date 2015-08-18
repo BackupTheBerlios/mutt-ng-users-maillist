@@ -1,0 +1,96 @@
+From eslerj at gmail.com  Sun Jan 14 23:09:00 2007
+From: eslerj at gmail.com (Joel Esler)
+Date: Sun, 14 Jan 2007 17:09:00 -0500
+Subject: S/MIME
+Message-ID: <8c643a500701141409o41f89de3n1e1701f479286941@mail.gmail.com>
+
+Looking for a bit of assistance with S/MIME encoded (signed) messages.
+ I have configured mutt-ng to properly decode and parse pgp signed
+emails and it works perfectly.  However, I have correspondance with
+several companies and government agencies that use S/MIME to
+encode/sign/encrypt their emails, and I do not have mutt-ng setup to
+properly parse these.
+
+I have read the instructions in the manual, however, was looking for a
+bit of assistnace perhaps from someone who has already set it up.
+
+-- 
+--Joel Esler
+
+
+From andre.berger at web.de  Sun Jan 21 19:51:35 2007
+From: andre.berger at web.de (Andre Berger)
+Date: Sun, 21 Jan 2007 19:51:35 +0100
+Subject: mutt-ng isn't dead!
+Message-ID: <20070121185135.GA17975@hvk>
+
+* Andreas Krennmair (2006-10-28):
+
+Thanks for your continuing effort, much appreciated by the community!
+
+Have a nice day! 
+
+-Andre
+
+
+From ravi.nallan at gmail.com  Mon Jan 22 08:12:42 2007
+From: ravi.nallan at gmail.com (Ravi Chandra Nallan)
+Date: Mon, 22 Jan 2007 12:42:42 +0530
+Subject: mutt-ng vs mutt w.r.t imap
+Message-ID: <cac7cb1d0701212312i4f79fcd8vebb992bfaff54fef@mail.gmail.com>
+
+Hi All,
+ I have this strange problem. It seems the mutt-ng is very slow compared to
+mutt when getting or sending mails from IMAP server.
+Mutt is fast as I scroll between the messages, but with mutt-ng it takes a
+lot of time while switching between folders, scrolling in the messages etc.
+The difference can be noticed with multiple folders opened in the sidebar.
+I have compiled the latest version of mutt-ng on Solaris 10 sparc machine.
+Any help?
+
+$ ldd `which mutt` `which muttng`
+/opt/csw/bin/mutt:
+        libslang.so.1 =>         /opt/csw/lib//libslang.so.1
+        libm.so.1 =>     /lib//libm.so.1
+        libssl.so.0.9.7 =>       /opt/csw/lib//libssl.so.0.9.7
+        libcrypto.so.0.9.7 =>    /opt/csw/lib//libcrypto.so.0.9.7
+        libintl.so.3 =>  /opt/csw/lib//libintl.so.3
+        libiconv.so.2 =>         /opt/csw/lib//libiconv.so.2
+        libsocket.so.1 =>        /lib//libsocket.so.1
+        libnsl.so.1 =>   /lib//libnsl.so.1
+        libgdbm.so.3 =>  /opt/csw/lib//libgdbm.so.3
+        libc.so.1 =>     /lib//libc.so.1
+        libdl.so.1 =>    /lib//libdl.so.1
+        libmp.so.2 =>    /lib//libmp.so.2
+        libmd5.so.1 =>   /lib//libmd5.so.1
+        libscf.so.1 =>   /lib//libscf.so.1
+        libdoor.so.1 =>  /lib//libdoor.so.1
+        libuutil.so.1 =>         /lib//libuutil.so.1
+        libm.so.2 =>     /lib//libm.so.2
+        /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+        /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+/usr/local/bin/muttng:
+        libslang.so.1 =>         /opt/csw/lib//libslang.so.1
+        libm.so.2 =>     /lib//libm.so.2
+        libssl.so.0.9.8 =>       /opt/csw/lib//libssl.so.0.9.8
+        libcrypto.so.0.9.8 =>    /opt/csw/lib//libcrypto.so.0.9.8
+        libintl.so.3 =>  /opt/csw/lib//libintl.so.3
+        libiconv.so.2 =>         /opt/csw/lib//libiconv.so.2
+        libsocket.so.1 =>        /lib//libsocket.so.1
+        libnsl.so.1 =>   /lib//libnsl.so.1
+        libgdbm.so.3 =>  /opt/csw/lib//libgdbm.so.3
+        libc.so.1 =>     /lib//libc.so.1
+        libdl.so.1 =>    /lib//libdl.so.1
+        libm.so.1 =>     /lib//libm.so.1
+        libmp.so.2 =>    /lib//libmp.so.2
+        libmd5.so.1 =>   /lib//libmd5.so.1
+        libscf.so.1 =>   /lib//libscf.so.1
+        libdoor.so.1 =>  /lib//libdoor.so.1
+        libuutil.so.1 =>         /lib//libuutil.so.1
+        /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+        /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+-Ravi
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20070122/20085d5e/attachment.html>
+

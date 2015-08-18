@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [OT] f=f with vim [was:] f=f vs. trailing spaces in edit_headers
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20%5BOT%5D%20f%3Df%20with%20vim%20%5Bwas%3A%5D%20f%3Df%20vs.%20trailing%20spaces%20in%20edit_headers&In-Reply-To=%3C20060213083917.GB6609%40hermes.commontology.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000044.html">
+   <LINK REL="Next"  HREF="000045.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[OT] f=f with vim [was:] f=f vs. trailing spaces in edit_headers</H1>
+    <B>Andreas Wagner</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20%5BOT%5D%20f%3Df%20with%20vim%20%5Bwas%3A%5D%20f%3Df%20vs.%20trailing%20spaces%20in%20edit_headers&In-Reply-To=%3C20060213083917.GB6609%40hermes.commontology.de%3E"
+       TITLE="[OT] f=f with vim [was:] f=f vs. trailing spaces in edit_headers">A.Wagner at stud.uni-frankfurt.de
+       </A><BR>
+    <I>Mon Feb 13 09:39:17 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000044.html">f=f vs. trailing spaces in edit_headers
+</A></li>
+        <LI>Next message: <A HREF="000045.html">Display now messed up with r778
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#55">[ date ]</a>
+              <a href="thread.html#55">[ thread ]</a>
+              <a href="subject.html#55">[ subject ]</a>
+              <a href="author.html#55">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hello Rocco, hello list,
+
+* Rocco Rutte wrote on Feb/11/2006:
+&gt;&gt;<i> I am using vim and format=flowed and whenever I am editing in the 
+</I>&gt;&gt;<i> headers they're being wrapped into one line.
+</I>&gt;<i>
+</I>&gt;<i> This is done in r777. Btw, what vim settings do you use? I only get 
+</I>&gt;<i> this problem when I let vim reformat the paragraph which I wouldn't do 
+</I>&gt;<i> in the header part...
+</I>
+I'm on r781 now and it's fine now. I suppose the trouble comes from some 
+of the vim settings I puzzled together from various places -- with only 
+half understanding what they do. Anyway, since you've asked, here they 
+are as far as mail is concerned, or better, since there is stuff for 
+handling quotations, signatures, attachments, abook entries and more, as 
+far as format=flowed is concerned.
+
+
+in ftplugin/mail/mymail.vim:
+----------------------------
+
+set textwidth=72
+set fo+=tcqwra
+set updatetime=100
+
+let MAIL_flowed = 0
+
+function! s:flowed_context()
+   if g:MAIL_flowed
+     if (getline(line(&quot;.&quot;)) =~ &quot;^-- $&quot;) || (getline(line((&quot;.&quot;)-1)) =~ &quot;^-- $&quot;)
+       set formatoptions-=aw
+     else
+       set formatoptions+=aw
+     endif
+   endif
+endfunc
+
+function! s:ft_mail()
+   if &amp;formatoptions =~# '\(w.*a\)\|\(a.*w\)'
+     let g:MAIL_flowed = 1
+   else
+     let g:MAIL_flowed = 0
+   endif
+   augroup Mail
+     au!
+     au CursorHold * call &lt;SID&gt;flowed_context()
+   augroup END
+endfunc
+
+function! Fixflowed()
+    &quot; save position
+    let l = line(&quot;.&quot;)
+    let c = col(&quot;.&quot;)
+    normal G$
+    &quot; whiles are used to avoid nasty error messages
+    &quot; add spaces to the end of every line
+    while search('\([^]&gt; :]\)\n\(&gt;[&gt; ]*[^&gt; ]\)','w') &gt; 0
+       silent s/\([^]&gt; :]\)\n\(&gt;[&gt; ]*[^&gt; ]\)/\1 \r\2/g
+    endwhile
+    &quot; now, fix the wockas spacing from the text
+    while search('^\([&gt; ]*&gt;\)\([^&gt; ]\)','w') &gt; 0
+       silent s/^\([&gt; ]*&gt;\)\([^&gt; ]\)/\1 \2/
+    endwhile
+   &quot; now, compress the wockas
+    while search('^\(&gt;&gt;*\) \(&gt;&gt;*\( [^&gt;]\)*\)', 'w') &gt; 0
+       silent s/^\(&gt;&gt;*\) \(&gt;&gt;*\( [^&gt;]\)*\)/\1\2/
+    endwhile
+    &quot; restore the original location, such as it is
+    execute l . &quot; normal &quot; . c . &quot;|&quot;
+endfunction
+
+call s:ft_mail()
+call Fixflowed()
+
+
+---------------
+I am not too sure where I have got this particular piece of vimcode 
+from, surely somewhere from vim's tips archive. AFAIU, with &quot;updatetime&quot; 
+it transparently reformats the paragraph while one is typing, which 
+gives an automatic f=f linewrap when simply typing in a plain paragraph, 
+but which also (e.g.) wraps the &quot;Subject: &quot; line onto the preceding &quot;To: 
+&quot; line when that &quot;To: &quot; line ends with a space and when I am editing the 
+Subject line. ... or rather /has/ wrapped, since without the trailing 
+space it's much better now. (I believe the two functions I pasted above 
+don't even have anything to do with the problem at hand, but I am not 
+sure and you might be interested nonetheless (and they might help you to 
+find the corresponding entry in the tips archive), so I pasted them 
+anyway.
+
+I hope that was what you've asked for,
+
+See you,
+Andreas
+
+-- 
+_________________________________________________
+No I Don't Yahoo!
+And I'm getting pretty sick of being asked if I do.
+_________________________________________________
+
+-- 
+My Public PGP Keys:
+1024 Bit DH/DSS: 0x869F81BA
+768 Bit RSA:     0x1AD97BA5
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000044.html">f=f vs. trailing spaces in edit_headers
+</A></li>
+	<LI>Next message: <A HREF="000045.html">Display now messed up with r778
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#55">[ date ]</a>
+              <a href="thread.html#55">[ thread ]</a>
+              <a href="subject.html#55">[ subject ]</a>
+              <a href="author.html#55">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

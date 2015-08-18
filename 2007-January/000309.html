@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> mutt-ng vs mutt w.r.t imap
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2007-January/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20mutt-ng%20vs%20mutt%20w.r.t%20imap&In-Reply-To=%3Ccac7cb1d0701212312i4f79fcd8vebb992bfaff54fef%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000308.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>mutt-ng vs mutt w.r.t imap</H1>
+    <B>Ravi Chandra Nallan</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20mutt-ng%20vs%20mutt%20w.r.t%20imap&In-Reply-To=%3Ccac7cb1d0701212312i4f79fcd8vebb992bfaff54fef%40mail.gmail.com%3E"
+       TITLE="mutt-ng vs mutt w.r.t imap">ravi.nallan at gmail.com
+       </A><BR>
+    <I>Mon Jan 22 08:12:42 CET 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000308.html">mutt-ng isn't dead!
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#309">[ date ]</a>
+              <a href="thread.html#309">[ thread ]</a>
+              <a href="subject.html#309">[ subject ]</a>
+              <a href="author.html#309">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi All,
+ I have this strange problem. It seems the mutt-ng is very slow compared to
+mutt when getting or sending mails from IMAP server.
+Mutt is fast as I scroll between the messages, but with mutt-ng it takes a
+lot of time while switching between folders, scrolling in the messages etc.
+The difference can be noticed with multiple folders opened in the sidebar.
+I have compiled the latest version of mutt-ng on Solaris 10 sparc machine.
+Any help?
+
+$ ldd `which mutt` `which muttng`
+/opt/csw/bin/mutt:
+        libslang.so.1 =&gt;         /opt/csw/lib//libslang.so.1
+        libm.so.1 =&gt;     /lib//libm.so.1
+        libssl.so.0.9.7 =&gt;       /opt/csw/lib//libssl.so.0.9.7
+        libcrypto.so.0.9.7 =&gt;    /opt/csw/lib//libcrypto.so.0.9.7
+        libintl.so.3 =&gt;  /opt/csw/lib//libintl.so.3
+        libiconv.so.2 =&gt;         /opt/csw/lib//libiconv.so.2
+        libsocket.so.1 =&gt;        /lib//libsocket.so.1
+        libnsl.so.1 =&gt;   /lib//libnsl.so.1
+        libgdbm.so.3 =&gt;  /opt/csw/lib//libgdbm.so.3
+        libc.so.1 =&gt;     /lib//libc.so.1
+        libdl.so.1 =&gt;    /lib//libdl.so.1
+        libmp.so.2 =&gt;    /lib//libmp.so.2
+        libmd5.so.1 =&gt;   /lib//libmd5.so.1
+        libscf.so.1 =&gt;   /lib//libscf.so.1
+        libdoor.so.1 =&gt;  /lib//libdoor.so.1
+        libuutil.so.1 =&gt;         /lib//libuutil.so.1
+        libm.so.2 =&gt;     /lib//libm.so.2
+        /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+        /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+/usr/local/bin/muttng:
+        libslang.so.1 =&gt;         /opt/csw/lib//libslang.so.1
+        libm.so.2 =&gt;     /lib//libm.so.2
+        libssl.so.0.9.8 =&gt;       /opt/csw/lib//libssl.so.0.9.8
+        libcrypto.so.0.9.8 =&gt;    /opt/csw/lib//libcrypto.so.0.9.8
+        libintl.so.3 =&gt;  /opt/csw/lib//libintl.so.3
+        libiconv.so.2 =&gt;         /opt/csw/lib//libiconv.so.2
+        libsocket.so.1 =&gt;        /lib//libsocket.so.1
+        libnsl.so.1 =&gt;   /lib//libnsl.so.1
+        libgdbm.so.3 =&gt;  /opt/csw/lib//libgdbm.so.3
+        libc.so.1 =&gt;     /lib//libc.so.1
+        libdl.so.1 =&gt;    /lib//libdl.so.1
+        libm.so.1 =&gt;     /lib//libm.so.1
+        libmp.so.2 =&gt;    /lib//libmp.so.2
+        libmd5.so.1 =&gt;   /lib//libmd5.so.1
+        libscf.so.1 =&gt;   /lib//libscf.so.1
+        libdoor.so.1 =&gt;  /lib//libdoor.so.1
+        libuutil.so.1 =&gt;         /lib//libuutil.so.1
+        /platform/SUNW,Sun-Blade-100/lib/libc_psr.so.1
+        /platform/SUNW,Sun-Blade-100/lib/libmd5_psr.so.1
+-Ravi
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20070122/20085d5e/attachment.html">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20070122/20085d5e/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000308.html">mutt-ng isn't dead!
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#309">[ date ]</a>
+              <a href="thread.html#309">[ thread ]</a>
+              <a href="subject.html#309">[ subject ]</a>
+              <a href="author.html#309">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

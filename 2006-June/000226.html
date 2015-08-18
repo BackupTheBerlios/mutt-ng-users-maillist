@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Help to install mutt-ng needed
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mutt-ng-users/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Help%20to%20install%20mutt-ng%20needed&In-Reply-To=%3C20060625185047.GG8425%40pox.one.pl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000225.html">
+   <LINK REL="Next"  HREF="000227.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Help to install mutt-ng needed</H1>
+    <B>POX</B> 
+    <A HREF="mailto:mutt-ng-users%40lists.berlios.de?Subject=Re%3A%20Help%20to%20install%20mutt-ng%20needed&In-Reply-To=%3C20060625185047.GG8425%40pox.one.pl%3E"
+       TITLE="Help to install mutt-ng needed">ozarow at gmail.com
+       </A><BR>
+    <I>Sun Jun 25 20:50:47 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000225.html">Help to install mutt-ng needed
+</A></li>
+        <LI>Next message: <A HREF="000227.html">Help to install mutt-ng needed
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#226">[ date ]</a>
+              <a href="thread.html#226">[ thread ]</a>
+              <a href="subject.html#226">[ subject ]</a>
+              <a href="author.html#226">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>German Erlenkamp (<A HREF="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">GrErlenkamp at aol.com</A>):
+&gt;<i> I want to try mutt-ng instead of mutt, because i have to manage
+</I>&gt;<i> different IMAP-accounts.
+</I>&gt;<i> So i tried to install it, but i got a problem: ./configure breaks with
+</I>&gt;<i> the error-message &quot;configure: error: no curses library found&quot;
+</I>
+You can install MuttNG from package, it's in experimental
+
+(aptitude install mutt-ng)
+
+
+&gt;<i> I need a library, thats what I understand, but which library? I tried
+</I>&gt;<i> 'aptitude' to get 'ncurses' but it seems that there is no such package.
+</I>
+use one of:
+* aptitude search ncurses
+* apt-cache search ncurses
+* apt-file search ncurses
+next time
+
+mutt-ng package's maintainer was able to build it with following
+packages:
+libncursesw5-dev, libsasl2-dev, libgnutls-dev (&gt;=1.3.5-1.1),
+libidn11-dev, linuxdoc-tools-text, lynx, gettext, groff, dpatch,
+automake1.7, libqdbm-dev, xsltproc, docbook-xml, docbook-xsl,
+libgpgme11-dev
+
+-- 
+-=[     Piotr Ozarowski     ]=-
+-=[ <A HREF="http://www.ozarowski.pl">http://www.ozarowski.pl</A> ]=-
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060625/60692751/attachment.pgp">https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060625/60692751/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000225.html">Help to install mutt-ng needed
+</A></li>
+	<LI>Next message: <A HREF="000227.html">Help to install mutt-ng needed
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#226">[ date ]</a>
+              <a href="thread.html#226">[ thread ]</a>
+              <a href="subject.html#226">[ subject ]</a>
+              <a href="author.html#226">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mutt-ng-users">More information about the Mutt-ng-users
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,872 @@
+From trey at fastmail.fm  Mon Apr  3 00:04:00 2006
+From: trey at fastmail.fm (Trey Sizemore)
+Date: Sun, 02 Apr 2006 18:04:00 -0400
+Subject: No longer prompting for IMAP password
+Message-ID: <44304A50.9070309@fastmail.fm>
+
+I have just updated to muttngr797 and I am no longer prompted for my
+IMAP password and, as such, logging in is failing.
+
+Would someone have a look to see what the problem might be with this
+revision?
+
+Thanks.
+
+-Trey
+
+
+From architect.06 at freenet.de  Sat Apr  8 12:06:56 2006
+From: architect.06 at freenet.de (=?ISO-8859-1?Q?Gesch=E4ftsleitung?=)
+Date: Sat, 8 Apr 2006 12:06:56 +0200
+Subject: =?ISO-8859-1?Q?Gesch=E4ftsgelegenheit?= 2006
+Message-ID: <200604081206568BE89B7E97$CD7A6F2974@AP>
+
+
+
+
+
+  Job & Karriere Newsletter 2006
+Guten Tag!
+
+?Suchen Sie einen Nebenjob und wollen 500 bis 2000 EUR nebenbei verdienen?
+
+?Suchen Sie eine neue Karriere oder wollen sich selbst?ndig machen, ohne
+Risiko, mit sehr geringen Investitionen und monatlichem Einkommen in den
+5stelligen Bereich?
+
+?Sie sind bereits selbst?ndig und suchen ein 2. Standbein mit monatlichem
+Einkommen bis 10.000 EUR zus?tzlich?
+
+Dann fordern Sie hier weitere Infos an
+unter:??http://unabhaengigkeit.4mg.com
+Eine gute Zukunft Ihr Job & Karriere Newsletter Team  Gesch?ftsleitung ?
+Newsletter Post Int.?? Chur-Schweiz
+
+Sie erhalten dieses Angebot, weil Sie sich zum Bezug unseres Newsletters
+eingetragen haben. Leider kommt es vor, dass auch andere Teilnehmer ohne
+Zustimmung der Adressinhaber`s fremde eMail-Adressen eintragen. Sollte dies
+der Fall sein, so bitten wir um Entschuldigung.
+
+Soll Ihre eMail-Adresse aus dem Verteiler gel?scht werden, so schicken Sie
+bitte ein Antwort-eMail an: "architect.06 at freenet.de" mit betrifft:
+"L?schen".
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060408/d40d65a6/attachment.html>
+
+From euroagents4 at gmail.com  Sun Apr  9 15:22:07 2006
+From: euroagents4 at gmail.com (Parker White)
+Date: Sun, 9 Apr 2006 14:22:07 +0100
+Subject: HELLO! PRIZE WINNER
+Message-ID: <200604091321.k39DLdt02185@bat.berlios.de>
+
+EURO MILLIONS ESPANA
+AWARD/PROMOTIONAL DEPARTMENT
+BERCELONA.SPAIN.
+EMAIL:vettaproval at netscape.net
+http://www.loteria.com/euro.php
+ 
+REF NUMBER:[LM/04679/TN]
+ 
+We are happy to inform you that your email address has been selected as
+one of the lucky email addresses in the category "B" of the online lotto
+conducted by EURO MILLIONS ESPANA.
+
+CONGRATULATIONS!!!!
+
+The EURO MILLIONS ESPANA was conducted by an automated computer balloting 
+system, where by email addresses(30,000 email addresses),were extracted from
+all continents of the world.A draw was held in different categories and 
+winners emerged from different parts of the world and they are entitled to 
+various cash prizes depending on their different categories.Thus,you are entitled 
+to a prize money of 466.812,79 Euros(Four hundred and sixty-six thousand, eight 
+hundred and twelve euro,seventy-nine cent)only.
+
+winning numbers:8-16-19-43-45-1-4
+Reference number:[LM/04679/TN]
+Ticket number:[754/22/76] 
+ 
+As a category B winner, you have been selected by computer balloting system where 
+only email addresses are soughted,from a total number of 30,000 email addresses 
+drawn from all over the globe.After an automated computer ballot of our International 
+Promotions Program, only ten winners emerged in this category and therefore you are
+to receive payout of 466.812,79 Euros.This promotional program takes place every year,
+and is promoted and sponsored! by EURO MILLIONS ESPANA,and other corporate organisations.
+This is to encourage the use of the internet and computers worldwide.
+To immediately claim your prize, please contact our fiduciary agent:
+below are the contact information of your fiiduciary agent:
+
+EURO MILLIONS AGENCY S.L
+====================================
+Mr.Costa Vella
+calle colon 1(28972).Barcelona,spain.
+TEL:0034-649-697-618
+TEL:0034-900-800-456
+EMAIL:vettaproval at netscape.net
+====================================
+In your best interest(s),you must initiate contact within one week of receipt
+of this correspondence.
+You are to provide the below details,to enable the speedy evaluation and
+processing of your winnings. we advice that you adhere strictly to their
+procedures to avoid any disqualifications and subsequent cancellation.
+1. your full names
+2. your full home / office address
+3. direct telephone/fax numbers and email
+4. fax copy of your identity card/driver's license
+
+The beneficiary is responsible for the(VETT/APPROVAL CHARGES)of his fund 
+to his/her country.Your winning prize is not deductable until your winnings
+has been processed,approved and transfered to you by your claim agent above,
+For verification on your lucky winning prize,you are to visit our online site
+(http://www.loteria.com/euro.php) and indicate the date this email lottery 
+programme draw of the EURO MILLIONS was held (30th of december 2005)and there 
+you will find your result winning number.the late release of this result was due 
+to difficulties encountered in sorting out mixed up numbers and email addresses.
+We congratulate you once again and it is our hope that you participate
+in any of our international programs in the nearest future.
+
+Thank you.
+Sincerely,
+Maria Jose.
+Promotions Manager
+EMAIL:vettaproval at netscape.net
+-------------- -----------------------------------
+This e-mail transmission contains information that is confidential and may 
+be privileged.It is intended only for the addressee(s) named above.
+ 
+
+
+From andre.berger at web.de  Sun Apr  9 19:38:33 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Sun, 9 Apr 2006 19:38:33 +0200
+Subject: Changelog.trunk
+Message-ID: <20060409173833.GG22263@hvk.local>
+
+Changelog.trunk has stopped reflecting the latest muttng version; am
+I missing something here?
+
+-Andre
+
+
+From jobs at house-worldwide.com  Mon Apr 10 18:08:25 2006
+From: jobs at house-worldwide.com (Gillian Loughrey)
+Date: Mon, 10 Apr 2006 10:08:25 -0600
+Subject: Stellenangebot (Worldwide House)
+Message-ID: <1FSywD-000XNQ-6L@S0106000d880272d7.cg.shawcable.net>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060410/180a7073/attachment.html>
+
+From shoveljiang at sina.com  Tue Apr 11 09:02:19 2006
+From: shoveljiang at sina.com (shoveljiang at sina.com)
+Date: Tue, 11 Apr 2006 15:02:19 +0800
+Subject: Supply casting, stamping and machining
+Message-ID: <200604110701.k3B71Wt10003@bat.berlios.de>
+
+Dear Sir or Madam:  
+   
+    We specialize in metalworking in China, approved by IS09001-2000 Quality System Certification. 
+
+    We process the products mainly to use investment casting, san casting,  die casting, permanent mould casting, stamping, machining, with all kinds of ferrous metal and nonferrous metal including stainless steel, carbon steel, aluminium, zinc, copper, and so on. Surface treatment includes grinding, polishing, hot galvanizing, plating,  powder coating, painting, passivating, anodizing, etc.. 
+      
+    We hope you try us by offering drawings or samples. We offer you good and inexpensive products. Your satisfaction is our pursuit.
+
+    In order to quote for you and make the mold in time, you'd better provide 2D drawing and the corresponding 3D drawing (original drawing or the IGES files transformed from 3D software). We know the detail according to 2D drawings and rapidly calculate the gross weight and surface area according to 3D drawings. 
+
+    Welcome to consult.
+
+
+
+
+Best regards
+
+Shauvay Jiang / Sales manager
+
+COMCID Machinery Manufacturing Co., Ltd.
+Add?China, 202, No. 77, Lane 138, Zhichuan Rd., Putuo, Shanghai (200333)
+Web: www.comcid.com 
+Tel: +86 21 62543691
+Fax: +86 21 62543691
+Email: shauvayjiang at tom.com or comcid at comcid.com 
+
+
+From rvsutherland at wongfaye.com  Tue Apr 11 08:31:40 2006
+From: rvsutherland at wongfaye.com (Irina Nikolaeva)
+Date: Mon, 10 Apr 2006 23:31:40 -0700
+Subject: Leichter Nebenverdienst in Deutschland
+Message-ID: <8618100833.20060410233140@wongfaye.com>
+
+Hallo ich bin Irina Nikolaeva und ich vertrete  die Firma  Btrus .
+Unsere Firma "Btrus" bietet folgende Dienste an:
+-Reservierung von teueren Hotels
+-Vermietung von Autos
+-Kaufen von Flugtickets
+
+Mit der Steigerung der Kundenanzahl, wuchsen auch Ihre Bedurfnisse.Wir haben noch keine Partner in Deutschland, deswegen bieten wir Ihnen
+diese Moglichkeit, als Partner fur uns zu arbeiten.
+
+Die Einzigen Anforderungen an Sie  sind:
+PC, Internet, E-mail
+Ein Konto bei einem  Zahlungsinstitut in Deutschland ist  bevorzugt.
+
+Und als gegen Leistung bieten wir Ihnen.
+Hohes Einkommensniveau.
+Flexible Arbeitszeiten.
+Moglichkeit diese Tatigkeit als Hauptbeschaftigung auszuuben.
+Und von jedem Deal erhalten Sie 300-1000|, und das nur fur 2-3 Stunden Arbeit
+
+Falls unser Angebot Sie neugierig gemacht hat und Sie sich angesprochen fuhlen, dann melden Sie sich einfach per E-MAIL: btrus_info at km.ru
+Wir freuen uns!
+Mit besten Grussen!
+
+
+
+
+From plkkqkznqk at bea.com  Tue Apr 11 13:46:58 2006
+From: plkkqkznqk at bea.com (?UROMILLONES LOTERIA INTERNATIONAL S.A.)
+Date: Tue, 11 Apr 2006 13:46:58 +0200
+Subject: CONGRATULATION YOU HAVE WON !!!
+Message-ID: <200604111146.k3BBkvt25626@bat.berlios.de>
+
+?UROMILLONES LOTERIA INTERNATIONAL S.A.
+CALLE PIVON Y SANCHEZ NO 8 2B 
+28014, MADRID SPAIN
+FROM:THE DESK OF THE VICE PRESIDENT.    
+INTERNATIONAL PROMOTIONS/PRIZE AWARD DEPT
+REF NO: UUE/11500369/25
+BATCH NO: AUE/018/O4
+PRIZE CLAIM TRACK #: 235JUK965 
+
+ATTENTION:PRIZE WINNER
+
+RE:AWARD NOTIFICATION/FINAL NOTICE. 
+We are pleased to inform you of the release of the results of the EUROMILLONES SPANISH SWEEPSTAKES LOTTERY/INTERNATIONAL PROGRAM held on the 18th of MARCH  2006,and the result was released on the 10th of APRIL 2006. 
+This lottery was promoted and sponsored by Spainsh European Lottery board in order to enhance and promote the use of Internet Explorer Users and Microsoft-wares around the globe. 
+Your Email attached to ticket number 4532-908 with serial number 78543293 drew the lucky numbers 09- 56-76-18-13-99-37 which consequently won in the 3rd category.You have therefore been approved for a lump payout of ?850,000.00 (EIGHT HUNDRED AND FIFTY THOUSAND EUROS ONLY)in cash credited to file REF NO: UUE/11500369/25. 
+CONGRATULATIONS!
+Your fund is now deposited with a security company and insured with your email address.Due to mix up of some numbers and email addresses, we ask you to keep your informations very confidential until your claims has been processed and your  funds remitted to your nominated bank account, as this is part of our security protocol to avoid double claiming. 
+All participants were selected through a computer ballots system drawn from 25,000 email addresses from Europe, North & South America, Asia, Australia Caribean, Africa And New Zealand as part of our international program which we conduct once every year. We hope that with a part of your prize, you will take part in our up coming end of year high stake ?1.8 billion International lottery. 
+
+To begin your claims, please contact your claims agent, 
+MR.TOM WEST, Foreign Operations Manager of UNIVERSAL SECURITY COMPANY,S.A. on 
+TEL:0034-653-449-869,
+Email: univerclaims at netscape.net
+
+Remember, all prize money must be claimed not later than 3weeks(21days)upon receipt of this notification.After this date all funds will be returned to the MINISTERIO DE ECONOMIA Y HACIENDA as unclaimed. Also,for your information 5% of your prize money belongs to the Security Company as a part of their commission. This commission will be paid to UNIVERSAL SECURITY COMPANY only after you have received your funds in your designated account. 
+NOTE: In order to avoid unnecessary delays and complications, please remember to quote your reference and batch numbers in every of your correspondence with your agent. 
+
+Sincerely, 
+JOSE MIUGEL PEREZ. 
+?UROMILLONES LOTERIA INTERNATIONAL S.A.
+VICE PRESIDENT. 
+  
+ 
+
+From bagpuss at slamdunkfan.com  Wed Apr 12 13:23:41 2006
+From: bagpuss at slamdunkfan.com (Liberty Financial Union)
+Date: Wed, 12 Apr 2006 07:23:41 -0400
+Subject: Suchen nach Regionalvertreter
+Message-ID: <9710809849.20060412072341@slamdunkfan.com>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060412/05afbaae/attachment.html>
+
+From gsclavhc at cineville.com  Thu Apr 13 18:50:30 2006
+From: gsclavhc at cineville.com (Sandra Butler)
+Date: Thu, 13 Apr 2006 18:50:30 +0200
+Subject: freie Vakanzen
+Message-ID: <1FU51a-000VBU-44@chello062178245196.2.12.vie.surfer.at>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060413/59f9eea2/attachment.html>
+
+From canada_lotterycentre at canada.com  Thu Apr 20 16:39:18 2006
+From: canada_lotterycentre at canada.com (Mr. Frank Bill)
+Date: Thu, 20 Apr 2006 16:39:18 +0200
+Subject: Congratulations! Your email address has won USD1.000.000.00, uk
+Message-ID: <200604201438.k3KEcpt19938@bat.berlios.de>
+
+From: Mr. Frank Bill
+No: 125 St Michael's Street
+Plot 2A Harrison Drive
+Ontario Canada.
+Tel/Fax: +1-514-371-0291
+(www.canada.com/findit/lotteries/index.html)
+Check for LOTTO 6/49
+
+Email: lotterycentre_canada at yahoo.ca 
+Email: canada_lotterycentre at canada.com
+Email: canadalottery_centre at canada.com
+Customer Service: 680 NCA 85914
+Ref: EAAL/851OYHI/04
+Batch No: Lotto 6/49
+Draw Coupon: Match 6+B
+
+               WINNING NOTIFICATION
+ 
+
+THIS LOTTERY IS SPONSORED BY THE CANADIAN GOVERNMENT
+FOR THE PROMOTION OF THE 2010 WORLD CUP TO BE HOSTED
+IN SOUTH AFRICA.
+ 
+We happily announce to you the draw of the Euro-Afro-
+American Sweepstake Lottery International programs held
+on the Wed Apr 5 2006 in Essex United Kingdom and
+Canada Your e-mail address attached to ticket number:
+B9564 75604545 100 with! Serial number 46560 drew the
+winning numbers 10/19/20/35/36/38 with a bonus Number 
+26,for LOTTO 6/49 under the choice of the lottery in 
+the 2nd category of daily three. You have therefore 
+been approved to claim a total sum of US$1.000.000.00
+(One Million United States Dollars) in cash credited 
+to file EAAL/9080118308/04.
+ 
+This is from a total cash prize of US $130,000,000.00
+Million dollars, shared amongst the first One-Hundred
+and thirty (130) lucky winners in this category
+worldwide. Please note that your lucky winning number
+falls within our Afro booklet representative office in
+Africa as indicated in your play coupon, because this
+particular draw was selected to promote the 2010 World
+Cup to be Hosted in South Africa hence your winning
+information must be kept to enable you participate in
+our subsequent games before the grand finale. In view
+of this, your US$1.000,000.00 (One Million United
+States Dollars) would be released to you by an
+accredited commercial Bank in South Africa. Our African
+agent will immediately commence the process to
+facilitate the release of your funds as soon as you
+contact him.
+ 
+All participants were selected randomly from World Wide
+Web site through computer draws system and extracted
+from over 10,000,00 companies and personal e-mails. For
+security reasons, you are advised to keep your winning
+information confidential till your claims is processed
+and your money remitted to you in whatever manner you
+deem fit to claim your prize. This is part of our
+precautionary measure to avoid double claiming and
+unwarranted abuse of this program by some unscrupulous
+elements. Please be warned. To file for your claim,
+please contact our corresponding agent in South Africa
+immediately you read this message for quick and urgent
+release of your fund, contact information is as follow:
+MR. ISRAEL SKOSANA, Tel: +27-73-327-6620. email: 
+(i_skosana at canada.com) Or 
+(canadalottery_agentisrael at yahoo.com) To avoid 
+unnecessary delays and complications, please quote your 
+reference/batch numbers in any correspondences with our 
+designated agents.
+ 
+Congratulations once more from all members and staff
+of this program that has successfully won this
+competition. Thank you for being part of our
+promotional lottery program. Yours Sincerely,
+Mrs.Gladys Owen United Kingdom Zonal Co-coordinator
+Mrs.Patricia Hope Asst. Gen. Sec Mr. Grey Johnson
+Canadian/American Zonal Secretary General.
+Switzerland Zonal Co-coordinator For African Winners Dr
+Bill Wilson. African/European Head Office
+Baumgarten-strasse 15 Postfach 686 Geneva CH-8201
+Schaffhausen Dr Peter Martins Head South African
+Offshore Payment Office Madrid, Spain. Thanks for your
+Co-operation in anticipation. Contact:
+(www.canada.com/findit/lotteries/index.html) Check for 
+LOTTO 6/49.
+
+
+
+
+From canadalottery_centre at canada.com  Thu Apr 20 18:49:44 2006
+From: canadalottery_centre at canada.com (Mr. Frank Bill)
+Date: Thu, 20 Apr 2006 18:49:44 +0200
+Subject: Congratulations! Your email address has won USD1.000.000.00,
+Message-ID: <200604201649.k3KGnHt29346@bat.berlios.de>
+
+From: Mr. Frank Bill
+No: 125 St Michael's Street
+Plot 2A Harrison Drive
+Ontario Canada.
+Tel/Fax: +1-514-371-0291
+(www.canada.com/findit/lotteries/index.html)
+Check for LOTTO 6/49
+
+Email: lotterycentre_canada at yahoo.ca 
+Email: canada_lotterycentre at canada.com
+Email: canadalottery_centre at canada.com
+Customer Service: 680 NCA 85914
+Ref: EAAL/851OYHI/04
+Batch No: Lotto 6/49
+Draw Coupon: Match 6+B
+
+               WINNING NOTIFICATION
+ 
+
+THIS LOTTERY IS SPONSORED BY THE CANADIAN GOVERNMENT
+FOR THE PROMOTION OF THE 2010 WORLD CUP TO BE HOSTED
+IN SOUTH AFRICA.
+ 
+We happily announce to you the draw of the Euro-Afro-
+American Sweepstake Lottery International programs held
+on the Wed Apr 5 2006 in Essex United Kingdom and
+Canada Your e-mail address attached to ticket number:
+B9564 75604545 100 with! Serial number 46560 drew the
+winning numbers 10/19/20/35/36/38 with a bonus Number 
+26,for LOTTO 6/49 under the choice of the lottery in 
+the 2nd category of daily three. You have therefore 
+been approved to claim a total sum of US$1.000.000.00
+(One Million United States Dollars) in cash credited 
+to file EAAL/9080118308/04.
+ 
+This is from a total cash prize of US $130,000,000.00
+Million dollars, shared amongst the first One-Hundred
+and thirty (130) lucky winners in this category
+worldwide. Please note that your lucky winning number
+falls within our Afro booklet representative office in
+Africa as indicated in your play coupon, because this
+particular draw was selected to promote the 2010 World
+Cup to be Hosted in South Africa hence your winning
+information must be kept to enable you participate in
+our subsequent games before the grand finale. In view
+of this, your US$1.000,000.00 (One Million United
+States Dollars) would be released to you by an
+accredited commercial Bank in South Africa. Our African
+agent will immediately commence the process to
+facilitate the release of your funds as soon as you
+contact him.
+ 
+All participants were selected randomly from World Wide
+Web site through computer draws system and extracted
+from over 10,000,00 companies and personal e-mails. For
+security reasons, you are advised to keep your winning
+information confidential till your claims is processed
+and your money remitted to you in whatever manner you
+deem fit to claim your prize. This is part of our
+precautionary measure to avoid double claiming and
+unwarranted abuse of this program by some unscrupulous
+elements. Please be warned. To file for your claim,
+please contact our corresponding agent in South Africa
+immediately you read this message for quick and urgent
+release of your fund, contact information is as follow:
+MR. ISRAEL SKOSANA, Tel: +27-73-327-6620. email: 
+(i_skosana at canada.com) Or 
+(canadalottery_agentisrael at yahoo.com) To avoid 
+unnecessary delays and complications, please quote your 
+reference/batch numbers in any correspondences with our 
+designated agents.
+ 
+Congratulations once more from all members and staff
+of this program that has successfully won this
+competition. Thank you for being part of our
+promotional lottery program. Yours Sincerely,
+Mrs.Gladys Owen United Kingdom Zonal Co-coordinator
+Mrs.Patricia Hope Asst. Gen. Sec Mr. Grey Johnson
+Canadian/American Zonal Secretary General.
+Switzerland Zonal Co-coordinator For African Winners Dr
+Bill Wilson. African/European Head Office
+Baumgarten-strasse 15 Postfach 686 Geneva CH-8201
+Schaffhausen Dr Peter Martins Head South African
+Offshore Payment Office Madrid, Spain. Thanks for your
+Co-operation in anticipation. Contact:
+(www.canada.com/findit/lotteries/index.html) Check for 
+LOTTO 6/49.
+
+
+
+
+From stern at itgssi.com  Fri Apr 21 18:58:18 2006
+From: stern at itgssi.com (James M Stern (x7955) 640)
+Date: Fri, 21 Apr 2006 09:58:18 -0700
+Subject: How to mark newsgroup messages as read
+Message-ID: <20060421165818.GC11974@itgssi.com>
+
+My muttng configuration gives unread mail messages a different color
+than read messages, a feature I like.
+
+I would like to do the same with newsgroup messages but muttng never
+seems to mark newsgroup messages as read.  Or at least if it does, my
+usual colors don't take effect.  How can I tell muttng to paint unread
+newsgroup messages and read messsages differently?
+
+I use muttng-20060417 on Linux.  I run muttng from GNU screen and
+establish my telnet session via PuTTY.
+
+Thank you.
+-- 
+Jim Stern, stern at itgssi.com
+
+
+From andre.berger at web.de  Fri Apr 21 19:09:07 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Fri, 21 Apr 2006 19:09:07 +0200
+Subject: How to mark newsgroup messages as read
+In-Reply-To: <20060421165818.GC11974@itgssi.com>
+References: <20060421165818.GC11974@itgssi.com>
+Message-ID: <20060421170907.GB483@hvk.local>
+
+* James M Stern (x7955) 640 (2006-04-21):
+> My muttng configuration gives unread mail messages a different color
+> than read messages, a feature I like.
+> 
+> I would like to do the same with newsgroup messages but muttng never
+> seems to mark newsgroup messages as read.  Or at least if it does, my
+> usual colors don't take effect.  How can I tell muttng to paint unread
+> newsgroup messages and read messsages differently?
+
+color index cyan default '~N' 
+
+works for me. 
+
+-Andre
+
+
+From stern at itgssi.com  Fri Apr 21 20:39:51 2006
+From: stern at itgssi.com (James M Stern (x7955) 640)
+Date: Fri, 21 Apr 2006 11:39:51 -0700
+Subject: How to mark newsgroup messages as read
+In-Reply-To: <20060421170907.GB483@hvk.local>
+References: <20060421165818.GC11974@itgssi.com> <20060421170907.GB483@hvk.local>
+Message-ID: <20060421183951.GD11974@itgssi.com>
+
+On Fri, Apr 21, 2006 at 07:09:07PM +0200, Andre Berger wrote:
+> * James M Stern (x7955) 640 (2006-04-21):
+> > My muttng configuration gives unread mail messages a different color
+> > than read messages, a feature I like.
+> > 
+> > I would like to do the same with newsgroup messages but muttng never
+> > seems to mark newsgroup messages as read.  Or at least if it does, my
+> > usual colors don't take effect.  How can I tell muttng to paint unread
+> > newsgroup messages and read messsages differently?
+> 
+> color index cyan default '~N' 
+> 
+> works for me. 
+
+Never mind, I see the problem.  I confused "<Esc>i" with "i".  That
+might explain it.  :-)
+
+Thank you for the reply.
+-- 
+Jim Stern, stern at itgssi.com
+
+
+From camlotto at netscape.net  Tue Apr 25 01:47:45 2006
+From: camlotto at netscape.net (THE NATIONAL LOTTERY COMMISSION)
+Date: Tue, 25 Apr 2006 01:47:45 +0200
+Subject: PROMOTION PROGRAM!!!
+Message-ID: <200604242347.k3ONlPt13358@bat.berlios.de>
+
+
+CAMELOT ONLINE GAMING
+REGULATED BY THE NATIONAL LOTTERY COMMISSION 
+GROOTHANDELSMARKT 20, 
+AMSTERDAM 1018 ND
+NETHERLANDS.
+ 
+ 
+ 
+ 
+CONGRATULATIONS!
+ 
+ 
+ 
+You have been selected as one of the twelve lucky winners under CATEGORY "B" in the sixth edition of 
+the CAMELOT ONLINE GAMING/LOTTERY INTERNATIONAL PROMOTIONS. You have been 
+approved for a payout of 625,000 Euros (Six Hundred and Twenty Five Thousand Euros Only).
+
+All participants for the online version of the International Promotion were randomly selected from the 
+internet database through computer draw system from over 100,000 unions, associations, and corporate 
+bodies that are listed online and downsized to 5,000 from which selection of the final lucky twelve was 
+made.
+
+The process of collecting your lottery prize winning is to be handled by an authorised claims agent within 
+our European booklet representative office in The Netherlands. You are to contact the fiduciary agent 
+within a week of receiving this notice. Please find below detail contact information:
+
+Duke Kaarls, (COG)
+Foreign Service Manager,
+C Kok v Alphenstr 13, 
+Amsterdam, 6417SR, 
+Netherlands
+Tel: + 31 645 228 532
+Email: camlottonl at netscape.net
+
+You MUST provide the claims agent with your full name, country of residence, address, telephone and 
+fax number along with the winning information below:
+
+Ref No: TCL/55/849177
+Grand Draw No: 01-A223
+Secret pin code: 56748
+
+Furthermore you are seriously advised to keep all winning information and numbers confidential until your 
+lottery winning is processed and claimed by you in line with our fiduciary security protocol to avoid double 
+claiming and unwarranted abuse of this program. Anyone under the age of 18 is automatically 
+disqualified. In the event of a change in present address, do inform your agent as soon as possible.
+
+Congratulations!
+
+Jos Hanssen
+VICE PRESIDENT/ONLINE LOTTERY CO-ORDINATOR CAMELOT ONLINE 
+GAMING/LOTTERY 
+
+**************************************************** 
+The contents of this e-mail are strictly confidential. This e-mail is meant for the addressee only. Should 
+this e-mail have been received erroneously please discard it.
+
+
+
+From universeh at sify.com  Wed Apr 26 13:50:27 2006
+From: universeh at sify.com (EURO MILLIONES SPANISH LOTTERY ESPA?AL)
+Date: Wed, 26 Apr 2006 13:50:27 +0200
+Subject: CONGRATULATIONS !!!(YOUR EMAIL HAVE WON YOU A PRIZE )
+Message-ID: <200604261150.k3QBoRt13084@bat.berlios.de>
+
+
+
+EURO MILLIONES SPANISH LOTTERY ESPA?AL 
+C / CORDOBA N? 14 PLANTA 2-A 
+28089 MADRID, ESPANA 
+
+
+FROM: INTERNATIONAL PROMOTION/PRIZE AWARD DEPT.
+REFERENCE: 67/80/IPD
+BATCH: EGGS-541-623-782:
+RE: WINNING NOTIFICATION / FINAL NOTICE
+ 
+Sir/Madam
+
+We are pleased to inform you of the result of the Euro millions Spanish Lottery Winners International E-mail programs held on the 14TH OF MA,2006 and result where release on the 26TH APRIL,2006. Your E-mail address attached to ticket number 653-908-321-675 with serial main number 345-790-241-671 drew lucky star numbers 34-32-90-43-32 which consequently won in the 2ND category, you have therefore been approved for a lump sum pay out of 1.000.000.00 Euro.(One Million Euro).
+
+CONGRATULATIONS!!!
+Due to mix up of some numbers and names, we ask that you keep your winning information confidential until your claims has been processed and your money remitted to you. This is part of our security protocol to avoid double claiming and unwarranted abuse of this program by some participants. All participants were selected through a computer ballot system drawn from over 100,000 company and 50,000,000 individual email addresses and names from all over the world.
+This lottery was promoted and sponsored by Association of Microsoft-waers Producers under Spanish European Lottery board in order to enhance and promote the use of Internet Explorer Users and Microsoft-wares around the globe. This promotional program takes place every three year. We hope with part of your winning you will take part in our end of year 50 million Euro International lottery.
+To file for your claim, please contact our fiduciary agent:
+ 
+DR.  ROBERT GONZALEZ
+SANTA LUCIA SECURITY COMPANY ESPA?A
+
+TEL: +34-692-241-846
+FAX: +34-911-765-923
+
+Email: santaluciass at netscape.net
+ 
+Remember, all winning must be claimed not later than one month, After this date all unclaimed funds will be included in the next stake. Please note in order to avoid unnecessary delays and complications please remember to quote your reference number and batch numbers in all correspondence. Furthermore, should there be any change of address do inform our agent as soon as possible.
+Congratulations once more from our members of staff and thank you for being part of our promotional program.
+Note: Anybody under the age of 18 is automatically disqualified.
+ 
+Sincerely yours,
+MRS,COMFORT JOSE
+(LOTTERY CO-ORDINATOR)
+
+From info at euro-rental.net  Fri Apr 28 01:16:58 2006
+From: info at euro-rental.net (Euro-Rental)
+Date: Fri, 28 Apr 2006 01:16:58 +0200
+Subject: Stellenangebot(DE), Presentacion de trabajo (ES) 
+Message-ID: <20060428021723.2705.qmail@univ-mesoamericana-s-xxi-sc-003997189.prodihostname>
+
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060428/6223caa0/attachment.html>
+
+From MAILER-DAEMON at aol.com  Fri Apr 28 01:17:19 2006
+From: MAILER-DAEMON at aol.com (Mail Delivery Subsystem)
+Date: Thu, 27 Apr 2006 19:17:19 -0400 (EDT)
+Subject: Returned mail: User unknown
+Message-ID: <200604272317.TAA23276@rly-yj03.mx.aol.com>
+
+The original message was received at Thu, 27 Apr 2006 19:17:12 -0400 (EDT)
+from univ-mesoamericana-s-xxi-sc-003997189.prodigy.net.mx [148.233.156.161]
+
+
+*** ATTENTION ***
+
+Your e-mail is being returned to you because there was a problem with its
+delivery.  The address which was undeliverable is listed in the section
+labeled: "----- The following addresses had permanent fatal errors -----".
+
+The reason your mail is being returned to you is listed in the section
+labeled: "----- Transcript of Session Follows -----".
+
+The line beginning with "<<<" describes the specific reason your e-mail could
+not be delivered.  The next line contains a second error message which is a
+general translation for other e-mail servers.
+
+Please direct further questions regarding this message to your e-mail
+administrator.
+
+--AOL Postmaster
+
+
+
+   ----- The following addresses had permanent fatal errors -----
+<www.tyrion010 at aol.com>
+
+   ----- Transcript of session follows -----
+... while talking to air-yj02.mail.aol.com.:
+>>> RCPT To:<www.tyrion010 at aol.com>
+<<< 550 MAILBOX NOT FOUND
+550 <www.tyrion010 at aol.com>... User unknown
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: text/rfc822-headers
+Size: 908 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060427/74ad5ed2/attachment.bin>
+
+From grahambal96 at netscape.net  Fri Apr 28 14:00:22 2006
+From: grahambal96 at netscape.net (Mr Graham Baldock)
+Date: Fri, 28 Apr 2006 14:00:22 +0200
+Subject: THANKS FOR YOUR KINDESS.
+Message-ID: <200604281200.k3SC00t12081@bat.berlios.de>
+
+BANK OF AMERICA (ASIA)LTD.
+17/F DEVCON HOUSE
+979 KING'S ROAD
+HONG KONG.
+graham_bal96 at yahoo.com.hk
+Dear Friend,
+I am Mr.Graham R. Baldock, credit officer of Bank of
+America (Asia) Ltd, Hong Kong. I am an Australian by
+nationality working with the Bank of America Asian
+Branch.
+I  have an urgent and  very confidential business
+proposition for you.
+On october 6, 2001, an American Engineer/Consultant
+with  the Chinese Solid  Minerals Corporation,
+Mr. Mathew Paxton made a (Fixed) Deposit for twelve
+calendar months, valued at US$40,500,000.00 (Forty
+Million  Five Hundred thousand United State Dollars
+only) in my branch.
+Upon maturity,I sent a routine  notification to his
+forwarding address but got no reply. After a month, we
+sent a reminder and finally we discovered from his
+contract employers, the  Hong Kong Solid Minerals
+Corporation that Mr. Mathew Paxton died from a
+recurrent heart disease.
+On further investigation,I found out that he died
+without making  a will, and all attempts to trace his
+next of kin was  fruitless.
+I therefore made further investigation and discovered
+that  Mr. Mathew Paxton did not declare any next of
+kin or relations in all his  official documents,
+including his Bank Deposit paperwork in my Bank.
+This sum of US$40,500,000.00 is still lingering in my
+Bank and the interest is being rolled over with the
+principal sum at the end of each year. No one will
+ever come forward to claim it.
+According to the Hong Kong Law,under china's foreign
+and defense affairs,at the expiration of 5 (five)
+years,such funds will revert to the ownership of the
+chinese Government for financing military
+operations,such as purchasing of arms and ammunitions
+for the military.
+In order to avert this negative development,i will
+like to seek for your permission as a foreigner to
+stand as the next of kin to Mr. Mathew Paxton so that
+the fruits of this old man's labor will not be use for
+financing weapons which will further enhance the
+courses of war in the world in general.
+The money will be paid into your account for us to
+share in the ratio of 60% for me and 30% for you and
+10% for Expenses Incurred in the course of the
+transaction.There is no risk at all as all the
+paperwork  for this project will be done by my
+attorney and with my position as the credit officer
+guarantees the successful execution of this project.
+If you are interested,please reply immediately.
+Upon your response, I shall then provide you with more
+details and that will help you understand the
+transaction.
+You should observe utmost confidentiality,and rest
+assured  that this  project would be most profitable
+for both parties because I shall require your
+assistance to invest my share in your country.
+Awaiting your urgent reply.
+Thanks and regards.
+Mr.Graham R. Baldock  
+
+From jlm17 at lucent.com  Fri Apr 28 16:16:59 2006
+From: jlm17 at lucent.com (jlm)
+Date: Fri, 28 Apr 2006 10:16:59 -0400
+Subject: Using control keys.
+Message-ID: <20060428141659.GA27174@cc543.inse.lucent.com>
+
+I am trying to use control keys to navigate the sidebar. I want control-j to move down an entry, control-k to move up an entry, and
+control-o to open the mailbox. I have these keybindings in my .muttngrc file:
+
+bind index ^k sidebar-prev
+bind index ^j sidebar-next
+bind index ^o sidebar-open
+
+When I type one of these key combinations muttng tells me that the key is not bound. When I look at the help it looks like it is bound.
+What am I doing wrong here?
+
+Thanks.
+
+
+From andre.berger at web.de  Fri Apr 28 16:35:37 2006
+From: andre.berger at web.de (Andre Berger)
+Date: Fri, 28 Apr 2006 16:35:37 +0200
+Subject: Using control keys.
+In-Reply-To: <20060428141659.GA27174@cc543.inse.lucent.com>
+References: <20060428141659.GA27174@cc543.inse.lucent.com>
+Message-ID: <20060428143537.GA1941@hvk.local>
+
+* jlm (2006-04-28):
+> I am trying to use control keys to navigate the sidebar. I want control-j to move down an entry, control-k to move up an entry, and
+> control-o to open the mailbox. I have these keybindings in my .muttngrc file:
+> 
+> bind index ^k sidebar-prev
+> bind index ^j sidebar-next
+> bind index ^o sidebar-open
+> 
+> When I type one of these key combinations muttng tells me that the key is not bound. When I look at the help it looks like it is bound.
+> What am I doing wrong here?
+
+Use "\c" not "^" 
+
+-Andre
+
+
+From farhanahmed06 at gmail.com  Fri Apr 28 16:45:05 2006
+From: farhanahmed06 at gmail.com (Farhan Ahmed)
+Date: Fri, 28 Apr 2006 20:15:05 +0530
+Subject: Using control keys.
+In-Reply-To: <20060428141659.GA27174@cc543.inse.lucent.com>
+References: <20060428141659.GA27174@cc543.inse.lucent.com>
+Message-ID: <20060428144505.GA6338@mainframe>
+
+jlm wrote:
+> I am trying to use control keys to navigate the sidebar. I want control-j to move down an entry, control-k to move up an entry, and
+> control-o to open the mailbox. I have these keybindings in my .muttngrc file:
+> 
+> bind index ^k sidebar-prev
+> bind index ^j sidebar-next
+> bind index ^o sidebar-open
+> 
+> When I type one of these key combinations muttng tells me that the key is not bound. When I look at the help it looks like it is bound.
+> What am I doing wrong here?
+
+Modify your .muttngrc to look like this:
+
+	bind index \Ck sidebar-prev
+	bind index \Cj sidebar-next
+	bind index \Co sidebar-open
+
+Hope this helps,
+Farhan Ahmed
+
+-- 
+Place		:  Bangalore, Karnataka, India
+GPG Key		:  8BE90E98
+WengoPhone ID	:  farhanahmed
+IRC Nick	:  farhanahmed / farhanahmed06 (irc.freenode.net)
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/mutt-ng-users/attachments/20060428/dea9783b/attachment.pgp>
+
